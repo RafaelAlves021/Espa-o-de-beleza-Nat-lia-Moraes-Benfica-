@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natália Moraes | Especialista em Alisamento Premium & Terapia Capilar</title>
+  
+  <!-- SEO Básico -->
+  <meta name="description" content="Espaço de Beleza Natália Moraes em Benfica, RJ. 20 anos de tradição, mais de 30 mil atendimentos, especialista em Alisamento Premium, Terapia Capilar e produtos próprios para todo o Brasil.">
+
+  <!-- Google Fonts: Poppins (Títulos fortes) e Mulish (Corpo limpo e elegante) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              magenta: '#D81B60',
+              deep: '#C2185B',
+              vibrant: '#E91E63',
+              dark: '#880e4f',
+              light: '#fce4ec',
+              surface: '#FFF1F5'
+            },
+            dark: {
+              900: '#111827',
+              800: '#1F2937',
+              700: '#374151'
+            }
+          },
+          fontFamily: {
+            title: ['Poppins', 'sans-serif'],
+            body: ['Mulish', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Estilos globais e customizações visuais */
+    body {
+      font-family: 'Mulish', sans-serif;
+      color: #1F2937;
+      background-color: #FFFFFF;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, h4, .font-title {
+      font-family: 'Poppins', sans-serif;
+      letter-spacing: -0.02em;
+    }
+    
+    /* Pulsação do botão WhatsApp flutuante */
+    @keyframes pulse-ring {
+      0% { transform: scale(0.95); opacity: 0.8; }
+      50% { transform: scale(1.15); opacity: 0.3; }
+      100% { transform: scale(0.95); opacity: 0.8; }
+    }
+    .pulse-effect::before {
+      content: '';
+      position: absolute;
+      inset: -6px;
+      border-radius: 9999px;
+      background-color: #25D366;
+      opacity: 0.5;
+      animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      z-index: -1;
+    }
+
+    /* Utilitário para corte de texto */
+    .clamp-3 {
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-brand-magenta selection:text-white">
+
+  <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo e Selo -->
+        <a href="#hero" class="flex flex-col group">
+          <div class="flex items-center gap-2">
+            <span class="text-2xl sm:text-3xl font-title font-black tracking-tight text-dark-900 group-hover:text-brand-magenta transition-colors">
+              NATÁLIA<span class="text-brand-magenta">MORAES</span>
+            </span>
+          </div>
+          <span class="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-brand-deep bg-brand-light px-2 py-0.5 rounded w-max mt-0.5">
+            Especialista em Alisamento Premium
+          </span>
+        </a>
+
+        <!-- Menu Desktop -->
+        <nav class="hidden lg:flex items-center gap-8">
+          <a href="#sobre" class="text-sm font-bold text-dark-800 hover:text-brand-magenta transition-colors uppercase tracking-wider">Sobre</a>
+          <a href="#especialidade" class="text-sm font-bold text-dark-800 hover:text-brand-magenta transition-colors uppercase tracking-wider">Alisamento</a>
+          <a href="#servicos" class="text-sm font-bold text-dark-800 hover:text-brand-magenta transition-colors uppercase tracking-wider">Serviços</a>
+          <a href="#produtos" class="text-sm font-bold text-brand-magenta hover:text-brand-dark transition-colors uppercase tracking-wider flex items-center gap-1.5">
+            <i class="fa-solid fa-bag-shopping text-xs"></i> Loja Brasil
+          </a>
+          <a href="#depoimentos" class="text-sm font-bold text-dark-800 hover:text-brand-magenta transition-colors uppercase tracking-wider">Avaliações</a>
+          <a href="#localizacao" class="text-sm font-bold text-dark-800 hover:text-brand-magenta transition-colors uppercase tracking-wider">Benfica RJ</a>
+        </nav>
+
+        <!-- CTA Header -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20com%20a%20Nat%C3%A1lia%20Moraes!" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             class="inline-flex items-center gap-2 bg-brand-magenta hover:bg-brand-deep text-white font-title text-sm font-bold px-5 py-3 rounded-full shadow-lg shadow-brand-magenta/30 hover:shadow-brand-magenta/50 transition-all transform hover:-translate-y-0.5 active:translate-y-0">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>Agendar no WhatsApp</span>
+          </a>
+        </div>
+
+        <!-- Botão Menu Mobile -->
+        <button id="mobileMenuBtn" aria-label="Abrir Menu de Navegação" class="lg:hidden p-2 rounded-lg text-dark-800 hover:text-brand-magenta hover:bg-gray-100 transition-colors">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Gaveta do Menu Mobile -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-gray-200 px-6 py-6 transition-all duration-300">
+      <div class="flex flex-col gap-4">
+        <a href="#sobre" class="mobile-link text-base font-bold text-dark-800 hover:text-brand-magenta py-1">Sobre a Natália</a>
+        <a href="#especialidade" class="mobile-link text-base font-bold text-dark-800 hover:text-brand-magenta py-1">Alisamento Premium</a>
+        <a href="#servicos" class="mobile-link text-base font-bold text-dark-800 hover:text-brand-magenta py-1">Todos os Serviços</a>
+        <a href="#produtos" class="mobile-link text-base font-bold text-brand-magenta py-1 flex items-center justify-between">
+          <span>Linha de Produtos Brasil</span>
+          <span class="text-xs bg-brand-light text-brand-magenta font-black px-2 py-0.5 rounded">NOVO</span>
+        </a>
+        <a href="#depoimentos" class="mobile-link text-base font-bold text-dark-800 hover:text-brand-magenta py-1">Depoimentos & Google</a>
+        <a href="#localizacao" class="mobile-link text-base font-bold text-dark-800 hover:text-brand-magenta py-1">Localização em Benfica</a>
+        
+        <div class="pt-4 border-t border-gray-100">
+          <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20Nat%C3%A1lia!%20Gostaria%20de%20solicitar%20um%20agendamento." 
+             target="_blank" 
+             rel="noopener noreferrer"
+             class="w-full flex items-center justify-center gap-2 bg-brand-magenta hover:bg-brand-deep text-white font-title text-base font-bold py-3.5 rounded-xl shadow-md">
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+            <span>Agendar no WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-20">
+    <section id="hero" class="relative bg-brand-magenta text-white overflow-hidden">
+      <!-- Elementos gráficos de fundo com efeito moderno -->
+      <div class="absolute inset-0 opacity-15 pointer-events-none">
+        <div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-white blur-3xl"></div>
+        <div class="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full bg-brand-vibrant blur-3xl"></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-28 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Conteúdo e Autoridade (Esquerda) -->
+          <div class="lg:col-span-7 flex flex-col items-start text-left">
+            
+            <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md text-white text-xs sm:text-sm font-bold uppercase tracking-wider px-4 py-1.5 rounded-full mb-6 border border-white/30">
+              <i class="fa-solid fa-crown text-yellow-300"></i>
+              <span>Referência em Benfica & todo o RJ</span>
+            </div>
+
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-tight uppercase mb-6">
+              Especialista em <br>
+              <span class="text-dark-900 bg-white px-2 py-0.5 inline-block my-1 rounded-md">Alisamento Premium</span><br>
+              e Terapia Capilar
+            </h1>
+
+            <p class="text-lg sm:text-xl text-white/90 font-medium max-w-2xl mb-8 leading-relaxed">
+              Mais de duas décadas transformando a autoestima de mulheres com saúde real para os fios e tecnologia capilar de ponta. Linha exclusiva com envio para todo o território nacional.
+            </p>
+
+            <!-- Selos de Autoridade Rápidos -->
+            <div class="grid grid-cols-2 sm:grid-cols-2 gap-4 w-full sm:w-auto mb-8">
+              <div class="bg-black/25 backdrop-blur-sm border border-white/20 rounded-2xl p-4 flex items-center gap-3">
+                <div class="w-12 h-12 rounded-xl bg-white text-brand-magenta flex items-center justify-center font-title font-black text-xl shrink-0 shadow-md">
+                  20
+                </div>
+                <div>
+                  <div class="font-title font-black text-white text-base">Anos</div>
+                  <div class="text-xs text-white/80 uppercase font-semibold">De Profissão</div>
+                </div>
+              </div>
+
+              <div class="bg-black/25 backdrop-blur-sm border border-white/20 rounded-2xl p-4 flex items-center gap-3">
+                <div class="w-12 h-12 rounded-xl bg-white text-brand-magenta flex items-center justify-center font-title font-black text-xl shrink-0 shadow-md">
+                  30k+
+                </div>
+                <div>
+                  <div class="font-title font-black text-white text-base">Atendimentos</div>
+                  <div class="text-xs text-white/80 uppercase font-semibold">Realizados</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTAs Primários -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto">
+              <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20Nat%C3%A1lia!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20meu%20Alisamento%20Premium." 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 class="inline-flex items-center justify-center gap-3 bg-white text-brand-magenta hover:bg-gray-100 font-title font-black text-lg px-8 py-4 rounded-xl shadow-xl transition-all transform hover:-translate-y-1 active:translate-y-0 text-center">
+                <i class="fa-brands fa-whatsapp text-2xl text-green-600"></i>
+                <span>Agendar Avaliação</span>
+              </a>
+
+              <a href="#produtos" 
+                 class="inline-flex items-center justify-center gap-2 bg-brand-dark/40 hover:bg-brand-dark/70 text-white border-2 border-white/40 font-title font-bold text-base px-6 py-4 rounded-xl transition-all text-center">
+                <i class="fa-solid fa-store"></i>
+                <span>Conhecer Produtos Próprios</span>
+              </a>
+            </div>
+
+            <!-- Google Rating mini badge -->
+            <div class="mt-8 flex items-center gap-3 text-sm text-white/90">
+              <div class="flex text-yellow-300">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span class="font-bold text-white">4,9 no Google</span>
+              <span class="text-white/60">•</span>
+              <span>49 avaliações verificadas</span>
+            </div>
+
+          </div>
+
+          <!-- Foto Destaque Profissional (Direita) -->
+          <div class="lg:col-span-5 relative">
+            <div class="relative mx-auto max-w-md lg:max-w-none">
+              <!-- Moldura de destaque com efeito de corte estilizado -->
+              <div class="absolute -inset-4 bg-white/20 rounded-3xl transform rotate-2"></div>
+              <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-dark-900">
+                <img 
+                  src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?q=80&w=1000&auto=format&fit=crop" 
+                  alt="Natália Moraes - Especialista em Alisamento Premium e Terapia Capilar"
+                  class="w-full h-[480px] sm:h-[540px] object-cover object-top hover:scale-105 transition-transform duration-700"
+                  loading="eager"
+                  onerror="this.src='https://placehold.co/600x800/D81B60/FFFFFF?text=Natália+Moraes'"
+                >
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                <div class="absolute bottom-6 left-6 right-6 text-white">
+                  <span class="bg-brand-magenta text-white text-xs font-black uppercase px-2.5 py-1 rounded-md tracking-wider">Especialista Oficial</span>
+                  <p class="font-title font-black text-2xl mt-1">Natália Moraes</p>
+                  <p class="text-xs text-white/80 font-medium">Fundadora & Desenvolvedora de Fórmulas Capilares</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="estatisticas" class="bg-dark-900 text-white py-12 border-b-4 border-brand-magenta">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 text-center">
+          
+          <!-- Estatística 1 -->
+          <div class="p-6 rounded-2xl bg-dark-800/60 border border-gray-800 hover:border-brand-magenta/40 transition-colors">
+            <div class="text-4xl sm:text-5xl lg:text-6xl font-black font-title text-brand-magenta mb-2">
+              <span class="counter" data-target="20">0</span><span class="text-white">+</span>
+            </div>
+            <div class="font-title font-bold text-base sm:text-lg text-white uppercase tracking-tight">Anos de Profissão</div>
+            <p class="text-xs text-gray-400 mt-1">Dedicação exclusiva e contínua</p>
+          </div>
+
+          <!-- Estatística 2 -->
+          <div class="p-6 rounded-2xl bg-dark-800/60 border border-gray-800 hover:border-brand-magenta/40 transition-colors">
+            <div class="text-4xl sm:text-5xl lg:text-6xl font-black font-title text-white mb-2">
+              <span class="counter" data-target="30000">0</span><span class="text-brand-magenta">+</span>
+            </div>
+            <div class="font-title font-bold text-base sm:text-lg text-white uppercase tracking-tight">Atendimentos</div>
+            <p class="text-xs text-gray-400 mt-1">Cabelos recuperados e transformados</p>
+          </div>
+
+          <!-- Estatística 3 -->
+          <div class="p-6 rounded-2xl bg-dark-800/60 border border-gray-800 hover:border-brand-magenta/40 transition-colors">
+            <div class="text-4xl sm:text-5xl lg:text-6xl font-black font-title text-brand-magenta mb-2">
+              <span>100</span><span class="text-white">%</span>
+            </div>
+            <div class="font-title font-bold text-base sm:text-lg text-white uppercase tracking-tight">Envio Brasil</div>
+            <p class="text-xs text-gray-400 mt-1">Produtos entregues em todo o país</p>
+          </div>
+
+          <!-- Estatística 4 -->
+          <div class="p-6 rounded-2xl bg-dark-800/60 border border-gray-800 hover:border-brand-magenta/40 transition-colors">
+            <div class="text-4xl sm:text-5xl lg:text-6xl font-black font-title text-yellow-400 mb-2">
+              <span class="counter-float" data-target="4.9">0.0</span>
+            </div>
+            <div class="font-title font-bold text-base sm:text-lg text-white uppercase tracking-tight">Nota no Google</div>
+            <p class="text-xs text-gray-400 mt-1">Avaliações comprovadas de clientes</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="py-20 sm:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          
+          <!-- Imagem e Credencial -->
+          <div class="lg:col-span-5 order-2 lg:order-1">
+            <div class="relative">
+              <div class="w-full h-[450px] sm:h-[500px] rounded-3xl overflow-hidden shadow-2xl border-2 border-gray-100">
+                <img 
+                  src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=1000&auto=format&fit=crop" 
+                  alt="Equipe e estrutura Natália Moraes"
+                  class="w-full h-full object-cover"
+                  onerror="this.src='https://placehold.co/600x700/C2185B/FFFFFF?text=Natália+Moraes+Equipe'"
+                >
+              </div>
+
+              <!-- Selo Flutuante -->
+              <div class="absolute -bottom-6 -right-4 sm:right-6 bg-white p-5 rounded-2xl shadow-xl border border-gray-100 max-w-xs">
+                <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 rounded-xl bg-brand-light text-brand-magenta flex items-center justify-center text-2xl font-bold">
+                    <i class="fa-solid fa-award"></i>
+                  </div>
+                  <div>
+                    <h2 class="font-title font-bold text-dark-900 text-sm">Qualidade Comprovada</h2>
+                    <p class="text-xs text-gray-500">Credibilidade técnica em cada protocolo</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Texto Sobre -->
+          <div class="lg:col-span-7 order-1 lg:order-2">
+            <span class="text-xs font-black uppercase tracking-widest text-brand-magenta bg-brand-light px-3 py-1 rounded-full">
+              Sobre a Especialista
+            </span>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-dark-900 mt-4 mb-6 leading-tight uppercase">
+              Saúde capilar de verdade com quem entende do assunto
+            </h2>
+
+            <blockquote class="text-lg sm:text-xl text-dark-700 italic border-l-4 border-brand-magenta pl-4 mb-6 font-semibold">
+              "Trabalho com uma equipe preparada para trazer saúde e cuidado aos cabelos. Zelamos pela satisfação das clientes, com qualidade nos serviços e credibilidade nos produtos. Será um prazer conhecer você — venha conhecer nossa equipe!"
+            </blockquote>
+
+            <p class="text-dark-700 leading-relaxed text-base mb-6">
+              Com mais de <strong>20 anos de carreira consolidada</strong> no Rio de Janeiro, Natália Moraes não apenas domina as técnicas mais avançadas de alinhamento e restauração da fibra capilar, como também pesquisa e formula cosméticos de manutenção com alta performance para garantir que seus resultados durem por meses.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+              <div class="flex items-start gap-3 p-4 rounded-xl bg-gray-50 border border-gray-100">
+                <i class="fa-solid fa-check-circle text-brand-magenta text-xl mt-0.5"></i>
+                <div>
+                  <h3 class="font-bold text-dark-900 text-sm">Equipe Treinada</h3>
+                  <p class="text-xs text-gray-600">Padronização de excelência em todos os procedimentos.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 p-4 rounded-xl bg-gray-50 border border-gray-100">
+                <i class="fa-solid fa-check-circle text-brand-magenta text-xl mt-0.5"></i>
+                <div>
+                  <h3 class="font-bold text-dark-900 text-sm">Fórmulas Próprias</h3>
+                  <p class="text-xs text-gray-600">Cosméticos desenvolvidos exclusivamente pela especialista.</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20espa%C3%A7o%20Nat%C3%A1lia%20Moraes!" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="inline-flex items-center gap-3 bg-dark-900 hover:bg-brand-magenta text-white font-title font-bold px-7 py-3.5 rounded-xl transition-all">
+              <span>Agendar Minha Visita</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="especialidade" class="py-20 bg-brand-surface border-y border-brand-light">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-black uppercase tracking-widest text-brand-magenta bg-white px-3 py-1 rounded-full shadow-sm">
+            O Carro-Chefe do Espaço
+          </span>
+          <h2 class="text-3xl sm:text-5xl font-black text-dark-900 mt-4 mb-4 uppercase">
+            Alisamento Premium
+          </h2>
+          <p class="text-gray-600 text-base sm:text-lg">
+            Um procedimento exclusivo concebido para proporcionar liso espelhado, toque aveludado e resistência da raiz às pontas, sem comprometer a saúde e maleabilidade natural dos fios.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Diferenciais da Técnica -->
+          <div class="lg:col-span-6 space-y-4">
+            
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-light/60 hover:shadow-md transition-shadow">
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-brand-magenta text-white flex items-center justify-center text-xl shrink-0 font-bold">
+                  <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+                <div>
+                  <h3 class="font-title font-bold text-dark-900 text-lg">Brilho Espelhado e Toque de Seda</h3>
+                  <p class="text-sm text-gray-600 mt-1">Fios alinhados com balanço natural, sem aquele aspecto pesado ou artificial de alisamentos convencionais.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-light/60 hover:shadow-md transition-shadow">
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-brand-magenta text-white flex items-center justify-center text-xl shrink-0 font-bold">
+                  <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div>
+                  <h3 class="font-title font-bold text-dark-900 text-lg">Proteção e Reposição Lipídica</h3>
+                  <p class="text-sm text-gray-600 mt-1">Tratamento pré e pós-aplicação com ativos nutritivos que preservam a integridade e umidade do córtex capilar.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-light/60 hover:shadow-md transition-shadow">
+              <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-brand-magenta text-white flex items-center justify-center text-xl shrink-0 font-bold">
+                  <i class="fa-solid fa-clock-rotate-left"></i>
+                </div>
+                <div>
+                  <h3 class="font-title font-bold text-dark-900 text-lg">Durabilidade Prolongada</h3>
+                  <p class="text-sm text-gray-600 mt-1">Efeito liso duradouro com manutenção simplificada no dia a dia com a linha própria de cosméticos.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-4">
+              <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20e%20fazer%20uma%20avalia%C3%A7%C3%A3o%20para%20o%20Alisamento%20Premium!" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-brand-magenta hover:bg-brand-deep text-white font-title font-bold px-8 py-4 rounded-xl shadow-lg shadow-brand-magenta/30 transition-all">
+                <i class="fa-brands fa-whatsapp text-xl"></i>
+                <span>Quero o Meu Alisamento Premium</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Cards Antes & Depois (Placeholders conceituais de alto nível) -->
+          <div class="lg:col-span-6">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              
+              <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-200">
+                <div class="relative">
+                  <span class="absolute top-3 left-3 bg-dark-900/90 text-white text-[11px] font-black uppercase px-2.5 py-1 rounded">Resultado 1</span>
+                  <img 
+                    src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=800&auto=format&fit=crop" 
+                    alt="Alisamento Premium Resultado 1" 
+                    class="w-full h-64 object-cover"
+                    onerror="this.src='https://placehold.co/500x500/D81B60/FFFFFF?text=Resultado+Alisamento+1'"
+                  >
+                </div>
+                <div class="p-4">
+                  <h3 class="font-title font-bold text-dark-900 text-sm">Alinhamento Perfeito</h3>
+                  <p class="text-xs text-gray-500 mt-0.5">Redução total de frizz com preservação da fibra.</p>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-200">
+                <div class="relative">
+                  <span class="absolute top-3 left-3 bg-brand-magenta text-white text-[11px] font-black uppercase px-2.5 py-1 rounded">Resultado 2</span>
+                  <img 
+                    src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?q=80&w=800&auto=format&fit=crop" 
+                    alt="Alisamento Premium Resultado 2" 
+                    class="w-full h-64 object-cover"
+                    onerror="this.src='https://placehold.co/500x500/D81B60/FFFFFF?text=Resultado+Alisamento+2'"
+                  >
+                </div>
+                <div class="p-4">
+                  <h3 class="font-title font-bold text-dark-900 text-sm">Liso Espelhado</h3>
+                  <p class="text-xs text-gray-500 mt-0.5">Toque aveludado e brilho ultra radiante.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="servicos" class="py-20 sm:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-black uppercase tracking-widest text-brand-magenta bg-brand-light px-3 py-1 rounded-full">
+            Menu Completo
+          </span>
+          <h2 class="text-3xl sm:text-5xl font-black text-dark-900 mt-4 mb-4 uppercase">
+            Serviços Especializados
+          </h2>
+          <p class="text-gray-600 text-base sm:text-lg">
+            Um ambiente preparado para cuidar da sua beleza de forma integrada em Benfica.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          
+          <!-- Card Serviço 1 -->
+          <div class="group p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-brand-magenta hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-brand-light text-brand-magenta group-hover:bg-brand-magenta group-hover:text-white flex items-center justify-center text-2xl transition-colors mb-6 shadow-sm">
+                <i class="fa-solid fa-seedling"></i>
+              </div>
+              <h3 class="font-title font-bold text-xl text-dark-900 mb-2">Terapia Capilar</h3>
+              <p class="text-sm text-gray-600 leading-relaxed">
+                Diagnóstico e tratamento intensivo do couro cabeludo e haste, combatendo oleosidade, queda e fragilidade.
+              </p>
+            </div>
+            <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20Terapia%20Capilar!" target="_blank" rel="noopener noreferrer" class="mt-6 text-sm font-bold text-brand-magenta group-hover:text-brand-deep flex items-center gap-2">
+              <span>Saber mais</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+          </div>
+
+          <!-- Card Serviço 2 -->
+          <div class="group p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-brand-magenta hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-brand-light text-brand-magenta group-hover:bg-brand-magenta group-hover:text-white flex items-center justify-center text-2xl transition-colors mb-6 shadow-sm">
+                <i class="fa-solid fa-scissors"></i>
+              </div>
+              <h3 class="font-title font-bold text-xl text-dark-900 mb-2">Cabeleireiro</h3>
+              <p class="text-sm text-gray-600 leading-relaxed">
+                Cortes modernos, escovas modeladas, tratamentos de hidratação, nutrição e reconstrução profunda.
+              </p>
+            </div>
+            <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20servi%C3%A7o%20de%20Cabeleireiro!" target="_blank" rel="noopener noreferrer" class="mt-6 text-sm font-bold text-brand-magenta group-hover:text-brand-deep flex items-center gap-2">
+              <span>Saber mais</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+          </div>
+
+          <!-- Card Serviço 3 -->
+          <div class="group p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-brand-magenta hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-brand-light text-brand-magenta group-hover:bg-brand-magenta group-hover:text-white flex items-center justify-center text-2xl transition-colors mb-6 shadow-sm">
+                <i class="fa-solid fa-hand-sparkles"></i>
+              </div>
+              <h3 class="font-title font-bold text-xl text-dark-900 mb-2">Manicure</h3>
+              <p class="text-sm text-gray-600 leading-relaxed">
+                Cuidado estético e higiene impecável para as unhas com esmaltação duradoura e acabamento impecável.
+              </p>
+            </div>
+            <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20Manicure!" target="_blank" rel="noopener noreferrer" class="mt-6 text-sm font-bold text-brand-magenta group-hover:text-brand-deep flex items-center gap-2">
+              <span>Saber mais</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+          </div>
+
+          <!-- Card Serviço 4 -->
+          <div class="group p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-brand-magenta hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-brand-light text-brand-magenta group-hover:bg-brand-magenta group-hover:text-white flex items-center justify-center text-2xl transition-colors mb-6 shadow-sm">
+                <i class="fa-solid fa-spa"></i>
+              </div>
+              <h3 class="font-title font-bold text-xl text-dark-900 mb-2">Pedicure</h3>
+              <p class="text-sm text-gray-600 leading-relaxed">
+                Tratamento relaxante e higienização completa para os pés com produtos emolientes e hidratação.
+              </p>
+            </div>
+            <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20Pedicure!" target="_blank" rel="noopener noreferrer" class="mt-6 text-sm font-bold text-brand-magenta group-hover:text-brand-deep flex items-center gap-2">
+              <span>Saber mais</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+          </div>
+
+          <!-- Card Serviço 5 -->
+          <div class="group p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-brand-magenta hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-brand-light text-brand-magenta group-hover:bg-brand-magenta group-hover:text-white flex items-center justify-center text-2xl transition-colors mb-6 shadow-sm">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+              <h3 class="font-title font-bold text-xl text-dark-900 mb-2">Design de Sobrancelha</h3>
+              <p class="text-sm text-gray-600 leading-relaxed">
+                Mapeamento facial personalizado para realçar o seu olhar respeitando a simetria natural do seu rosto.
+              </p>
+            </div>
+            <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20quero%20agendar%20Design%20de%20Sobrancelha!" target="_blank" rel="noopener noreferrer" class="mt-6 text-sm font-bold text-brand-magenta group-hover:text-brand-deep flex items-center gap-2">
+              <span>Saber mais</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+          </div>
+
+          <!-- Card Serviço 6 -->
+          <div class="group p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-brand-magenta hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-brand-light text-brand-magenta group-hover:bg-brand-magenta group-hover:text-white flex items-center justify-center text-2xl transition-colors mb-6 shadow-sm">
+                <i class="fa-solid fa-gem"></i>
+              </div>
+              <h3 class="font-title font-bold text-xl text-dark-900 mb-2">Extensão de Cílios</h3>
+              <p class="text-sm text-gray-600 leading-relaxed">
+                Alongamento e volume na medida certa com técnicas seguras que preservam os fios naturais.
+              </p>
+            </div>
+            <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20aplica%C3%A7%C3%A3o%20de%20C%C3%ADlios!" target="_blank" rel="noopener noreferrer" class="mt-6 text-sm font-bold text-brand-magenta group-hover:text-brand-deep flex items-center gap-2">
+              <span>Saber mais</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="produtos" class="py-20 sm:py-28 bg-dark-900 text-white relative overflow-hidden">
+      <!-- Fundo de iluminação cosmética -->
+      <div class="absolute -right-32 top-10 w-96 h-96 bg-brand-magenta/20 blur-3xl pointer-events-none rounded-full"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div>
+            <div class="inline-flex items-center gap-2 bg-brand-magenta text-white text-xs font-black uppercase px-3 py-1 rounded-full mb-3">
+              <i class="fa-solid fa-truck-fast"></i>
+              <span>Envio Para Todo o Brasil</span>
+            </div>
+            <h2 class="text-3xl sm:text-5xl font-black uppercase font-title">
+              Linha Própria de Cosméticos
+            </h2>
+            <p class="text-gray-400 max-w-xl text-base sm:text-lg mt-2">
+              Formulados pessoalmente por Natália Moraes para que você mantenha o resultado de salão de luxo em casa.
+            </p>
+          </div>
+          
+          <div class="bg-dark-800 border border-gray-700 px-5 py-3 rounded-2xl flex items-center gap-3">
+            <i class="fa-solid fa-shield-check text-2xl text-brand-magenta"></i>
+            <div class="text-xs">
+              <span class="font-bold text-white block">Garantia de Qualidade</span>
+              <span class="text-gray-400">Produtos testados e aprovados clinicamente</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vitrine de E-commerce -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Card de Destaque do Produto Principal (Banana e Mel) -->
+          <div class="lg:col-span-7 bg-dark-800 rounded-3xl p-6 sm:p-10 border border-gray-700 shadow-2xl relative">
+            <span class="absolute top-6 right-6 bg-brand-magenta text-white text-xs font-black uppercase px-3 py-1.5 rounded-full shadow-lg">
+              Mais Vendido do Brasil
+            </span>
+
+            <div class="grid grid-cols-1 sm:grid-cols-12 gap-8 items-center">
+              
+              <!-- Imagem do Produto -->
+              <div class="sm:col-span-5 text-center">
+                <div class="bg-gradient-to-b from-gray-800 to-gray-900 p-4 rounded-2xl border border-gray-700">
+                  <img 
+                    src="https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?q=80&w=800&auto=format&fit=crop" 
+                    alt="Kit Shampoo e Condicionador Banana e Mel Natália Moraes" 
+                    class="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform"
+                    onerror="this.src='https://placehold.co/400x500/D81B60/FFFFFF?text=Kit+Banana+e+Mel'"
+                  >
+                </div>
+                <span class="text-[11px] text-gray-400 uppercase tracking-widest mt-2 block font-semibold">2 x 300ml | Uso Diário</span>
+              </div>
+
+              <!-- Informações e Botão de Compra -->
+              <div class="sm:col-span-7 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center gap-1 text-yellow-400 text-xs mb-2">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="text-gray-300 ml-1 text-xs font-bold">(5.0)</span>
+                  </div>
+
+                  <h3 class="font-title font-black text-2xl text-white mb-2 leading-tight">
+                    Shampoo e Condicionador Banana & Mel
+                  </h3>
+
+                  <p class="text-sm text-gray-300 mb-4 leading-relaxed">
+                    Nutrição profunda com extratos naturais. Restaura fios ressecados, prolonga o alinhamento e sela as cutículas instantaneamente.
+                  </p>
+
+                  <div class="bg-dark-900/80 p-3 rounded-xl border border-gray-700/60 mb-6">
+                    <ul class="text-xs text-gray-300 space-y-1">
+                      <li><i class="fa-solid fa-check text-brand-magenta mr-1.5"></i> Alto poder de emoliência e hidratação</li>
+                      <li><i class="fa-solid fa-check text-brand-magenta mr-1.5"></i> Prolonga a durabilidade do Alisamento</li>
+                      <li><i class="fa-solid fa-check text-brand-magenta mr-1.5"></i> Desenvolvido por Natália Moraes</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="flex items-baseline gap-3 mb-6">
+                  <span class="text-3xl sm:text-4xl font-black text-white font-title">R$ 50,00</span>
+                  <span class="text-xs text-green-400 font-bold bg-green-950/60 px-2 py-1 rounded border border-green-800">Pronta Entrega</span>
+                </div>
+
+                <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20quero%20comprar%20o%20Kit%20Shampoo%20e%20Condicionador%20Banana%20e%20Mel%20por%20R%24%2050%2C00!" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="w-full inline-flex items-center justify-center gap-3 bg-brand-magenta hover:bg-brand-vibrant text-white font-title font-black text-base py-4 px-6 rounded-xl shadow-lg shadow-brand-magenta/40 transition-all transform hover:-translate-y-0.5 active:translate-y-0">
+                  <i class="fa-brands fa-whatsapp text-xl"></i>
+                  <span>Quero Comprar Agora</span>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Banner Informativo de Entrega Brasil -->
+          <div class="lg:col-span-5 space-y-6">
+            
+            <div class="bg-gradient-to-br from-brand-magenta to-brand-deep p-8 rounded-3xl text-white shadow-xl">
+              <i class="fa-solid fa-box-open text-4xl mb-4 text-white/90"></i>
+              <h3 class="font-title font-black text-2xl uppercase mb-3">Receba em Casa com Segurança</h3>
+              <p class="text-sm text-white/90 leading-relaxed mb-6">
+                Não mora no Rio de Janeiro? Não tem problema! Enviamos as fórmulas originais da Natália Moraes via Correios ou Transportadora para qualquer CEP do Brasil.
+              </p>
+              
+              <div class="space-y-3 border-t border-white/20 pt-4 text-xs font-semibold">
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-truck text-sm"></i>
+                  <span>Cálculo de frete rápido direto no WhatsApp</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-lock text-sm"></i>
+                  <span>Pagamento seguro via Pix ou Cartão</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <i class="fa-solid fa-circle-check text-sm"></i>
+                  <span>Embalagem reforçada anti-vazamento</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-dark-800 border border-gray-800 text-center">
+              <p class="text-sm text-gray-300 font-medium">Tem dúvidas sobre qual produto é ideal para o seu cabelo?</p>
+              <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o%20sobre%20os%20produtos%20da%20Nat%C3%A1lia%20Moraes." target="_blank" rel="noopener noreferrer" class="text-brand-magenta font-bold text-sm inline-flex items-center gap-1.5 mt-2 hover:underline">
+                <span>Falar com especialista no WhatsApp</span>
+                <i class="fa-solid fa-angle-right text-xs"></i>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="galeria" class="py-20 sm:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-black uppercase tracking-widest text-brand-magenta bg-brand-light px-3 py-1 rounded-full">
+            Resultados Reais
+          </span>
+          <h2 class="text-3xl sm:text-5xl font-black text-dark-900 mt-4 mb-4 uppercase">
+            Galeria de Transformações
+          </h2>
+          <p class="text-gray-600 text-base sm:text-lg">
+            Acompanhe o padrão de perfeição entregue diariamente em nosso espaço em Benfica.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          
+          <div class="group relative rounded-2xl overflow-hidden aspect-square bg-gray-100 shadow-sm">
+            <img 
+              src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=800&auto=format&fit=crop" 
+              alt="Procedimento de Cabelo Natália Moraes" 
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              onerror="this.src='https://placehold.co/500x500/C2185B/FFFFFF?text=Galeria+1'"
+            >
+            <div class="absolute inset-0 bg-brand-magenta/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="text-white font-title font-bold text-sm uppercase tracking-wider">Ver Detalhes</span>
+            </div>
+          </div>
+
+          <div class="group relative rounded-2xl overflow-hidden aspect-square bg-gray-100 shadow-sm">
+            <img 
+              src="https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=800&auto=format&fit=crop" 
+              alt="Tratamento Capilar no Salão" 
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              onerror="this.src='https://placehold.co/500x500/D81B60/FFFFFF?text=Galeria+2'"
+            >
+            <div class="absolute inset-0 bg-brand-magenta/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="text-white font-title font-bold text-sm uppercase tracking-wider">Ver Detalhes</span>
+            </div>
+          </div>
+
+          <div class="group relative rounded-2xl overflow-hidden aspect-square bg-gray-100 shadow-sm">
+            <img 
+              src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?q=80&w=800&auto=format&fit=crop" 
+              alt="Design e Beleza Feminina" 
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              onerror="this.src='https://placehold.co/500x500/880e4f/FFFFFF?text=Galeria+3'"
+            >
+            <div class="absolute inset-0 bg-brand-magenta/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="text-white font-title font-bold text-sm uppercase tracking-wider">Ver Detalhes</span>
+            </div>
+          </div>
+
+          <div class="group relative rounded-2xl overflow-hidden aspect-square bg-gray-100 shadow-sm">
+            <img 
+              src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?q=80&w=800&auto=format&fit=crop" 
+              alt="Alinhamento e Cuidado Capilar" 
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+              onerror="this.src='https://placehold.co/500x500/E91E63/FFFFFF?text=Galeria+4'"
+            >
+            <div class="absolute inset-0 bg-brand-magenta/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="text-white font-title font-bold text-sm uppercase tracking-wider">Ver Detalhes</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mt-10 text-center">
+          <a href="https://www.instagram.com/nataliamoraeshair" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             class="inline-flex items-center gap-2 text-dark-900 hover:text-brand-magenta font-title font-bold text-sm uppercase tracking-wider transition-colors">
+            <i class="fa-brands fa-instagram text-xl text-pink-600"></i>
+            <span>Ver mais no Instagram oficial @nataliamoraeshair</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="depoimentos" class="py-20 sm:py-28 bg-brand-surface border-y border-brand-light">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Header da Prova Social -->
+        <div class="flex flex-col md:flex-row items-center justify-between mb-16 gap-8">
+          <div>
+            <span class="text-xs font-black uppercase tracking-widest text-brand-magenta bg-white px-3 py-1 rounded-full shadow-sm">
+              Opinião de Quem Confia
+            </span>
+            <h2 class="text-3xl sm:text-5xl font-black text-dark-900 mt-4 uppercase">
+              Avaliações Reais
+            </h2>
+            <p class="text-gray-600 text-base sm:text-lg mt-1">
+              Transparência e respeito conquistados em cada atendimento.
+            </p>
+          </div>
+
+          <!-- Destaque Google -->
+          <div class="bg-white p-6 rounded-2xl shadow-lg border border-brand-light flex items-center gap-5">
+            <div class="w-14 h-14 rounded-2xl bg-yellow-50 text-yellow-500 flex items-center justify-center text-3xl">
+              <i class="fa-brands fa-google"></i>
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-3xl font-black text-dark-900 font-title">4,9</span>
+                <div class="flex text-yellow-400 text-sm">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+              <p class="text-xs text-gray-500 font-bold uppercase tracking-wider mt-0.5">Baseado em 49 avaliações no Google</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid de Depoimentos Fornecidos -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Depoimento 1 -->
+          <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between hover:-translate-y-1 transition-transform">
+            <div>
+              <div class="flex text-yellow-400 mb-4">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-dark-800 text-base italic leading-relaxed mb-6 font-medium">
+                "Os produtos de manutenção são desenvolvidos pela própria proprietária."
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-gray-100">
+              <div class="w-10 h-10 rounded-full bg-brand-light text-brand-magenta font-black flex items-center justify-center text-sm">
+                C
+              </div>
+              <div>
+                <span class="font-bold text-dark-900 text-sm block">Cliente Satisfeita</span>
+                <span class="text-xs text-green-600 flex items-center gap-1 font-semibold">
+                  <i class="fa-solid fa-circle-check text-[10px]"></i> Avaliação Google
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Depoimento 2 -->
+          <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between hover:-translate-y-1 transition-transform">
+            <div>
+              <div class="flex text-yellow-400 mb-4">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-dark-800 text-base italic leading-relaxed mb-6 font-medium">
+                "Eu amei meu tratamento, as meninas são maravilhosas, vou voltar com certeza."
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-gray-100">
+              <div class="w-10 h-10 rounded-full bg-brand-light text-brand-magenta font-black flex items-center justify-center text-sm">
+                A
+              </div>
+              <div>
+                <span class="font-bold text-dark-900 text-sm block">Cliente Fiel</span>
+                <span class="text-xs text-green-600 flex items-center gap-1 font-semibold">
+                  <i class="fa-solid fa-circle-check text-[10px]"></i> Avaliação Google
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Depoimento 3 -->
+          <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between hover:-translate-y-1 transition-transform">
+            <div>
+              <div class="flex text-yellow-400 mb-4">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-dark-800 text-base italic leading-relaxed mb-6 font-medium">
+                "Há serviços de cabeleireiro, manicure, pedicure, design de sobrancelha, cílios!"
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-gray-100">
+              <div class="w-10 h-10 rounded-full bg-brand-light text-brand-magenta font-black flex items-center justify-center text-sm">
+                M
+              </div>
+              <div>
+                <span class="font-bold text-dark-900 text-sm block">Frequentadora Assídua</span>
+                <span class="text-xs text-green-600 flex items-center gap-1 font-semibold">
+                  <i class="fa-solid fa-circle-check text-[10px]"></i> Avaliação Google
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="localizacao" class="py-20 sm:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Informações de Endereço e Horário -->
+          <div class="lg:col-span-5">
+            <span class="text-xs font-black uppercase tracking-widest text-brand-magenta bg-brand-light px-3 py-1 rounded-full">
+              Como Chegar
+            </span>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-dark-900 mt-4 mb-6 uppercase">
+              Nosso Espaço em Benfica
+            </h2>
+
+            <p class="text-gray-600 text-base mb-8 leading-relaxed">
+              Fácil acesso na Zona Norte do Rio de Janeiro. Um ambiente climatizado, acolhedor e estruturado com equipamentos profissionais para receber você com máximo conforto.
+            </p>
+
+            <div class="space-y-6">
+              
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-xl bg-brand-light text-brand-magenta flex items-center justify-center text-xl shrink-0 font-bold">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-dark-900 text-base">Endereço</h3>
+                  <p class="text-sm text-gray-600">R. Mal. Aguiar, 31 - Benfica, Rio de Janeiro - RJ</p>
+                  <p class="text-xs text-gray-500">CEP: 20920-280</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-xl bg-brand-light text-brand-magenta flex items-center justify-center text-xl shrink-0 font-bold">
+                  <i class="fa-solid fa-clock"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-dark-900 text-base">Horário de Atendimento</h3>
+                  <p class="text-sm text-gray-600">Terça a Sábado: 10h às 19h</p>
+                  <p class="text-xs text-gray-500">Abre às 10h (Atendimento com hora marcada)</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-xl bg-brand-light text-brand-magenta flex items-center justify-center text-xl shrink-0 font-bold">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-dark-900 text-base">Contato Direto</h3>
+                  <p class="text-sm text-gray-600">(21) 96927-7003</p>
+                  <p class="text-xs text-gray-500">WhatsApp disponível para dúvidas e agendamentos</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="mt-8">
+              <a href="https://maps.google.com/?q=R.+Mal.+Aguiar,+31+-+Benfica,+Rio+de+Janeiro+-+RJ,+20920-280" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 class="inline-flex items-center gap-2 bg-dark-900 hover:bg-brand-magenta text-white font-title font-bold text-sm px-6 py-3.5 rounded-xl transition-colors">
+                <i class="fa-solid fa-diamond-turn-right"></i>
+                <span>Abrir Rota no Google Maps</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Embed do Google Maps -->
+          <div class="lg:col-span-7">
+            <div class="w-full h-[400px] sm:h-[460px] rounded-3xl overflow-hidden shadow-xl border-4 border-white bg-gray-200">
+              <iframe 
+                title="Localização do Espaço Natália Moraes em Benfica"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.399589307775!2d-43.2393351!3d-22.8986256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f8c05763595%3A0xe212879944bbfae8!2sR.%20Mal.%20Aguiar%2C%2031%20-%20Benfica%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2020920-280!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contato" class="py-20 bg-brand-magenta text-white relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Chamada de Ação Rápida -->
+          <div class="lg:col-span-6">
+            <span class="bg-white/20 text-white text-xs font-black uppercase px-3 py-1 rounded-full border border-white/30">
+              Atendimento Exclusivo
+            </span>
+            <h2 class="text-3xl sm:text-5xl font-black mt-4 mb-6 leading-tight uppercase font-title">
+              Pronta para viver a melhor versão do seu cabelo?
+            </h2>
+            <p class="text-white/90 text-lg mb-8 leading-relaxed">
+              Preencha o formulário rápido ao lado para gerar sua mensagem instantânea e falar diretamente conosco, ou clique no botão direto de WhatsApp.
+            </p>
+
+            <div class="space-y-4 mb-8">
+              <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20diretamente%20com%20a%20equipe%20da%20Nat%C3%A1lia%20Moraes!" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 class="inline-flex items-center gap-3 bg-white text-brand-magenta hover:bg-gray-100 font-title font-black text-lg px-8 py-4 rounded-xl shadow-xl transition-all">
+                <i class="fa-brands fa-whatsapp text-2xl text-green-600"></i>
+                <span>Chamar no WhatsApp Direto</span>
+              </a>
+            </div>
+
+            <div class="flex items-center gap-6 text-sm text-white/80">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-phone"></i>
+                <span>(21) 96927-7003</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-brands fa-instagram"></i>
+                <span>@nataliamoraeshair</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Formulário que converte e abre o WhatsApp formatado -->
+          <div class="lg:col-span-6">
+            <div class="bg-white text-dark-900 p-8 sm:p-10 rounded-3xl shadow-2xl border border-gray-100">
+              <h3 class="font-title font-black text-2xl text-dark-900 mb-2 uppercase">Agendamento ou Compra</h3>
+              <p class="text-xs text-gray-500 mb-6">Envie sua solicitação em 1 clique para nossa recepção:</p>
+
+              <form id="contactForm" class="space-y-4">
+                <div>
+                  <label for="userName" class="block text-xs font-black uppercase tracking-wider text-dark-800 mb-1">Seu Nome Completo</label>
+                  <input type="text" id="userName" required placeholder="Ex: Fernanda Silva" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:border-brand-magenta focus:ring-2 focus:ring-brand-magenta/20 transition-all text-sm font-medium">
+                </div>
+
+                <div>
+                  <label for="userPhone" class="block text-xs font-black uppercase tracking-wider text-dark-800 mb-1">Seu Telefone / WhatsApp</label>
+                  <input type="tel" id="userPhone" required placeholder="Ex: (21) 99999-9999" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:border-brand-magenta focus:ring-2 focus:ring-brand-magenta/20 transition-all text-sm font-medium">
+                </div>
+
+                <div>
+                  <label for="userInterest" class="block text-xs font-black uppercase tracking-wider text-dark-800 mb-1">Qual é o seu interesse principal?</label>
+                  <select id="userInterest" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:border-brand-magenta focus:ring-2 focus:ring-brand-magenta/20 transition-all text-sm font-medium bg-white">
+                    <option value="Alisamento Premium">Alisamento Premium (Especialidade)</option>
+                    <option value="Compra do Kit Banana e Mel">Comprar Produtos (Envio Brasil)</option>
+                    <option value="Terapia Capilar">Terapia Capilar</option>
+                    <option value="Cabeleireiro (Corte/Escova)">Cabeleireiro (Corte, Escova ou Tratamento)</option>
+                    <option value="Manicure / Pedicure">Manicure / Pedicure</option>
+                    <option value="Design de Sobrancelha / Cílios">Design de Sobrancelha / Cílios</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="userMessage" class="block text-xs font-black uppercase tracking-wider text-dark-800 mb-1">Mensagem ou Dúvida (Opcional)</label>
+                  <textarea id="userMessage" rows="3" placeholder="Gostaria de agendar para sábado..." class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:border-brand-magenta focus:ring-2 focus:ring-brand-magenta/20 transition-all text-sm font-medium resize-none"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-brand-magenta hover:bg-brand-deep text-white font-title font-black text-base py-4 rounded-xl shadow-lg shadow-brand-magenta/30 transition-all flex items-center justify-center gap-2">
+                  <i class="fa-brands fa-whatsapp text-xl"></i>
+                  <span>Enviar para o WhatsApp</span>
+                </button>
+              </form>
+
+              <!-- Feedback inline -->
+              <p id="formFeedback" class="text-xs text-center text-green-600 font-bold mt-3 hidden">
+                <i class="fa-solid fa-check"></i> Redirecionando para o WhatsApp oficial...
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-dark-900 text-white pt-16 pb-12 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-gray-800">
+        
+        <!-- Coluna Marca -->
+        <div class="lg:col-span-4 space-y-4">
+          <div class="text-2xl font-black font-title tracking-tight text-white">
+            NATÁLIA<span class="text-brand-magenta">MORAES</span>
+          </div>
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-deep bg-brand-light px-2.5 py-1 rounded inline-block">
+            20 Anos Cuidando de Cabelos
+          </span>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Especialista em Alisamento Premium, Terapia Capilar e desenvolvimento de cosméticos capilares com envio para todo o Brasil.
+          </p>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://www.instagram.com/nataliamoraeshair" target="_blank" rel="noopener noreferrer" aria-label="Instagram Natália Moraes" class="w-10 h-10 rounded-xl bg-dark-800 text-gray-300 hover:text-white hover:bg-brand-magenta flex items-center justify-center transition-colors">
+              <i class="fa-brands fa-instagram text-lg"></i>
+            </a>
+            <a href="https://wa.me/5521969277003" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Natália Moraes" class="w-10 h-10 rounded-xl bg-dark-800 text-gray-300 hover:text-white hover:bg-green-600 flex items-center justify-center transition-colors">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Coluna Links Rápidos -->
+        <div class="lg:col-span-3">
+          <h4 class="font-title font-bold text-white uppercase text-sm tracking-wider mb-4">Navegação Rápida</h4>
+          <ul class="space-y-2.5 text-sm text-gray-400 font-medium">
+            <li><a href="#sobre" class="hover:text-brand-magenta transition-colors">Sobre a Natália</a></li>
+            <li><a href="#especialidade" class="hover:text-brand-magenta transition-colors">Alisamento Premium</a></li>
+            <li><a href="#servicos" class="hover:text-brand-magenta transition-colors">Serviços do Espaço</a></li>
+            <li><a href="#produtos" class="hover:text-brand-magenta transition-colors">Produtos Banana e Mel</a></li>
+            <li><a href="#depoimentos" class="hover:text-brand-magenta transition-colors">Depoimentos Google</a></li>
+            <li><a href="#localizacao" class="hover:text-brand-magenta transition-colors">Endereço em Benfica</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna Serviços -->
+        <div class="lg:col-span-2">
+          <h4 class="font-title font-bold text-white uppercase text-sm tracking-wider mb-4">Procedimentos</h4>
+          <ul class="space-y-2.5 text-sm text-gray-400 font-medium">
+            <li>Alisamento Premium</li>
+            <li>Terapia Capilar</li>
+            <li>Cabeleireiro</li>
+            <li>Manicure & Pedicure</li>
+            <li>Design de Sobrancelha</li>
+            <li>Extensão de Cílios</li>
+          </ul>
+        </div>
+
+        <!-- Coluna Informações de Atendimento -->
+        <div class="lg:col-span-3">
+          <h4 class="font-title font-bold text-white uppercase text-sm tracking-wider mb-4">Espaço de Beleza</h4>
+          <p class="text-sm text-gray-400 mb-2">
+            R. Mal. Aguiar, 31 - Benfica<br>
+            Rio de Janeiro - RJ, 20920-280
+          </p>
+          <p class="text-sm text-gray-400 mb-3">
+            WhatsApp: <span class="text-white font-bold">(21) 96927-7003</span>
+          </p>
+          <div class="inline-block bg-dark-800 text-xs text-brand-light px-3 py-1.5 rounded-lg border border-gray-700">
+            Terça a Sábado: 10h às 19h
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Linha de Direitos Autorais -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
+        <p>&copy; 2026 Espaço de Beleza Natália Moraes. Todos os direitos reservados.</p>
+        <p class="text-gray-400">Desenvolvido com padrão visual de marca e alta conversão.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <div class="fixed bottom-6 right-6 z-50">
+    <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20Nat%C3%A1lia!%20Vim%20pelo%20site%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Falar no WhatsApp com Natália Moraes"
+       class="relative flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#25D366] text-white shadow-2xl hover:scale-110 active:scale-95 transition-transform duration-300 pulse-effect group">
+      <i class="fa-brands fa-whatsapp text-3xl sm:text-4xl"></i>
+      
+      <!-- Tooltip em hover para desktop -->
+      <span class="absolute right-full mr-3 bg-dark-900 text-white text-xs font-bold py-1.5 px-3 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-lg hidden sm:block">
+        Fale conosco no WhatsApp
+      </span>
+    </a>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // 1. Menu Mobile Toggle
+      const mobileBtn = document.getElementById('mobileMenuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const mobileLinks = document.querySelectorAll('.mobile-link');
+
+      if (mobileBtn && mobileMenu) {
+        mobileBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+          });
+        });
+      }
+
+      // 2. Animação de Contadores Numéricos (Intersection Observer)
+      const counters = document.querySelectorAll('.counter');
+      const floatCounters = document.querySelectorAll('.counter-float');
+      let animated = false;
+
+      function animateCounters() {
+        // Contadores inteiros
+        counters.forEach(counter => {
+          const target = +counter.getAttribute('data-target');
+          const duration = 2000; // 2 segundos
+          const start = 0;
+          const startTime = performance.now();
+
+          function update(currentTime) {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            
+            // Função easeOutQuad para suavizar a contagem
+            const easeProgress = 1 - (1 - progress) * (1 - progress);
+            const currentVal = Math.floor(easeProgress * (target - start) + start);
+
+            if (target >= 1000) {
+              counter.innerText = currentVal.toLocaleString('pt-BR');
+            } else {
+              counter.innerText = currentVal;
+            }
+
+            if (progress < 1) {
+              requestAnimationFrame(update);
+            } else {
+              counter.innerText = target >= 1000 ? target.toLocaleString('pt-BR') : target;
+            }
+          }
+
+          requestAnimationFrame(update);
+        });
+
+        // Contadores com casas decimais (ex: 4.9)
+        floatCounters.forEach(counter => {
+          const target = parseFloat(counter.getAttribute('data-target'));
+          const duration = 1800;
+          const startTime = performance.now();
+
+          function updateFloat(currentTime) {
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const easeProgress = 1 - (1 - progress) * (1 - progress);
+            const currentVal = (easeProgress * target).toFixed(1);
+
+            counter.innerText = currentVal.replace('.', ',');
+
+            if (progress < 1) {
+              requestAnimationFrame(updateFloat);
+            } else {
+              counter.innerText = target.toFixed(1).replace('.', ',');
+            }
+          }
+
+          requestAnimationFrame(updateFloat);
+        });
+      }
+
+      // Observer para disparar a animação quando a seção de estatísticas for visível
+      const statsSection = document.getElementById('estatisticas');
+      if (statsSection) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting && !animated) {
+              animated = true;
+              animateCounters();
+            }
+          });
+        }, { threshold: 0.3 });
+
+        observer.observe(statsSection);
+      }
+
+      // 3. Tratamento e Validação do Formulário com Envio para o WhatsApp
+      const contactForm = document.getElementById('contactForm');
+      const formFeedback = document.getElementById('formFeedback');
+
+      if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+
+          const name = document.getElementById('userName').value.trim();
+          const phone = document.getElementById('userPhone').value.trim();
+          const interest = document.getElementById('userInterest').value;
+          const message = document.getElementById('userMessage').value.trim();
+
+          // Formatação da mensagem para o WhatsApp
+          let text = `*Olá, Natália Moraes! Gostaria de um atendimento:*\n\n`;
+          text += `👤 *Nome:* ${name}\n`;
+          text += `📱 *Telefone:* ${phone}\n`;
+          text += `✨ *Interesse:* ${interest}\n`;
+          if (message) {
+            text += `💬 *Mensagem:* ${message}\n`;
+          }
+          text += `\n_Mensagem enviada através da Landing Page oficial._`;
+
+          const encodedText = encodeURIComponent(text);
+          const whatsappURL = `https://wa.me/5521969277003?text=${encodedText}`;
+
+          // Feedback visual rápido
+          if (formFeedback) {
+            formFeedback.classList.remove('hidden');
+          }
+
+          setTimeout(() => {
+            window.open(whatsappURL, '_blank');
+            contactForm.reset();
+            if (formFeedback) {
+              setTimeout(() => formFeedback.classList.add('hidden'), 4000);
+            }
+          }, 400);
+        });
+      }
+
+    });
+  </script>
+</body>
+</html>
