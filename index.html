@@ -13,10 +13,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
 
-  <!-- Font Awesome para ícones -->
+  <!-- Font Awesome para ícones vetoriais -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- Tailwind CSS via CDN -->
+  <!-- Tailwind CSS via CDN com configuração personalizada -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -59,7 +59,7 @@
       letter-spacing: -0.02em;
     }
     
-    /* Pulsação do botão WhatsApp flutuante */
+    /* Efeito de pulsação suave para o botão flutuante de WhatsApp */
     @keyframes pulse-ring {
       0% { transform: scale(0.95); opacity: 0.8; }
       50% { transform: scale(1.15); opacity: 0.3; }
@@ -76,7 +76,7 @@
       z-index: -1;
     }
 
-    /* Utilitário para corte de texto */
+    /* Utilitário para corte de texto com reticências */
     .clamp-3 {
       display: -webkit-box;
       -webkit-line-clamp: 3;
@@ -87,11 +87,12 @@
 </head>
 <body class="antialiased selection:bg-brand-magenta selection:text-white">
 
+  <!-- 1. HEADER FIXO -->
   <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20">
         
-        <!-- Logo e Selo -->
+        <!-- Logótipo e Distintivo -->
         <a href="#hero" class="flex flex-col group">
           <div class="flex items-center gap-2">
             <span class="text-2xl sm:text-3xl font-title font-black tracking-tight text-dark-900 group-hover:text-brand-magenta transition-colors">
@@ -119,7 +120,7 @@
         <div class="hidden sm:flex items-center gap-3">
           <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20com%20a%20Nat%C3%A1lia%20Moraes!" 
              target="_blank" 
-             rel="noopener noreferrer"
+             rel="noopener noreferrer" 
              class="inline-flex items-center gap-2 bg-brand-magenta hover:bg-brand-deep text-white font-title text-sm font-bold px-5 py-3 rounded-full shadow-lg shadow-brand-magenta/30 hover:shadow-brand-magenta/50 transition-all transform hover:-translate-y-0.5 active:translate-y-0">
             <i class="fa-brands fa-whatsapp text-lg"></i>
             <span>Agendar no WhatsApp</span>
@@ -136,7 +137,7 @@
     <!-- Gaveta do Menu Mobile -->
     <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-gray-200 px-6 py-6 transition-all duration-300">
       <div class="flex flex-col gap-4">
-        <a href="#sobre" class="mobile-link text-base font-bold text-dark-800 hover:text-brand-magenta py-1">Sobre a Natália</a>
+        <a href="#sobre" class="mobile-link text-base font-bold text-dark-800 hover:text-brand-magenta py-1">Sobre a Natália & Equipe</a>
         <a href="#especialidade" class="mobile-link text-base font-bold text-dark-800 hover:text-brand-magenta py-1">Alisamento Premium</a>
         <a href="#servicos" class="mobile-link text-base font-bold text-dark-800 hover:text-brand-magenta py-1">Todos os Serviços</a>
         <a href="#produtos" class="mobile-link text-base font-bold text-brand-magenta py-1 flex items-center justify-between">
@@ -149,7 +150,7 @@
         <div class="pt-4 border-t border-gray-100">
           <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20Nat%C3%A1lia!%20Gostaria%20de%20solicitar%20um%20agendamento." 
              target="_blank" 
-             rel="noopener noreferrer"
+             rel="noopener noreferrer" 
              class="w-full flex items-center justify-center gap-2 bg-brand-magenta hover:bg-brand-deep text-white font-title text-base font-bold py-3.5 rounded-xl shadow-md">
             <i class="fa-brands fa-whatsapp text-xl"></i>
             <span>Agendar no WhatsApp</span>
@@ -160,8 +161,8 @@
   </header>
 
   <main class="pt-20">
+    <!-- 2. HERO SECTION COM A FOTO REAL DA NATÁLIA (img/nataliahero.jpg) -->
     <section id="hero" class="relative bg-brand-magenta text-white overflow-hidden">
-      <!-- Elementos gráficos de fundo com efeito moderno -->
       <div class="absolute inset-0 opacity-15 pointer-events-none">
         <div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-white blur-3xl"></div>
         <div class="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full bg-brand-vibrant blur-3xl"></div>
@@ -170,9 +171,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-28 relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
-          <!-- Conteúdo e Autoridade (Esquerda) -->
           <div class="lg:col-span-7 flex flex-col items-start text-left">
-            
             <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md text-white text-xs sm:text-sm font-bold uppercase tracking-wider px-4 py-1.5 rounded-full mb-6 border border-white/30">
               <i class="fa-solid fa-crown text-yellow-300"></i>
               <span>Referência em Benfica & todo o RJ</span>
@@ -188,7 +187,7 @@
               Mais de duas décadas transformando a autoestima de mulheres com saúde real para os fios e tecnologia capilar de ponta. Linha exclusiva com envio para todo o território nacional.
             </p>
 
-            <!-- Selos de Autoridade Rápidos -->
+            <!-- Selos Rápidos de Autoridade -->
             <div class="grid grid-cols-2 sm:grid-cols-2 gap-4 w-full sm:w-auto mb-8">
               <div class="bg-black/25 backdrop-blur-sm border border-white/20 rounded-2xl p-4 flex items-center gap-3">
                 <div class="w-12 h-12 rounded-xl bg-white text-brand-magenta flex items-center justify-center font-title font-black text-xl shrink-0 shadow-md">
@@ -211,11 +210,11 @@
               </div>
             </div>
 
-            <!-- CTAs Primários -->
+            <!-- Botões Principais de Ação -->
             <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto">
               <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20Nat%C3%A1lia!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20meu%20Alisamento%20Premium." 
                  target="_blank" 
-                 rel="noopener noreferrer"
+                 rel="noopener noreferrer" 
                  class="inline-flex items-center justify-center gap-3 bg-white text-brand-magenta hover:bg-gray-100 font-title font-black text-lg px-8 py-4 rounded-xl shadow-xl transition-all transform hover:-translate-y-1 active:translate-y-0 text-center">
                 <i class="fa-brands fa-whatsapp text-2xl text-green-600"></i>
                 <span>Agendar Avaliação</span>
@@ -228,7 +227,6 @@
               </a>
             </div>
 
-            <!-- Google Rating mini badge -->
             <div class="mt-8 flex items-center gap-3 text-sm text-white/90">
               <div class="flex text-yellow-300">
                 <i class="fa-solid fa-star"></i>
@@ -241,17 +239,15 @@
               <span class="text-white/60">•</span>
               <span>49 avaliações verificadas</span>
             </div>
-
           </div>
 
-          <!-- Foto Destaque Profissional (Direita) -->
+          <!-- Moldura com a Foto Oficial de Estúdio da Natália (img/nataliahero.jpg) -->
           <div class="lg:col-span-5 relative">
             <div class="relative mx-auto max-w-md lg:max-w-none">
-              <!-- Moldura de destaque com efeito de corte estilizado -->
               <div class="absolute -inset-4 bg-white/20 rounded-3xl transform rotate-2"></div>
               <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-dark-900">
                 <img 
-                  src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?q=80&w=1000&auto=format&fit=crop" 
+                  src="img/nataliahero.jpg" 
                   alt="Natália Moraes - Especialista em Alisamento Premium e Terapia Capilar"
                   class="w-full h-[480px] sm:h-[540px] object-cover object-top hover:scale-105 transition-transform duration-700"
                   loading="eager"
@@ -271,11 +267,11 @@
       </div>
     </section>
 
+    <!-- 3. BARRA DE ESTATÍSTICAS ANIMADAS -->
     <section id="estatisticas" class="bg-dark-900 text-white py-12 border-b-4 border-brand-magenta">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 text-center">
           
-          <!-- Estatística 1 -->
           <div class="p-6 rounded-2xl bg-dark-800/60 border border-gray-800 hover:border-brand-magenta/40 transition-colors">
             <div class="text-4xl sm:text-5xl lg:text-6xl font-black font-title text-brand-magenta mb-2">
               <span class="counter" data-target="20">0</span><span class="text-white">+</span>
@@ -284,7 +280,6 @@
             <p class="text-xs text-gray-400 mt-1">Dedicação exclusiva e contínua</p>
           </div>
 
-          <!-- Estatística 2 -->
           <div class="p-6 rounded-2xl bg-dark-800/60 border border-gray-800 hover:border-brand-magenta/40 transition-colors">
             <div class="text-4xl sm:text-5xl lg:text-6xl font-black font-title text-white mb-2">
               <span class="counter" data-target="30000">0</span><span class="text-brand-magenta">+</span>
@@ -293,7 +288,6 @@
             <p class="text-xs text-gray-400 mt-1">Cabelos recuperados e transformados</p>
           </div>
 
-          <!-- Estatística 3 -->
           <div class="p-6 rounded-2xl bg-dark-800/60 border border-gray-800 hover:border-brand-magenta/40 transition-colors">
             <div class="text-4xl sm:text-5xl lg:text-6xl font-black font-title text-brand-magenta mb-2">
               <span>100</span><span class="text-white">%</span>
@@ -302,7 +296,6 @@
             <p class="text-xs text-gray-400 mt-1">Produtos entregues em todo o país</p>
           </div>
 
-          <!-- Estatística 4 -->
           <div class="p-6 rounded-2xl bg-dark-800/60 border border-gray-800 hover:border-brand-magenta/40 transition-colors">
             <div class="text-4xl sm:text-5xl lg:text-6xl font-black font-title text-yellow-400 mb-2">
               <span class="counter-float" data-target="4.9">0.0</span>
@@ -315,85 +308,108 @@
       </div>
     </section>
 
+    <!-- 4. SOBRE A NATÁLIA E A EQUIPA (DIVISÃO EM DOIS BLOCOS) -->
     <section id="sobre" class="py-20 sm:py-28 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          
-          <!-- Imagem e Credencial -->
-          <div class="lg:col-span-5 order-2 lg:order-1">
-            <div class="relative">
-              <div class="w-full h-[450px] sm:h-[500px] rounded-3xl overflow-hidden shadow-2xl border-2 border-gray-100">
-                <img 
-                  src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=1000&auto=format&fit=crop" 
-                  alt="Equipe e estrutura Natália Moraes"
-                  class="w-full h-full object-cover"
-                  onerror="this.src='https://placehold.co/600x700/C2185B/FFFFFF?text=Natália+Moraes+Equipe'"
-                >
-              </div>
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-black uppercase tracking-widest text-brand-magenta bg-brand-light px-3 py-1 rounded-full">
+            Conheça Quem Cuida de Você
+          </span>
+          <h2 class="text-3xl sm:text-5xl font-black text-dark-900 mt-4 mb-4 uppercase font-title">
+            Natália Moraes & Equipe
+          </h2>
+          <p class="text-gray-600 text-base sm:text-lg">
+            A combinação entre a autoridade de uma especialista e o acolhimento de uma equipa preparada para a saúde dos seus fios.
+          </p>
+        </div>
 
-              <!-- Selo Flutuante -->
-              <div class="absolute -bottom-6 -right-4 sm:right-6 bg-white p-5 rounded-2xl shadow-xl border border-gray-100 max-w-xs">
-                <div class="flex items-center gap-3">
-                  <div class="w-12 h-12 rounded-xl bg-brand-light text-brand-magenta flex items-center justify-center text-2xl font-bold">
-                    <i class="fa-solid fa-award"></i>
-                  </div>
-                  <div>
-                    <h2 class="font-title font-bold text-dark-900 text-sm">Qualidade Comprovada</h2>
-                    <p class="text-xs text-gray-500">Credibilidade técnica em cada protocolo</p>
-                  </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+          
+          <!-- BLOCO 1: NATÁLIA MORAES (img/natalia.jpg) -->
+          <div class="bg-gray-50 border border-gray-100 rounded-3xl p-6 sm:p-8 flex flex-col justify-between hover:shadow-xl hover:border-brand-magenta/30 transition-all duration-300">
+            <div>
+              <div class="relative w-full h-[360px] sm:h-[400px] rounded-2xl overflow-hidden shadow-lg border-2 border-white mb-6">
+                <img 
+                  src="img/natalia.jpg" 
+                  alt="Natália Moraes - Especialista em Alisamento Premium e Terapeuta Capilar" 
+                  class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
+                  onerror="this.src='https://placehold.co/600x700/D81B60/FFFFFF?text=Natália+Moraes'"
+                >
+                <div class="absolute bottom-4 left-4 bg-brand-magenta text-white text-xs font-black uppercase px-3 py-1 rounded-md shadow-md tracking-wider">
+                  Fundadora & Especialista
                 </div>
               </div>
+
+              <h3 class="text-2xl sm:text-3xl font-black text-dark-900 font-title mb-2 uppercase">
+                Natália Moraes
+              </h3>
+              <p class="text-brand-deep font-bold text-sm mb-4">
+                Especialista em Alisamento Premium & Terapeuta Capilar
+              </p>
+              <p class="text-dark-700 text-sm sm:text-base leading-relaxed mb-4">
+                Com <strong>20 anos de carreira consolidada</strong> no Rio de Janeiro e mais de 30 mil atendimentos, Natália domina as técnicas mais refinadas de alinhamento térmico seguro e formula produtos próprios de manutenção de alta performance vendidos para todo o Brasil.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-gray-200/80 flex items-center justify-between">
+              <span class="text-xs text-gray-500 font-bold uppercase tracking-wider">
+                <i class="fa-solid fa-certificate text-brand-magenta mr-1"></i> 20 Anos de Autoridade
+              </span>
+              <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20Nat%C3%A1lia%20Moraes!" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-brand-magenta hover:text-brand-deep flex items-center gap-1.5 transition-colors">
+                <span>Agendar com ela</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
             </div>
           </div>
 
-          <!-- Texto Sobre -->
-          <div class="lg:col-span-7 order-1 lg:order-2">
-            <span class="text-xs font-black uppercase tracking-widest text-brand-magenta bg-brand-light px-3 py-1 rounded-full">
-              Sobre a Especialista
-            </span>
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-dark-900 mt-4 mb-6 leading-tight uppercase">
-              Saúde capilar de verdade com quem entende do assunto
-            </h2>
-
-            <blockquote class="text-lg sm:text-xl text-dark-700 italic border-l-4 border-brand-magenta pl-4 mb-6 font-semibold">
-              "Trabalho com uma equipe preparada para trazer saúde e cuidado aos cabelos. Zelamos pela satisfação das clientes, com qualidade nos serviços e credibilidade nos produtos. Será um prazer conhecer você — venha conhecer nossa equipe!"
-            </blockquote>
-
-            <p class="text-dark-700 leading-relaxed text-base mb-6">
-              Com mais de <strong>20 anos de carreira consolidada</strong> no Rio de Janeiro, Natália Moraes não apenas domina as técnicas mais avançadas de alinhamento e restauração da fibra capilar, como também pesquisa e formula cosméticos de manutenção com alta performance para garantir que seus resultados durem por meses.
-            </p>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-              <div class="flex items-start gap-3 p-4 rounded-xl bg-gray-50 border border-gray-100">
-                <i class="fa-solid fa-check-circle text-brand-magenta text-xl mt-0.5"></i>
-                <div>
-                  <h3 class="font-bold text-dark-900 text-sm">Equipe Treinada</h3>
-                  <p class="text-xs text-gray-600">Padronização de excelência em todos os procedimentos.</p>
+          <!-- BLOCO 2: EQUIPA DO ESPAÇO (img/equipe.jpg.jpeg) -->
+          <div class="bg-gray-50 border border-gray-100 rounded-3xl p-6 sm:p-8 flex flex-col justify-between hover:shadow-xl hover:border-brand-magenta/30 transition-all duration-300">
+            <div>
+              <div class="relative w-full h-[360px] sm:h-[400px] rounded-2xl overflow-hidden shadow-lg border-2 border-white mb-6">
+                <img 
+                  src="img/equipe.jpg" 
+                  alt="Equipe do Espaço de Beleza Natália Moraes" 
+                  class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500"
+                  onerror="this.src='https://placehold.co/600x700/C2185B/FFFFFF?text=Equipe+Natália+Moraes'"
+                >
+                <div class="absolute bottom-4 left-4 bg-dark-900 text-white text-xs font-black uppercase px-3 py-1 rounded-md shadow-md tracking-wider">
+                  Nossa Equipe
                 </div>
               </div>
-              <div class="flex items-start gap-3 p-4 rounded-xl bg-gray-50 border border-gray-100">
-                <i class="fa-solid fa-check-circle text-brand-magenta text-xl mt-0.5"></i>
-                <div>
-                  <h3 class="font-bold text-dark-900 text-sm">Fórmulas Próprias</h3>
-                  <p class="text-xs text-gray-600">Cosméticos desenvolvidos exclusivamente pela especialista.</p>
-                </div>
-              </div>
+
+              <h3 class="text-2xl sm:text-3xl font-black text-dark-900 font-title mb-2 uppercase">
+                A Equipe de Atendimento
+              </h3>
+              <p class="text-brand-deep font-bold text-sm mb-4">
+                Profissionais qualificadas em todas as especialidades
+              </p>
+              
+              <blockquote class="text-dark-700 text-sm sm:text-base italic border-l-4 border-brand-magenta pl-3 mb-4 font-medium leading-relaxed">
+                "Trabalho com uma equipe preparada para trazer saúde e cuidado aos cabelos. Zelamos pela satisfação das clientes, com qualidade nos serviços e credibilidade nos produtos."
+              </blockquote>
+              <p class="text-dark-700 text-sm leading-relaxed mb-4">
+                Cabeleireiro, manicure, pedicure, sobrancelhas e cílios integrados num só ambiente em Benfica para que se sinta acolhida do início ao fim com hora marcada.
+              </p>
             </div>
 
-            <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20espa%C3%A7o%20Nat%C3%A1lia%20Moraes!" 
-               target="_blank" 
-               rel="noopener noreferrer"
-               class="inline-flex items-center gap-3 bg-dark-900 hover:bg-brand-magenta text-white font-title font-bold px-7 py-3.5 rounded-xl transition-all">
-              <span>Agendar Minha Visita</span>
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
+            <div class="pt-4 border-t border-gray-200/80 flex items-center justify-between">
+              <span class="text-xs text-gray-500 font-bold uppercase tracking-wider">
+                <i class="fa-solid fa-heart text-brand-magenta mr-1"></i> Atendimento Integrado
+              </span>
+              <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20com%20a%20equipe!" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-brand-magenta hover:text-brand-deep flex items-center gap-1.5 transition-colors">
+                <span>Conhecer a equipe</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+            </div>
           </div>
 
         </div>
+
       </div>
     </section>
 
+    <!-- 5. ESPECIALIDADE EM DESTAQUE: ALISAMENTO PREMIUM -->
     <section id="especialidade" class="py-20 bg-brand-surface border-y border-brand-light">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -411,9 +427,7 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           
-          <!-- Diferenciais da Técnica -->
           <div class="lg:col-span-6 space-y-4">
-            
             <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-light/60 hover:shadow-md transition-shadow">
               <div class="flex items-center gap-4">
                 <div class="w-12 h-12 rounded-xl bg-brand-magenta text-white flex items-center justify-center text-xl shrink-0 font-bold">
@@ -453,19 +467,16 @@
             <div class="pt-4">
               <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20e%20fazer%20uma%20avalia%C3%A7%C3%A3o%20para%20o%20Alisamento%20Premium!" 
                  target="_blank" 
-                 rel="noopener noreferrer"
+                 rel="noopener noreferrer" 
                  class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-brand-magenta hover:bg-brand-deep text-white font-title font-bold px-8 py-4 rounded-xl shadow-lg shadow-brand-magenta/30 transition-all">
                 <i class="fa-brands fa-whatsapp text-xl"></i>
                 <span>Quero o Meu Alisamento Premium</span>
               </a>
             </div>
-
           </div>
 
-          <!-- Cards Antes & Depois (Placeholders conceituais de alto nível) -->
           <div class="lg:col-span-6">
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              
               <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-200">
                 <div class="relative">
                   <span class="absolute top-3 left-3 bg-dark-900/90 text-white text-[11px] font-black uppercase px-2.5 py-1 rounded">Resultado 1</span>
@@ -497,15 +508,14 @@
                   <p class="text-xs text-gray-500 mt-0.5">Toque aveludado e brilho ultra radiante.</p>
                 </div>
               </div>
-
             </div>
           </div>
 
         </div>
-
       </div>
     </section>
 
+    <!-- 6. DEMAIS SERVIÇOS -->
     <section id="servicos" class="py-20 sm:py-28 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -523,7 +533,6 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           
-          <!-- Card Serviço 1 -->
           <div class="group p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-brand-magenta hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
             <div>
               <div class="w-14 h-14 rounded-2xl bg-brand-light text-brand-magenta group-hover:bg-brand-magenta group-hover:text-white flex items-center justify-center text-2xl transition-colors mb-6 shadow-sm">
@@ -540,7 +549,6 @@
             </a>
           </div>
 
-          <!-- Card Serviço 2 -->
           <div class="group p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-brand-magenta hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
             <div>
               <div class="w-14 h-14 rounded-2xl bg-brand-light text-brand-magenta group-hover:bg-brand-magenta group-hover:text-white flex items-center justify-center text-2xl transition-colors mb-6 shadow-sm">
@@ -557,7 +565,6 @@
             </a>
           </div>
 
-          <!-- Card Serviço 3 -->
           <div class="group p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-brand-magenta hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
             <div>
               <div class="w-14 h-14 rounded-2xl bg-brand-light text-brand-magenta group-hover:bg-brand-magenta group-hover:text-white flex items-center justify-center text-2xl transition-colors mb-6 shadow-sm">
@@ -574,7 +581,6 @@
             </a>
           </div>
 
-          <!-- Card Serviço 4 -->
           <div class="group p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-brand-magenta hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
             <div>
               <div class="w-14 h-14 rounded-2xl bg-brand-light text-brand-magenta group-hover:bg-brand-magenta group-hover:text-white flex items-center justify-center text-2xl transition-colors mb-6 shadow-sm">
@@ -591,7 +597,6 @@
             </a>
           </div>
 
-          <!-- Card Serviço 5 -->
           <div class="group p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-brand-magenta hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
             <div>
               <div class="w-14 h-14 rounded-2xl bg-brand-light text-brand-magenta group-hover:bg-brand-magenta group-hover:text-white flex items-center justify-center text-2xl transition-colors mb-6 shadow-sm">
@@ -608,7 +613,6 @@
             </a>
           </div>
 
-          <!-- Card Serviço 6 -->
           <div class="group p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-brand-magenta hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
             <div>
               <div class="w-14 h-14 rounded-2xl bg-brand-light text-brand-magenta group-hover:bg-brand-magenta group-hover:text-white flex items-center justify-center text-2xl transition-colors mb-6 shadow-sm">
@@ -626,12 +630,11 @@
           </div>
 
         </div>
-
       </div>
     </section>
 
+    <!-- 7. VITRINE DE PRODUTOS PRÓPRIOS -->
     <section id="produtos" class="py-20 sm:py-28 bg-dark-900 text-white relative overflow-hidden">
-      <!-- Fundo de iluminação cosmética -->
       <div class="absolute -right-32 top-10 w-96 h-96 bg-brand-magenta/20 blur-3xl pointer-events-none rounded-full"></div>
 
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -659,10 +662,8 @@
           </div>
         </div>
 
-        <!-- Vitrine de E-commerce -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           
-          <!-- Card de Destaque do Produto Principal (Banana e Mel) -->
           <div class="lg:col-span-7 bg-dark-800 rounded-3xl p-6 sm:p-10 border border-gray-700 shadow-2xl relative">
             <span class="absolute top-6 right-6 bg-brand-magenta text-white text-xs font-black uppercase px-3 py-1.5 rounded-full shadow-lg">
               Mais Vendido do Brasil
@@ -670,7 +671,6 @@
 
             <div class="grid grid-cols-1 sm:grid-cols-12 gap-8 items-center">
               
-              <!-- Imagem do Produto -->
               <div class="sm:col-span-5 text-center">
                 <div class="bg-gradient-to-b from-gray-800 to-gray-900 p-4 rounded-2xl border border-gray-700">
                   <img 
@@ -683,7 +683,6 @@
                 <span class="text-[11px] text-gray-400 uppercase tracking-widest mt-2 block font-semibold">2 x 300ml | Uso Diário</span>
               </div>
 
-              <!-- Informações e Botão de Compra -->
               <div class="sm:col-span-7 flex flex-col justify-between">
                 <div>
                   <div class="flex items-center gap-1 text-yellow-400 text-xs mb-2">
@@ -719,7 +718,7 @@
 
                 <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20quero%20comprar%20o%20Kit%20Shampoo%20e%20Condicionador%20Banana%20e%20Mel%20por%20R%24%2050%2C00!" 
                    target="_blank" 
-                   rel="noopener noreferrer"
+                   rel="noopener noreferrer" 
                    class="w-full inline-flex items-center justify-center gap-3 bg-brand-magenta hover:bg-brand-vibrant text-white font-title font-black text-base py-4 px-6 rounded-xl shadow-lg shadow-brand-magenta/40 transition-all transform hover:-translate-y-0.5 active:translate-y-0">
                   <i class="fa-brands fa-whatsapp text-xl"></i>
                   <span>Quero Comprar Agora</span>
@@ -729,9 +728,7 @@
             </div>
           </div>
 
-          <!-- Banner Informativo de Entrega Brasil -->
           <div class="lg:col-span-5 space-y-6">
-            
             <div class="bg-gradient-to-br from-brand-magenta to-brand-deep p-8 rounded-3xl text-white shadow-xl">
               <i class="fa-solid fa-box-open text-4xl mb-4 text-white/90"></i>
               <h3 class="font-title font-black text-2xl uppercase mb-3">Receba em Casa com Segurança</h3>
@@ -762,14 +759,13 @@
                 <i class="fa-solid fa-angle-right text-xs"></i>
               </a>
             </div>
-
           </div>
 
         </div>
-
       </div>
     </section>
 
+    <!-- 8. GALERIA -->
     <section id="galeria" class="py-20 sm:py-28 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -786,7 +782,6 @@
         </div>
 
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-          
           <div class="group relative rounded-2xl overflow-hidden aspect-square bg-gray-100 shadow-sm">
             <img 
               src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=800&auto=format&fit=crop" 
@@ -834,13 +829,12 @@
               <span class="text-white font-title font-bold text-sm uppercase tracking-wider">Ver Detalhes</span>
             </div>
           </div>
-
         </div>
 
         <div class="mt-10 text-center">
           <a href="https://www.instagram.com/nataliamoraeshair" 
              target="_blank" 
-             rel="noopener noreferrer"
+             rel="noopener noreferrer" 
              class="inline-flex items-center gap-2 text-dark-900 hover:text-brand-magenta font-title font-bold text-sm uppercase tracking-wider transition-colors">
             <i class="fa-brands fa-instagram text-xl text-pink-600"></i>
             <span>Ver mais no Instagram oficial @nataliamoraeshair</span>
@@ -850,10 +844,10 @@
       </div>
     </section>
 
+    <!-- 9. AVALIAÇÕES / DEPOIMENTOS -->
     <section id="depoimentos" class="py-20 sm:py-28 bg-brand-surface border-y border-brand-light">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <!-- Header da Prova Social -->
         <div class="flex flex-col md:flex-row items-center justify-between mb-16 gap-8">
           <div>
             <span class="text-xs font-black uppercase tracking-widest text-brand-magenta bg-white px-3 py-1 rounded-full shadow-sm">
@@ -867,7 +861,6 @@
             </p>
           </div>
 
-          <!-- Destaque Google -->
           <div class="bg-white p-6 rounded-2xl shadow-lg border border-brand-light flex items-center gap-5">
             <div class="w-14 h-14 rounded-2xl bg-yellow-50 text-yellow-500 flex items-center justify-center text-3xl">
               <i class="fa-brands fa-google"></i>
@@ -888,10 +881,8 @@
           </div>
         </div>
 
-        <!-- Grid de Depoimentos Fornecidos -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           
-          <!-- Depoimento 1 -->
           <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between hover:-translate-y-1 transition-transform">
             <div>
               <div class="flex text-yellow-400 mb-4">
@@ -918,7 +909,6 @@
             </div>
           </div>
 
-          <!-- Depoimento 2 -->
           <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between hover:-translate-y-1 transition-transform">
             <div>
               <div class="flex text-yellow-400 mb-4">
@@ -945,7 +935,6 @@
             </div>
           </div>
 
-          <!-- Depoimento 3 -->
           <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between hover:-translate-y-1 transition-transform">
             <div>
               <div class="flex text-yellow-400 mb-4">
@@ -973,16 +962,15 @@
           </div>
 
         </div>
-
       </div>
     </section>
 
+    <!-- 10. LOCALIZAÇÃO -->
     <section id="localizacao" class="py-20 sm:py-28 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
-          <!-- Informações de Endereço e Horário -->
           <div class="lg:col-span-5">
             <span class="text-xs font-black uppercase tracking-widest text-brand-magenta bg-brand-light px-3 py-1 rounded-full">
               Como Chegar
@@ -996,7 +984,6 @@
             </p>
 
             <div class="space-y-6">
-              
               <div class="flex items-start gap-4">
                 <div class="w-12 h-12 rounded-xl bg-brand-light text-brand-magenta flex items-center justify-center text-xl shrink-0 font-bold">
                   <i class="fa-solid fa-location-dot"></i>
@@ -1029,22 +1016,19 @@
                   <p class="text-xs text-gray-500">WhatsApp disponível para dúvidas e agendamentos</p>
                 </div>
               </div>
-
             </div>
 
             <div class="mt-8">
               <a href="https://maps.google.com/?q=R.+Mal.+Aguiar,+31+-+Benfica,+Rio+de+Janeiro+-+RJ,+20920-280" 
                  target="_blank" 
-                 rel="noopener noreferrer"
+                 rel="noopener noreferrer" 
                  class="inline-flex items-center gap-2 bg-dark-900 hover:bg-brand-magenta text-white font-title font-bold text-sm px-6 py-3.5 rounded-xl transition-colors">
                 <i class="fa-solid fa-diamond-turn-right"></i>
                 <span>Abrir Rota no Google Maps</span>
               </a>
             </div>
-
           </div>
 
-          <!-- Embed do Google Maps -->
           <div class="lg:col-span-7">
             <div class="w-full h-[400px] sm:h-[460px] rounded-3xl overflow-hidden shadow-xl border-4 border-white bg-gray-200">
               <iframe 
@@ -1061,16 +1045,15 @@
           </div>
 
         </div>
-
       </div>
     </section>
 
+    <!-- 11. CONTATO E AGENDAMENTO FINAL -->
     <section id="contato" class="py-20 bg-brand-magenta text-white relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
-          <!-- Chamada de Ação Rápida -->
           <div class="lg:col-span-6">
             <span class="bg-white/20 text-white text-xs font-black uppercase px-3 py-1 rounded-full border border-white/30">
               Atendimento Exclusivo
@@ -1085,7 +1068,7 @@
             <div class="space-y-4 mb-8">
               <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20diretamente%20com%20a%20equipe%20da%20Nat%C3%A1lia%20Moraes!" 
                  target="_blank" 
-                 rel="noopener noreferrer"
+                 rel="noopener noreferrer" 
                  class="inline-flex items-center gap-3 bg-white text-brand-magenta hover:bg-gray-100 font-title font-black text-lg px-8 py-4 rounded-xl shadow-xl transition-all">
                 <i class="fa-brands fa-whatsapp text-2xl text-green-600"></i>
                 <span>Chamar no WhatsApp Direto</span>
@@ -1102,10 +1085,8 @@
                 <span>@nataliamoraeshair</span>
               </div>
             </div>
-
           </div>
 
-          <!-- Formulário que converte e abre o WhatsApp formatado -->
           <div class="lg:col-span-6">
             <div class="bg-white text-dark-900 p-8 sm:p-10 rounded-3xl shadow-2xl border border-gray-100">
               <h3 class="font-title font-black text-2xl text-dark-900 mb-2 uppercase">Agendamento ou Compra</h3>
@@ -1145,7 +1126,6 @@
                 </button>
               </form>
 
-              <!-- Feedback inline -->
               <p id="formFeedback" class="text-xs text-center text-green-600 font-bold mt-3 hidden">
                 <i class="fa-solid fa-check"></i> Redirecionando para o WhatsApp oficial...
               </p>
@@ -1153,18 +1133,17 @@
           </div>
 
         </div>
-
       </div>
     </section>
 
   </main>
 
+  <!-- 12. FOOTER COM CRÉDITO DO DESENVOLVEDOR (RAFAEL ALVES) -->
   <footer class="bg-dark-900 text-white pt-16 pb-12 border-t border-gray-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-gray-800">
         
-        <!-- Coluna Marca -->
         <div class="lg:col-span-4 space-y-4">
           <div class="text-2xl font-black font-title tracking-tight text-white">
             NATÁLIA<span class="text-brand-magenta">MORAES</span>
@@ -1185,11 +1164,10 @@
           </div>
         </div>
 
-        <!-- Coluna Links Rápidos -->
         <div class="lg:col-span-3">
           <h4 class="font-title font-bold text-white uppercase text-sm tracking-wider mb-4">Navegação Rápida</h4>
           <ul class="space-y-2.5 text-sm text-gray-400 font-medium">
-            <li><a href="#sobre" class="hover:text-brand-magenta transition-colors">Sobre a Natália</a></li>
+            <li><a href="#sobre" class="hover:text-brand-magenta transition-colors">Sobre a Natália & Equipe</a></li>
             <li><a href="#especialidade" class="hover:text-brand-magenta transition-colors">Alisamento Premium</a></li>
             <li><a href="#servicos" class="hover:text-brand-magenta transition-colors">Serviços do Espaço</a></li>
             <li><a href="#produtos" class="hover:text-brand-magenta transition-colors">Produtos Banana e Mel</a></li>
@@ -1198,7 +1176,6 @@
           </ul>
         </div>
 
-        <!-- Coluna Serviços -->
         <div class="lg:col-span-2">
           <h4 class="font-title font-bold text-white uppercase text-sm tracking-wider mb-4">Procedimentos</h4>
           <ul class="space-y-2.5 text-sm text-gray-400 font-medium">
@@ -1211,7 +1188,6 @@
           </ul>
         </div>
 
-        <!-- Coluna Informações de Atendimento -->
         <div class="lg:col-span-3">
           <h4 class="font-title font-bold text-white uppercase text-sm tracking-wider mb-4">Espaço de Beleza</h4>
           <p class="text-sm text-gray-400 mb-2">
@@ -1228,15 +1204,21 @@
 
       </div>
 
-      <!-- Linha de Direitos Autorais -->
+      <!-- Linha de Direitos Autorais e Créditos com Hiperligação Direta -->
       <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
         <p>&copy; 2026 Espaço de Beleza Natália Moraes. Todos os direitos reservados.</p>
-        <p class="text-gray-400">Desenvolvido com padrão visual de marca e alta conversão.</p>
+        <p class="text-gray-400">
+          Desenvolvido por 
+          <a href="https://rafaelalves021.github.io/Portf-lio-Atualizado/" target="_blank" rel="noopener noreferrer" class="text-brand-magenta hover:text-white font-bold transition-colors underline decoration-brand-magenta underline-offset-4">
+            Rafael Alves
+          </a>
+        </p>
       </div>
 
     </div>
   </footer>
 
+  <!-- BOTÃO FLUTUANTE DE WHATSAPP OFICIAL -->
   <div class="fixed bottom-6 right-6 z-50">
     <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20Nat%C3%A1lia!%20Vim%20pelo%20site%20e%20gostaria%20de%20tirar%20uma%20d%C3%BAvida." 
        target="_blank" 
@@ -1245,13 +1227,13 @@
        class="relative flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#25D366] text-white shadow-2xl hover:scale-110 active:scale-95 transition-transform duration-300 pulse-effect group">
       <i class="fa-brands fa-whatsapp text-3xl sm:text-4xl"></i>
       
-      <!-- Tooltip em hover para desktop -->
       <span class="absolute right-full mr-3 bg-dark-900 text-white text-xs font-bold py-1.5 px-3 rounded-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-lg hidden sm:block">
         Fale conosco no WhatsApp
       </span>
     </a>
   </div>
 
+  <!-- JAVASCRIPT NATIVO -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
 
@@ -1278,18 +1260,15 @@
       let animated = false;
 
       function animateCounters() {
-        // Contadores inteiros
         counters.forEach(counter => {
           const target = +counter.getAttribute('data-target');
-          const duration = 2000; // 2 segundos
+          const duration = 2000;
           const start = 0;
           const startTime = performance.now();
 
           function update(currentTime) {
             const elapsed = currentTime - startTime;
             const progress = Math.min(elapsed / duration, 1);
-            
-            // Função easeOutQuad para suavizar a contagem
             const easeProgress = 1 - (1 - progress) * (1 - progress);
             const currentVal = Math.floor(easeProgress * (target - start) + start);
 
@@ -1309,7 +1288,6 @@
           requestAnimationFrame(update);
         });
 
-        // Contadores com casas decimais (ex: 4.9)
         floatCounters.forEach(counter => {
           const target = parseFloat(counter.getAttribute('data-target'));
           const duration = 1800;
@@ -1334,7 +1312,6 @@
         });
       }
 
-      // Observer para disparar a animação quando a seção de estatísticas for visível
       const statsSection = document.getElementById('estatisticas');
       if (statsSection) {
         const observer = new IntersectionObserver((entries) => {
@@ -1362,7 +1339,6 @@
           const interest = document.getElementById('userInterest').value;
           const message = document.getElementById('userMessage').value.trim();
 
-          // Formatação da mensagem para o WhatsApp
           let text = `*Olá, Natália Moraes! Gostaria de um atendimento:*\n\n`;
           text += `👤 *Nome:* ${name}\n`;
           text += `📱 *Telefone:* ${phone}\n`;
@@ -1375,7 +1351,6 @@
           const encodedText = encodeURIComponent(text);
           const whatsappURL = `https://wa.me/5521969277003?text=${encodedText}`;
 
-          // Feedback visual rápido
           if (formFeedback) {
             formFeedback.classList.remove('hidden');
           }
