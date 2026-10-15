@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Natália Moraes | Especialista em Alisamento Premium & Terapia Capilar</title>
+  <title>Natália Moraes | Especialista em Alisamento Premium, Cachos & Linha Própria de Cosméticos</title>
   
   <!-- SEO Básico -->
-  <meta name="description" content="Espaço de Beleza Natália Moraes em Benfica, RJ. 20 anos de tradição, mais de 30 mil atendimentos, especialista em Alisamento Premium, Terapia Capilar e produtos próprios para todo o Brasil.">
+  <meta name="description" content="Espaço de Beleza Natália Moraes em Benfica, RJ. 20 anos de tradição, mais de 30 mil atendimentos, especialista em Alisamento Premium, Vacina Capilar, Cachos, Atendimento Infantil e cosméticos próprios com envio para todo o Brasil.">
 
-  <!-- Google Fonts: Poppins (Títulos fortes) e Mulish (Corpo limpo e elegante) -->
+  <!-- Google Fonts: Poppins (Títulos) e Mulish (Corpo) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
   <!-- Font Awesome para ícones vetoriais -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- Tailwind CSS via CDN com configuração personalizada -->
+  <!-- Tailwind CSS via CDN com configuração temática -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -46,91 +46,56 @@
     }
   </script>
 
-  <style>
-    /* Estilos globais e customizações visuais */
-    body {
-      font-family: 'Mulish', sans-serif;
-      color: #1F2937;
-      background-color: #FFFFFF;
-      overflow-x: hidden;
-    }
-    h1, h2, h3, h4, .font-title {
-      font-family: 'Poppins', sans-serif;
-      letter-spacing: -0.02em;
-    }
-    
-    /* Efeito de pulsação suave para o botão flutuante de WhatsApp */
-    @keyframes pulse-ring {
-      0% { transform: scale(0.95); opacity: 0.8; }
-      50% { transform: scale(1.15); opacity: 0.3; }
-      100% { transform: scale(0.95); opacity: 0.8; }
-    }
-    .pulse-effect::before {
-      content: '';
-      position: absolute;
-      inset: -6px;
-      border-radius: 9999px;
-      background-color: #25D366;
-      opacity: 0.5;
-      animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-      z-index: -1;
-    }
-
-    /* Utilitário para corte de texto com reticências */
-    .clamp-3 {
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-  </style>
+  <!-- Ligação ao Ficheiro CSS Externo -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body class="antialiased selection:bg-brand-magenta selection:text-white">
 
-  <!-- 1. HEADER FIXO -->
+  <!-- 1. HEADER FIXO (LAYOUT HARMONIZADO E SEM QUEBRAS) -->
   <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
+      <div class="flex items-center justify-between h-20 gap-4">
         
-        <!-- Logótipo e Distintivo -->
-        <a href="#hero" class="flex flex-col group">
-          <div class="flex items-center gap-2">
-            <span class="text-2xl sm:text-3xl font-title font-black tracking-tight text-dark-900 group-hover:text-brand-magenta transition-colors">
-              NATÁLIA<span class="text-brand-magenta">MORAES</span>
-            </span>
-          </div>
-          <span class="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-brand-deep bg-brand-light px-2 py-0.5 rounded w-max mt-0.5">
+        <!-- Bloco 1: Logótipo e Crachá Original -->
+        <a href="#hero" class="flex flex-col group shrink-0">
+          <span class="text-2xl lg:text-3xl font-title font-black tracking-tight text-dark-900 group-hover:text-brand-magenta transition-colors whitespace-nowrap">
+            NATÁLIA<span class="text-brand-magenta">MORAES</span>
+          </span>
+          <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-brand-deep bg-brand-light px-2 py-0.5 rounded w-max mt-0.5 whitespace-nowrap">
             Especialista em Alisamento Premium
           </span>
         </a>
 
-        <!-- Menu Desktop -->
-        <nav class="hidden lg:flex items-center gap-8">
-          <a href="#sobre" class="text-sm font-bold text-dark-800 hover:text-brand-magenta transition-colors uppercase tracking-wider">Sobre</a>
-          <a href="#especialidade" class="text-sm font-bold text-dark-800 hover:text-brand-magenta transition-colors uppercase tracking-wider">Alisamento</a>
-          <a href="#servicos" class="text-sm font-bold text-dark-800 hover:text-brand-magenta transition-colors uppercase tracking-wider">Serviços</a>
-          <a href="#produtos" class="text-sm font-bold text-brand-magenta hover:text-brand-dark transition-colors uppercase tracking-wider flex items-center gap-1.5">
-            <i class="fa-solid fa-bag-shopping text-xs"></i> Loja Brasil
+        <!-- Bloco 2: Menu Desktop Central -->
+        <nav class="hidden lg:flex items-center gap-5 xl:gap-7">
+          <a href="#sobre" class="text-xs xl:text-sm font-bold text-dark-800 hover:text-brand-magenta transition-colors uppercase tracking-wider whitespace-nowrap">Sobre</a>
+          <a href="#especialidade" class="text-xs xl:text-sm font-bold text-dark-800 hover:text-brand-magenta transition-colors uppercase tracking-wider whitespace-nowrap">Alisamento</a>
+          <a href="#servicos" class="text-xs xl:text-sm font-bold text-dark-800 hover:text-brand-magenta transition-colors uppercase tracking-wider whitespace-nowrap">Serviços</a>
+          <a href="#infantil" class="text-xs xl:text-sm font-bold text-dark-800 hover:text-brand-magenta transition-colors uppercase tracking-wider whitespace-nowrap">Espaço Infantil</a>
+          <a href="#produtos" class="text-xs xl:text-sm font-bold text-dark-800 hover:text-brand-magenta transition-colors uppercase tracking-wider whitespace-nowrap">Loja Brasil</a>
+          <a href="#galeria" class="text-xs xl:text-sm font-bold text-brand-magenta hover:text-brand-dark transition-colors uppercase tracking-wider whitespace-nowrap flex items-center gap-1">
+            <i class="fa-solid fa-camera text-xs"></i> Transformações
           </a>
-          <a href="#depoimentos" class="text-sm font-bold text-dark-800 hover:text-brand-magenta transition-colors uppercase tracking-wider">Avaliações</a>
-          <a href="#localizacao" class="text-sm font-bold text-dark-800 hover:text-brand-magenta transition-colors uppercase tracking-wider">Benfica RJ</a>
+          <a href="#depoimentos" class="text-xs xl:text-sm font-bold text-dark-800 hover:text-brand-magenta transition-colors uppercase tracking-wider whitespace-nowrap">Avaliações</a>
+          <a href="#localizacao" class="text-xs xl:text-sm font-bold text-dark-800 hover:text-brand-magenta transition-colors uppercase tracking-wider whitespace-nowrap">Benfica RJ</a>
         </nav>
 
-        <!-- CTA Header -->
-        <div class="hidden sm:flex items-center gap-3">
+        <!-- Bloco 3: Botão de Ação Direta -->
+        <div class="hidden sm:flex items-center shrink-0">
           <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20com%20a%20Nat%C3%A1lia%20Moraes!" 
              target="_blank" 
              rel="noopener noreferrer" 
-             class="inline-flex items-center gap-2 bg-brand-magenta hover:bg-brand-deep text-white font-title text-sm font-bold px-5 py-3 rounded-full shadow-lg shadow-brand-magenta/30 hover:shadow-brand-magenta/50 transition-all transform hover:-translate-y-0.5 active:translate-y-0">
-            <i class="fa-brands fa-whatsapp text-lg"></i>
+             class="inline-flex items-center justify-center gap-2 bg-brand-magenta hover:bg-brand-deep text-white font-title text-xs xl:text-sm font-bold px-4 xl:px-5 py-2.5 rounded-full shadow-md shadow-brand-magenta/30 hover:shadow-brand-magenta/50 transition-all transform hover:-translate-y-0.5 active:translate-y-0 whitespace-nowrap">
+            <i class="fa-brands fa-whatsapp text-base xl:text-lg"></i>
             <span>Agendar no WhatsApp</span>
           </a>
         </div>
 
         <!-- Botão Menu Mobile -->
-        <button id="mobileMenuBtn" aria-label="Abrir Menu de Navegação" class="lg:hidden p-2 rounded-lg text-dark-800 hover:text-brand-magenta hover:bg-gray-100 transition-colors">
+        <button id="mobileMenuBtn" aria-label="Abrir Menu de Navegação" class="lg:hidden p-2 rounded-lg text-dark-800 hover:text-brand-magenta hover:bg-gray-100 transition-colors shrink-0">
           <i class="fa-solid fa-bars text-2xl"></i>
         </button>
+
       </div>
     </div>
 
@@ -140,10 +105,9 @@
         <a href="#sobre" class="mobile-link text-base font-bold text-dark-800 hover:text-brand-magenta py-1">Sobre a Natália & Equipe</a>
         <a href="#especialidade" class="mobile-link text-base font-bold text-dark-800 hover:text-brand-magenta py-1">Alisamento Premium</a>
         <a href="#servicos" class="mobile-link text-base font-bold text-dark-800 hover:text-brand-magenta py-1">Todos os Serviços</a>
-        <a href="#produtos" class="mobile-link text-base font-bold text-brand-magenta py-1 flex items-center justify-between">
-          <span>Linha de Produtos Brasil</span>
-          <span class="text-xs bg-brand-light text-brand-magenta font-black px-2 py-0.5 rounded">NOVO</span>
-        </a>
+        <a href="#infantil" class="mobile-link text-base font-bold text-dark-800 hover:text-brand-magenta py-1">Espaço Infantil</a>
+        <a href="#produtos" class="mobile-link text-base font-bold text-dark-800 hover:text-brand-magenta py-1">Loja Brasil</a>
+        <a href="#galeria" class="mobile-link text-base font-bold text-brand-magenta py-1">Transformações Reais</a>
         <a href="#depoimentos" class="mobile-link text-base font-bold text-dark-800 hover:text-brand-magenta py-1">Depoimentos & Google</a>
         <a href="#localizacao" class="mobile-link text-base font-bold text-dark-800 hover:text-brand-magenta py-1">Localização em Benfica</a>
         
@@ -161,7 +125,7 @@
   </header>
 
   <main class="pt-20">
-    <!-- 2. HERO SECTION COM A FOTO REAL DA NATÁLIA (img/nataliahero.jpg) -->
+    <!-- 2. HERO SECTION COM FOTO DE ESTÚDIO DA NATÁLIA (nataliahero.jpg) -->
     <section id="hero" class="relative bg-brand-magenta text-white overflow-hidden">
       <div class="absolute inset-0 opacity-15 pointer-events-none">
         <div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-white blur-3xl"></div>
@@ -174,45 +138,55 @@
           <div class="lg:col-span-7 flex flex-col items-start text-left">
             <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md text-white text-xs sm:text-sm font-bold uppercase tracking-wider px-4 py-1.5 rounded-full mb-6 border border-white/30">
               <i class="fa-solid fa-crown text-yellow-300"></i>
-              <span>Referência em Benfica & todo o RJ</span>
+              <span>Carro-Chefe: Vacina Capilar • Cachos • Linha Própria</span>
             </div>
 
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-tight uppercase mb-6">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-tight uppercase mb-6 font-title">
               Especialista em <br>
-              <span class="text-dark-900 bg-white px-2 py-0.5 inline-block my-1 rounded-md">Alisamento Premium</span><br>
-              e Terapia Capilar
+              <span class="text-dark-900 bg-white px-2 py-0.5 inline-block my-1 rounded-md">Vacina Capilar</span><br>
+              Cachos & Cosméticos Exclusivos
             </h1>
 
             <p class="text-lg sm:text-xl text-white/90 font-medium max-w-2xl mb-8 leading-relaxed">
-              Mais de duas décadas transformando a autoestima de mulheres com saúde real para os fios e tecnologia capilar de ponta. Linha exclusiva com envio para todo o território nacional.
+              Mais de duas décadas de tradição em Benfica. Transformações de alto padrão, acolhimento infantil e fórmulas próprias desenvolvidas pela especialista para garantir resultados de salão em sua casa.
             </p>
 
             <!-- Selos Rápidos de Autoridade -->
-            <div class="grid grid-cols-2 sm:grid-cols-2 gap-4 w-full sm:w-auto mb-8">
-              <div class="bg-black/25 backdrop-blur-sm border border-white/20 rounded-2xl p-4 flex items-center gap-3">
-                <div class="w-12 h-12 rounded-xl bg-white text-brand-magenta flex items-center justify-center font-title font-black text-xl shrink-0 shadow-md">
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 w-full sm:w-auto mb-8">
+              <div class="bg-black/25 backdrop-blur-sm border border-white/20 rounded-2xl p-3 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-white text-brand-magenta flex items-center justify-center font-title font-black text-lg shrink-0 shadow-md">
                   20
                 </div>
                 <div>
-                  <div class="font-title font-black text-white text-base">Anos</div>
-                  <div class="text-xs text-white/80 uppercase font-semibold">De Profissão</div>
+                  <div class="font-title font-black text-white text-sm">Anos</div>
+                  <div class="text-[10px] text-white/80 uppercase font-semibold">De Tradição</div>
                 </div>
               </div>
 
-              <div class="bg-black/25 backdrop-blur-sm border border-white/20 rounded-2xl p-4 flex items-center gap-3">
-                <div class="w-12 h-12 rounded-xl bg-white text-brand-magenta flex items-center justify-center font-title font-black text-xl shrink-0 shadow-md">
+              <div class="bg-black/25 backdrop-blur-sm border border-white/20 rounded-2xl p-3 flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-white text-brand-magenta flex items-center justify-center font-title font-black text-lg shrink-0 shadow-md">
                   30k+
                 </div>
                 <div>
-                  <div class="font-title font-black text-white text-base">Atendimentos</div>
-                  <div class="text-xs text-white/80 uppercase font-semibold">Realizados</div>
+                  <div class="font-title font-black text-white text-sm">Atendimentos</div>
+                  <div class="text-[10px] text-white/80 uppercase font-semibold">Realizados</div>
+                </div>
+              </div>
+
+              <div class="bg-black/25 backdrop-blur-sm border border-white/20 rounded-2xl p-3 flex items-center gap-3 col-span-2 sm:col-span-1">
+                <div class="w-10 h-10 rounded-xl bg-white text-brand-magenta flex items-center justify-center text-lg shrink-0 shadow-md">
+                  <i class="fa-solid fa-truck-fast text-brand-magenta"></i>
+                </div>
+                <div>
+                  <div class="font-title font-black text-white text-sm">Envio Brasil</div>
+                  <div class="text-[10px] text-white/80 uppercase font-semibold">Entrega Rápida</div>
                 </div>
               </div>
             </div>
 
             <!-- Botões Principais de Ação -->
             <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto">
-              <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20Nat%C3%A1lia!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20meu%20Alisamento%20Premium." 
+              <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20Nat%C3%A1lia!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." 
                  target="_blank" 
                  rel="noopener noreferrer" 
                  class="inline-flex items-center justify-center gap-3 bg-white text-brand-magenta hover:bg-gray-100 font-title font-black text-lg px-8 py-4 rounded-xl shadow-xl transition-all transform hover:-translate-y-1 active:translate-y-0 text-center">
@@ -222,8 +196,8 @@
 
               <a href="#produtos" 
                  class="inline-flex items-center justify-center gap-2 bg-brand-dark/40 hover:bg-brand-dark/70 text-white border-2 border-white/40 font-title font-bold text-base px-6 py-4 rounded-xl transition-all text-center">
-                <i class="fa-solid fa-store"></i>
-                <span>Conhecer Produtos Próprios</span>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>Ver Produtos com Envio</span>
               </a>
             </div>
 
@@ -241,14 +215,14 @@
             </div>
           </div>
 
-          <!-- Moldura com a Foto Oficial de Estúdio da Natália (img/nataliahero.jpg) -->
+          <!-- Moldura com a Foto Oficial da Natália Moraes -->
           <div class="lg:col-span-5 relative">
             <div class="relative mx-auto max-w-md lg:max-w-none">
               <div class="absolute -inset-4 bg-white/20 rounded-3xl transform rotate-2"></div>
               <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-dark-900">
                 <img 
                   src="img/nataliahero.jpg" 
-                  alt="Natália Moraes - Especialista em Alisamento Premium e Terapia Capilar"
+                  alt="Natália Moraes - Especialista em Vacina Capilar, Cachos e Linha Própria"
                   class="w-full h-[480px] sm:h-[540px] object-cover object-top hover:scale-105 transition-transform duration-700"
                   loading="eager"
                   onerror="this.src='https://placehold.co/600x800/D81B60/FFFFFF?text=Natália+Moraes'"
@@ -257,7 +231,7 @@
                 <div class="absolute bottom-6 left-6 right-6 text-white">
                   <span class="bg-brand-magenta text-white text-xs font-black uppercase px-2.5 py-1 rounded-md tracking-wider">Especialista Oficial</span>
                   <p class="font-title font-black text-2xl mt-1">Natália Moraes</p>
-                  <p class="text-xs text-white/80 font-medium">Fundadora & Desenvolvedora de Fórmulas Capilares</p>
+                  <p class="text-xs text-white/80 font-medium">Vacina Capilar • Cachos • Criadora de Fórmulas</p>
                 </div>
               </div>
             </div>
@@ -276,8 +250,8 @@
             <div class="text-4xl sm:text-5xl lg:text-6xl font-black font-title text-brand-magenta mb-2">
               <span class="counter" data-target="20">0</span><span class="text-white">+</span>
             </div>
-            <div class="font-title font-bold text-base sm:text-lg text-white uppercase tracking-tight">Anos de Profissão</div>
-            <p class="text-xs text-gray-400 mt-1">Dedicação exclusiva e contínua</p>
+            <div class="font-title font-bold text-base sm:text-lg text-white uppercase tracking-tight">Anos de Tradição</div>
+            <p class="text-xs text-gray-400 mt-1">Dedicação contínua à saúde capilar</p>
           </div>
 
           <div class="p-6 rounded-2xl bg-dark-800/60 border border-gray-800 hover:border-brand-magenta/40 transition-colors">
@@ -285,7 +259,7 @@
               <span class="counter" data-target="30000">0</span><span class="text-brand-magenta">+</span>
             </div>
             <div class="font-title font-bold text-base sm:text-lg text-white uppercase tracking-tight">Atendimentos</div>
-            <p class="text-xs text-gray-400 mt-1">Cabelos recuperados e transformados</p>
+            <p class="text-xs text-gray-400 mt-1">Cabelos transformados com saúde</p>
           </div>
 
           <div class="p-6 rounded-2xl bg-dark-800/60 border border-gray-800 hover:border-brand-magenta/40 transition-colors">
@@ -293,7 +267,7 @@
               <span>100</span><span class="text-white">%</span>
             </div>
             <div class="font-title font-bold text-base sm:text-lg text-white uppercase tracking-tight">Envio Brasil</div>
-            <p class="text-xs text-gray-400 mt-1">Produtos entregues em todo o país</p>
+            <p class="text-xs text-gray-400 mt-1">Cosméticos entregues em todo o país</p>
           </div>
 
           <div class="p-6 rounded-2xl bg-dark-800/60 border border-gray-800 hover:border-brand-magenta/40 transition-colors">
@@ -308,7 +282,7 @@
       </div>
     </section>
 
-    <!-- 4. SOBRE A NATÁLIA E A EQUIPA (DIVISÃO EM DOIS BLOCOS) -->
+    <!-- 4. SOBRE A NATÁLIA E A EQUIPA -->
     <section id="sobre" class="py-20 sm:py-28 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -320,24 +294,24 @@
             Natália Moraes & Equipe
           </h2>
           <p class="text-gray-600 text-base sm:text-lg">
-            A combinação entre a autoridade de uma especialista e o acolhimento de uma equipa preparada para a saúde dos seus fios.
+            A combinação entre a autoridade de uma especialista e a credibilidade de cosméticos próprios de alto rendimento.
           </p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
           
-          <!-- BLOCO 1: NATÁLIA MORAES (img/natalia.jpg) -->
+          <!-- BLOCO 1: NATÁLIA MORAES -->
           <div class="bg-gray-50 border border-gray-100 rounded-3xl p-6 sm:p-8 flex flex-col justify-between hover:shadow-xl hover:border-brand-magenta/30 transition-all duration-300">
             <div>
               <div class="relative w-full h-[360px] sm:h-[400px] rounded-2xl overflow-hidden shadow-lg border-2 border-white mb-6">
                 <img 
                   src="img/natalia.jpg" 
-                  alt="Natália Moraes - Especialista em Alisamento Premium e Terapeuta Capilar" 
+                  alt="Natália Moraes em atendimento" 
                   class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500"
                   onerror="this.src='https://placehold.co/600x700/D81B60/FFFFFF?text=Natália+Moraes'"
                 >
                 <div class="absolute bottom-4 left-4 bg-brand-magenta text-white text-xs font-black uppercase px-3 py-1 rounded-md shadow-md tracking-wider">
-                  Fundadora & Especialista
+                  Fundadora & Desenvolvedora
                 </div>
               </div>
 
@@ -345,16 +319,16 @@
                 Natália Moraes
               </h3>
               <p class="text-brand-deep font-bold text-sm mb-4">
-                Especialista em Alisamento Premium & Terapeuta Capilar
+                Criadora das Fórmulas Oficiais • Terapeuta Capilar
               </p>
               <p class="text-dark-700 text-sm sm:text-base leading-relaxed mb-4">
-                Com <strong>20 anos de carreira consolidada</strong> no Rio de Janeiro e mais de 30 mil atendimentos, Natália domina as técnicas mais refinadas de alinhamento térmico seguro e formula produtos próprios de manutenção de alta performance vendidos para todo o Brasil.
+                Com <strong>20 anos de carreira consolidada</strong> no Rio de Janeiro, Natália não apenas desenvolve protocolos exclusivos no salão como formula cosméticos profissionais para manutenção home care, enviados para clientes em todos os estados do Brasil.
               </p>
             </div>
 
             <div class="pt-4 border-t border-gray-200/80 flex items-center justify-between">
               <span class="text-xs text-gray-500 font-bold uppercase tracking-wider">
-                <i class="fa-solid fa-certificate text-brand-magenta mr-1"></i> 20 Anos de Autoridade
+                <i class="fa-solid fa-certificate text-brand-magenta mr-1"></i> Fórmulas Registadas
               </span>
               <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20Nat%C3%A1lia%20Moraes!" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-brand-magenta hover:text-brand-deep flex items-center gap-1.5 transition-colors">
                 <span>Agendar com ela</span>
@@ -363,7 +337,7 @@
             </div>
           </div>
 
-          <!-- BLOCO 2: EQUIPA DO ESPAÇO (img/equipe.jpg.jpeg) -->
+          <!-- BLOCO 2: EQUIPA DO ESPAÇO -->
           <div class="bg-gray-50 border border-gray-100 rounded-3xl p-6 sm:p-8 flex flex-col justify-between hover:shadow-xl hover:border-brand-magenta/30 transition-all duration-300">
             <div>
               <div class="relative w-full h-[360px] sm:h-[400px] rounded-2xl overflow-hidden shadow-lg border-2 border-white mb-6">
@@ -382,14 +356,14 @@
                 A Equipe de Atendimento
               </h3>
               <p class="text-brand-deep font-bold text-sm mb-4">
-                Profissionais qualificadas em todas as especialidades
+                Especialistas em Cabelo, Cachos, Nail Designer & Estética
               </p>
               
               <blockquote class="text-dark-700 text-sm sm:text-base italic border-l-4 border-brand-magenta pl-3 mb-4 font-medium leading-relaxed">
                 "Trabalho com uma equipe preparada para trazer saúde e cuidado aos cabelos. Zelamos pela satisfação das clientes, com qualidade nos serviços e credibilidade nos produtos."
               </blockquote>
               <p class="text-dark-700 text-sm leading-relaxed mb-4">
-                Cabeleireiro, manicure, pedicure, sobrancelhas e cílios integrados num só ambiente em Benfica para que se sinta acolhida do início ao fim com hora marcada.
+                Do design de unhas às terapias e alinhamentos capilares, a nossa equipa atende cada cliente com hora marcada e atenção individualizada em Benfica.
               </p>
             </div>
 
@@ -409,158 +383,116 @@
       </div>
     </section>
 
-    <!-- 5. ESPECIALIDADE EM DESTAQUE: ALISAMENTO PREMIUM -->
+    <!-- 5. DESTAQUE: VACINA CAPILAR & O UNIVERSO DOS CACHOS -->
     <section id="especialidade" class="py-20 bg-brand-surface border-y border-brand-light">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-16">
           <span class="text-xs font-black uppercase tracking-widest text-brand-magenta bg-white px-3 py-1 rounded-full shadow-sm">
-            O Carro-Chefe do Espaço
+            Os Maiores Destaques do Salão
           </span>
-          <h2 class="text-3xl sm:text-5xl font-black text-dark-900 mt-4 mb-4 uppercase">
-            Alisamento Premium
+          <h2 class="text-3xl sm:text-5xl font-black text-dark-900 mt-4 mb-4 uppercase font-title">
+            Vacina Capilar & Cachos
           </h2>
           <p class="text-gray-600 text-base sm:text-lg">
-            Um procedimento exclusivo concebido para proporcionar liso espelhado, toque aveludado e resistência da raiz às pontas, sem comprometer a saúde e maleabilidade natural dos fios.
+            Os tratamentos que conquistaram Benfica: blindagem profunda com a nossa Vacina Capilar e protocolos avançados de definição e soltura para cabelos cacheados.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
           
-          <div class="lg:col-span-6 space-y-4">
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-light/60 hover:shadow-md transition-shadow">
-              <div class="flex items-center gap-4">
-                <div class="w-12 h-12 rounded-xl bg-brand-magenta text-white flex items-center justify-center text-xl shrink-0 font-bold">
-                  <i class="fa-solid fa-wand-magic-sparkles"></i>
-                </div>
-                <div>
-                  <h3 class="font-title font-bold text-dark-900 text-lg">Brilho Espelhado e Toque de Seda</h3>
-                  <p class="text-sm text-gray-600 mt-1">Fios alinhados com balanço natural, sem aquele aspecto pesado ou artificial de alisamentos convencionais.</p>
-                </div>
+          <div class="bg-white rounded-3xl p-8 sm:p-10 border-2 border-brand-magenta shadow-xl flex flex-col justify-between relative overflow-hidden">
+            <span class="absolute top-5 right-5 bg-brand-magenta text-white text-xs font-black uppercase px-3 py-1 rounded-full shadow">
+              ★ Carro-Chefe
+            </span>
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-brand-light text-brand-magenta flex items-center justify-center text-2xl font-bold mb-6">
+                <i class="fa-solid fa-syringe"></i>
               </div>
+              <h3 class="text-2xl sm:text-3xl font-black font-title text-dark-900 mb-2 uppercase">
+                Vacina Capilar
+              </h3>
+              <p class="text-brand-deep font-bold text-sm mb-4">
+                O tratamento mais procurado para recuperação imediata
+              </p>
+              <p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-6">
+                Uma dose potente de bio-ativos, aminoácidos e nutrientes concentrados que atua no interior do córtex, selando a fibra e restaurando a densidade dos fios fragilizados.
+              </p>
             </div>
 
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-light/60 hover:shadow-md transition-shadow">
-              <div class="flex items-center gap-4">
-                <div class="w-12 h-12 rounded-xl bg-brand-magenta text-white flex items-center justify-center text-xl shrink-0 font-bold">
-                  <i class="fa-solid fa-shield-halved"></i>
-                </div>
-                <div>
-                  <h3 class="font-title font-bold text-dark-900 text-lg">Proteção e Reposição Lipídica</h3>
-                  <p class="text-sm text-gray-600 mt-1">Tratamento pré e pós-aplicação com ativos nutritivos que preservam a integridade e umidade do córtex capilar.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="bg-white p-6 rounded-2xl shadow-sm border border-brand-light/60 hover:shadow-md transition-shadow">
-              <div class="flex items-center gap-4">
-                <div class="w-12 h-12 rounded-xl bg-brand-magenta text-white flex items-center justify-center text-xl shrink-0 font-bold">
-                  <i class="fa-solid fa-clock-rotate-left"></i>
-                </div>
-                <div>
-                  <h3 class="font-title font-bold text-dark-900 text-lg">Durabilidade Prolongada</h3>
-                  <p class="text-sm text-gray-600 mt-1">Efeito liso duradouro com manutenção simplificada no dia a dia com a linha própria de cosméticos.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="pt-4">
-              <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20e%20fazer%20uma%20avalia%C3%A7%C3%A3o%20para%20o%20Alisamento%20Premium!" 
-                 target="_blank" 
-                 rel="noopener noreferrer" 
-                 class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-brand-magenta hover:bg-brand-deep text-white font-title font-bold px-8 py-4 rounded-xl shadow-lg shadow-brand-magenta/30 transition-all">
-                <i class="fa-brands fa-whatsapp text-xl"></i>
-                <span>Quero o Meu Alisamento Premium</span>
-              </a>
-            </div>
+            <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20quero%20agendar%20o%20tratamento%20de%20Vacina%20Capilar!" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="w-full inline-flex items-center justify-center gap-3 bg-brand-magenta hover:bg-brand-deep text-white font-title font-bold py-4 rounded-xl shadow-lg shadow-brand-magenta/30 transition-all text-center">
+              <i class="fa-brands fa-whatsapp text-xl"></i>
+              <span>Quero Fazer a Vacina Capilar</span>
+            </a>
           </div>
 
-          <div class="lg:col-span-6">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-200">
-                <div class="relative">
-                  <span class="absolute top-3 left-3 bg-dark-900/90 text-white text-[11px] font-black uppercase px-2.5 py-1 rounded">Resultado 1</span>
-                  <img 
-                    src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=800&auto=format&fit=crop" 
-                    alt="Alisamento Premium Resultado 1" 
-                    class="w-full h-64 object-cover"
-                    onerror="this.src='https://placehold.co/500x500/D81B60/FFFFFF?text=Resultado+Alisamento+1'"
-                  >
-                </div>
-                <div class="p-4">
-                  <h3 class="font-title font-bold text-dark-900 text-sm">Alinhamento Perfeito</h3>
-                  <p class="text-xs text-gray-500 mt-0.5">Redução total de frizz com preservação da fibra.</p>
-                </div>
+          <div class="bg-white rounded-3xl p-8 sm:p-10 border border-gray-200 shadow-xl flex flex-col justify-between relative overflow-hidden">
+            <span class="absolute top-5 right-5 bg-dark-900 text-white text-xs font-black uppercase px-3 py-1 rounded-full shadow">
+              Especialidade Cachos
+            </span>
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-brand-light text-brand-magenta flex items-center justify-center text-2xl font-bold mb-6">
+                <i class="fa-solid fa-water"></i>
               </div>
-
-              <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-200">
-                <div class="relative">
-                  <span class="absolute top-3 left-3 bg-brand-magenta text-white text-[11px] font-black uppercase px-2.5 py-1 rounded">Resultado 2</span>
-                  <img 
-                    src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?q=80&w=800&auto=format&fit=crop" 
-                    alt="Alisamento Premium Resultado 2" 
-                    class="w-full h-64 object-cover"
-                    onerror="this.src='https://placehold.co/500x500/D81B60/FFFFFF?text=Resultado+Alisamento+2'"
-                  >
-                </div>
-                <div class="p-4">
-                  <h3 class="font-title font-bold text-dark-900 text-sm">Liso Espelhado</h3>
-                  <p class="text-xs text-gray-500 mt-0.5">Toque aveludado e brilho ultra radiante.</p>
-                </div>
-              </div>
+              <h3 class="text-2xl sm:text-3xl font-black font-title text-dark-900 mb-2 uppercase">
+                Tratamentos para Cachos
+              </h3>
+              <p class="text-brand-deep font-bold text-sm mb-4">
+                Recuperação de curvatura, cachoterapia e definição
+              </p>
+              <p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-6">
+                Valorização da curvatura natural com métodos sem agressão química, devolvendo a elasticidade, o balanço e a hidratação que os fios necessitam.
+              </p>
             </div>
+
+            <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20tenho%20interesse%20nos%20tratamentos%20para%20Cachos!" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="w-full inline-flex items-center justify-center gap-3 bg-dark-900 hover:bg-brand-magenta text-white font-title font-bold py-4 rounded-xl shadow-md transition-all text-center">
+              <i class="fa-brands fa-whatsapp text-xl"></i>
+              <span>Cuidar dos Meus Cachos</span>
+            </a>
           </div>
 
         </div>
+
       </div>
     </section>
 
-    <!-- 6. DEMAIS SERVIÇOS -->
+    <!-- 6. TODOS OS SERVIÇOS E PROCEDIMENTOS -->
     <section id="servicos" class="py-20 sm:py-28 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-16">
           <span class="text-xs font-black uppercase tracking-widest text-brand-magenta bg-brand-light px-3 py-1 rounded-full">
-            Menu Completo
+            Catálogo Completo
           </span>
-          <h2 class="text-3xl sm:text-5xl font-black text-dark-900 mt-4 mb-4 uppercase">
-            Serviços Especializados
+          <h2 class="text-3xl sm:text-5xl font-black text-dark-900 mt-4 mb-4 uppercase font-title">
+            Serviços e Procedimentos
           </h2>
           <p class="text-gray-600 text-base sm:text-lg">
-            Um ambiente preparado para cuidar da sua beleza de forma integrada em Benfica.
+            Conheça todos os cuidados, transformações e técnicas oferecidas no nosso espaço em Benfica.
           </p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           
-          <div class="group p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-brand-magenta hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+          <div class="group p-8 rounded-3xl bg-brand-surface border-2 border-brand-magenta shadow-md flex flex-col justify-between">
             <div>
-              <div class="w-14 h-14 rounded-2xl bg-brand-light text-brand-magenta group-hover:bg-brand-magenta group-hover:text-white flex items-center justify-center text-2xl transition-colors mb-6 shadow-sm">
-                <i class="fa-solid fa-seedling"></i>
+              <div class="w-14 h-14 rounded-2xl bg-brand-magenta text-white flex items-center justify-center text-2xl transition-colors mb-6 shadow-sm">
+                <i class="fa-solid fa-syringe"></i>
               </div>
-              <h3 class="font-title font-bold text-xl text-dark-900 mb-2">Terapia Capilar</h3>
-              <p class="text-sm text-gray-600 leading-relaxed">
-                Diagnóstico e tratamento intensivo do couro cabeludo e haste, combatendo oleosidade, queda e fragilidade.
+              <span class="text-[10px] font-black uppercase tracking-wider bg-brand-magenta text-white px-2 py-0.5 rounded">Carro-Chefe</span>
+              <h3 class="font-title font-bold text-xl text-dark-900 mt-2 mb-2">Vacina Capilar</h3>
+              <p class="text-sm text-gray-600 leading-relaxed mb-4">
+                Blindagem e reposição biológica de aminoácidos para recuperação intensiva de fios fragilizados.
               </p>
             </div>
-            <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20tenho%20interesse%20em%20Terapia%20Capilar!" target="_blank" rel="noopener noreferrer" class="mt-6 text-sm font-bold text-brand-magenta group-hover:text-brand-deep flex items-center gap-2">
-              <span>Saber mais</span>
-              <i class="fa-solid fa-arrow-right text-xs"></i>
-            </a>
-          </div>
-
-          <div class="group p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-brand-magenta hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-            <div>
-              <div class="w-14 h-14 rounded-2xl bg-brand-light text-brand-magenta group-hover:bg-brand-magenta group-hover:text-white flex items-center justify-center text-2xl transition-colors mb-6 shadow-sm">
-                <i class="fa-solid fa-scissors"></i>
-              </div>
-              <h3 class="font-title font-bold text-xl text-dark-900 mb-2">Cabeleireiro</h3>
-              <p class="text-sm text-gray-600 leading-relaxed">
-                Cortes modernos, escovas modeladas, tratamentos de hidratação, nutrição e reconstrução profunda.
-              </p>
-            </div>
-            <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20servi%C3%A7o%20de%20Cabeleireiro!" target="_blank" rel="noopener noreferrer" class="mt-6 text-sm font-bold text-brand-magenta group-hover:text-brand-deep flex items-center gap-2">
-              <span>Saber mais</span>
+            <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20tenho%20interesse%20na%20Vacina%20Capilar!" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-brand-magenta group-hover:text-brand-deep flex items-center gap-2 transition-colors">
+              <span>Agendar procedimento</span>
               <i class="fa-solid fa-arrow-right text-xs"></i>
             </a>
           </div>
@@ -570,13 +502,14 @@
               <div class="w-14 h-14 rounded-2xl bg-brand-light text-brand-magenta group-hover:bg-brand-magenta group-hover:text-white flex items-center justify-center text-2xl transition-colors mb-6 shadow-sm">
                 <i class="fa-solid fa-hand-sparkles"></i>
               </div>
-              <h3 class="font-title font-bold text-xl text-dark-900 mb-2">Manicure</h3>
-              <p class="text-sm text-gray-600 leading-relaxed">
-                Cuidado estético e higiene impecável para as unhas com esmaltação duradoura e acabamento impecável.
+              <h3 class="font-title font-bold text-xl text-dark-900 mb-1">Nail Designer</h3>
+              <span class="text-xs font-bold text-brand-magenta uppercase tracking-wider block mb-2">Alongamento • Fibra de Vidro • Banho de Gel</span>
+              <p class="text-sm text-gray-600 leading-relaxed mb-4">
+                Estruturação e embelezamento das unhas com resistência, naturalidade e acabamento perfeito.
               </p>
             </div>
-            <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20Manicure!" target="_blank" rel="noopener noreferrer" class="mt-6 text-sm font-bold text-brand-magenta group-hover:text-brand-deep flex items-center gap-2">
-              <span>Saber mais</span>
+            <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20servi%C3%A7o%20de%20Nail%20Designer!" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-brand-magenta group-hover:text-brand-deep flex items-center gap-2 transition-colors">
+              <span>Agendar procedimento</span>
               <i class="fa-solid fa-arrow-right text-xs"></i>
             </a>
           </div>
@@ -584,15 +517,16 @@
           <div class="group p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-brand-magenta hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
             <div>
               <div class="w-14 h-14 rounded-2xl bg-brand-light text-brand-magenta group-hover:bg-brand-magenta group-hover:text-white flex items-center justify-center text-2xl transition-colors mb-6 shadow-sm">
-                <i class="fa-solid fa-spa"></i>
+                <i class="fa-solid fa-water"></i>
               </div>
-              <h3 class="font-title font-bold text-xl text-dark-900 mb-2">Pedicure</h3>
-              <p class="text-sm text-gray-600 leading-relaxed">
-                Tratamento relaxante e higienização completa para os pés com produtos emolientes e hidratação.
+              <h3 class="font-title font-bold text-xl text-dark-900 mb-1">Cachoterapia & Cachos</h3>
+              <span class="text-xs font-bold text-brand-magenta uppercase tracking-wider block mb-2">Soltura • Vacina para Cachos • Curvatura</span>
+              <p class="text-sm text-gray-600 leading-relaxed mb-4">
+                Recuperação de curvatura e nutrição lipídica profunda para fios ondulados, cacheados e crespos.
               </p>
             </div>
-            <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20Pedicure!" target="_blank" rel="noopener noreferrer" class="mt-6 text-sm font-bold text-brand-magenta group-hover:text-brand-deep flex items-center gap-2">
-              <span>Saber mais</span>
+            <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20gostaria%20de%20cuidar%20dos%20meus%20Cachos!" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-brand-magenta group-hover:text-brand-deep flex items-center gap-2 transition-colors">
+              <span>Agendar procedimento</span>
               <i class="fa-solid fa-arrow-right text-xs"></i>
             </a>
           </div>
@@ -600,15 +534,15 @@
           <div class="group p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-brand-magenta hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
             <div>
               <div class="w-14 h-14 rounded-2xl bg-brand-light text-brand-magenta group-hover:bg-brand-magenta group-hover:text-white flex items-center justify-center text-2xl transition-colors mb-6 shadow-sm">
-                <i class="fa-solid fa-eye"></i>
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
               </div>
-              <h3 class="font-title font-bold text-xl text-dark-900 mb-2">Design de Sobrancelha</h3>
-              <p class="text-sm text-gray-600 leading-relaxed">
-                Mapeamento facial personalizado para realçar o seu olhar respeitando a simetria natural do seu rosto.
+              <h3 class="font-title font-bold text-xl text-dark-900 mb-2">Botox Capilar</h3>
+              <p class="text-sm text-gray-600 leading-relaxed mb-4">
+                Redução de volume e reconstrução da massa capilar, eliminando o frizz com reposição de nutrientes.
               </p>
             </div>
-            <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20quero%20agendar%20Design%20de%20Sobrancelha!" target="_blank" rel="noopener noreferrer" class="mt-6 text-sm font-bold text-brand-magenta group-hover:text-brand-deep flex items-center gap-2">
-              <span>Saber mais</span>
+            <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20tenho%20interesse%20no%20Botox%20Capilar!" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-brand-magenta group-hover:text-brand-deep flex items-center gap-2 transition-colors">
+              <span>Agendar procedimento</span>
               <i class="fa-solid fa-arrow-right text-xs"></i>
             </a>
           </div>
@@ -616,24 +550,113 @@
           <div class="group p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-brand-magenta hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
             <div>
               <div class="w-14 h-14 rounded-2xl bg-brand-light text-brand-magenta group-hover:bg-brand-magenta group-hover:text-white flex items-center justify-center text-2xl transition-colors mb-6 shadow-sm">
-                <i class="fa-solid fa-gem"></i>
+                <i class="fa-solid fa-fire"></i>
               </div>
-              <h3 class="font-title font-bold text-xl text-dark-900 mb-2">Extensão de Cílios</h3>
-              <p class="text-sm text-gray-600 leading-relaxed">
-                Alongamento e volume na medida certa com técnicas seguras que preservam os fios naturais.
+              <h3 class="font-title font-bold text-xl text-dark-900 mb-1">Progressivas</h3>
+              <span class="text-xs font-bold text-brand-magenta uppercase tracking-wider block mb-2">Com Formol & Sem Formol (Orgânica)</span>
+              <p class="text-sm text-gray-600 leading-relaxed mb-4">
+                Alinhamento térmico com diagnóstico prévio para garantir fios lisos com integridade e movimento.
               </p>
             </div>
-            <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20aplica%C3%A7%C3%A3o%20de%20C%C3%ADlios!" target="_blank" rel="noopener noreferrer" class="mt-6 text-sm font-bold text-brand-magenta group-hover:text-brand-deep flex items-center gap-2">
-              <span>Saber mais</span>
+            <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20Progressiva!" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-brand-magenta group-hover:text-brand-deep flex items-center gap-2 transition-colors">
+              <span>Agendar procedimento</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+          </div>
+
+          <div class="group p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:border-brand-magenta hover:bg-white hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+            <div>
+              <div class="w-14 h-14 rounded-2xl bg-brand-light text-brand-magenta group-hover:bg-brand-magenta group-hover:text-white flex items-center justify-center text-2xl transition-colors mb-6 shadow-sm">
+                <i class="fa-solid fa-scissors"></i>
+              </div>
+              <h3 class="font-title font-bold text-xl text-dark-900 mb-2">Corte & Coloração</h3>
+              <p class="text-sm text-gray-600 leading-relaxed mb-4">
+                Visagismo capilar e colorimetria com pigmentos nobres que preservam a integridade e o brilho dos fios.
+              </p>
+            </div>
+            <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20Corte%20ou%20Colora%C3%A7%C3%A3o!" target="_blank" rel="noopener noreferrer" class="text-sm font-bold text-brand-magenta group-hover:text-brand-deep flex items-center gap-2 transition-colors">
+              <span>Agendar procedimento</span>
               <i class="fa-solid fa-arrow-right text-xs"></i>
             </a>
           </div>
 
         </div>
+
       </div>
     </section>
 
-    <!-- 7. VITRINE DE PRODUTOS PRÓPRIOS -->
+    <!-- 7. ESPAÇO INFANTIL ESPECIALIZADO -->
+    <section id="infantil" class="py-20 sm:py-28 bg-brand-surface border-y border-brand-light relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-6 space-y-6">
+            <span class="text-xs font-black uppercase tracking-widest text-brand-magenta bg-white px-3 py-1 rounded-full shadow-sm">
+              Especialidade Reconhecida
+            </span>
+            <h2 class="text-3xl sm:text-5xl font-black text-dark-900 uppercase font-title leading-tight">
+              Cuidado com Crianças: O Nosso Atendimento Infantil
+            </h2>
+            <p class="text-gray-600 text-base sm:text-lg leading-relaxed">
+              Cuidar dos cabelos dos pequenos exige muito mais do que técnica — exige <strong>paciência, carinho, psicologia e acolhimento</strong>. A Natália Moraes é amplamente procurada por famílias pelo seu jeito delicado de transformar o momento do salão numa experiência sem lágrimas e sem traumas.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div class="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm">
+                <div class="w-10 h-10 rounded-xl bg-brand-light text-brand-magenta flex items-center justify-center text-xl mb-3">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+                <h4 class="font-title font-bold text-dark-900 text-sm mb-1 uppercase">Paciência & Carinho</h4>
+                <p class="text-xs text-gray-500">Respeito ao tempo e aos sentimentos de cada criança.</p>
+              </div>
+
+              <div class="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm">
+                <div class="w-10 h-10 rounded-xl bg-brand-light text-brand-magenta flex items-center justify-center text-xl mb-3">
+                  <i class="fa-solid fa-shield-cat"></i>
+                </div>
+                <h4 class="font-title font-bold text-dark-900 text-sm mb-1 uppercase">Produtos Hipoalergénicos</h4>
+                <p class="text-xs text-gray-500">Fórmulas seguras e suaves para couros cabeludos delicados.</p>
+              </div>
+            </div>
+
+            <div class="pt-2">
+              <a href="https://wa.me/5521969277003?text=Ol%C3%A1%20Nat%C3%A1lia!%20Gostaria%20de%20agendar%20um%20atendimento%20infantil%20para%20o%20meu%20filho(a)." 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="inline-flex items-center justify-center gap-3 bg-brand-magenta hover:bg-brand-deep text-white font-title font-bold px-8 py-4 rounded-xl shadow-lg shadow-brand-magenta/30 transition-all text-center">
+                <i class="fa-brands fa-whatsapp text-xl"></i>
+                <span>Agendar Horário Infantil</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6">
+            <div class="relative mx-auto max-w-md lg:max-w-none">
+              <div class="absolute -inset-4 bg-brand-magenta/10 rounded-3xl transform -rotate-2"></div>
+              <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-dark-900">
+                <img 
+                  src="img/infantil.jpg" 
+                  alt="Natália Moraes em atendimento infantil acolhedor com crianças no salão"
+                  class="w-full h-[460px] object-cover object-center hover:scale-105 transition-transform duration-700"
+                  onerror="this.src='https://placehold.co/600x800/D81B60/FFFFFF?text=Atendimento+Infantil'"
+                >
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+                <div class="absolute bottom-6 left-6 right-6 text-white">
+                  <span class="bg-brand-magenta text-white text-[10px] font-black uppercase px-2.5 py-1 rounded-md tracking-wider">Cuidado Humanizado</span>
+                  <p class="font-title font-black text-xl mt-1">Experiência Leve e Divertida</p>
+                  <p class="text-xs text-white/80">Um salão preparado para receber todas as crianças com carinho.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. VITRINE DE PRODUTOS REAIS (produto1.jpg até produto6.jpg) -->
     <section id="produtos" class="py-20 sm:py-28 bg-dark-900 text-white relative overflow-hidden">
       <div class="absolute -right-32 top-10 w-96 h-96 bg-brand-magenta/20 blur-3xl pointer-events-none rounded-full"></div>
 
@@ -646,205 +669,464 @@
               <span>Envio Para Todo o Brasil</span>
             </div>
             <h2 class="text-3xl sm:text-5xl font-black uppercase font-title">
-              Linha Própria de Cosméticos
+              Linha Oficial Natália Moraes
             </h2>
             <p class="text-gray-400 max-w-xl text-base sm:text-lg mt-2">
-              Formulados pessoalmente por Natália Moraes para que você mantenha o resultado de salão de luxo em casa.
+              Fórmulas originais desenvolvidas pela especialista para continuar o tratamento de salão em sua casa.
             </p>
           </div>
           
           <div class="bg-dark-800 border border-gray-700 px-5 py-3 rounded-2xl flex items-center gap-3">
             <i class="fa-solid fa-shield-check text-2xl text-brand-magenta"></i>
             <div class="text-xs">
-              <span class="font-bold text-white block">Garantia de Qualidade</span>
-              <span class="text-gray-400">Produtos testados e aprovados clinicamente</span>
+              <span class="font-bold text-white block">Garantia de Autenticidade</span>
+              <span class="text-gray-400">Embalagem segura e pronta entrega</span>
             </div>
           </div>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           
-          <div class="lg:col-span-7 bg-dark-800 rounded-3xl p-6 sm:p-10 border border-gray-700 shadow-2xl relative">
-            <span class="absolute top-6 right-6 bg-brand-magenta text-white text-xs font-black uppercase px-3 py-1.5 rounded-full shadow-lg">
-              Mais Vendido do Brasil
-            </span>
-
-            <div class="grid grid-cols-1 sm:grid-cols-12 gap-8 items-center">
-              
-              <div class="sm:col-span-5 text-center">
-                <div class="bg-gradient-to-b from-gray-800 to-gray-900 p-4 rounded-2xl border border-gray-700">
-                  <img 
-                    src="https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?q=80&w=800&auto=format&fit=crop" 
-                    alt="Kit Shampoo e Condicionador Banana e Mel Natália Moraes" 
-                    class="w-full h-64 object-cover rounded-xl shadow-lg hover:scale-105 transition-transform"
-                    onerror="this.src='https://placehold.co/400x500/D81B60/FFFFFF?text=Kit+Banana+e+Mel'"
-                  >
-                </div>
-                <span class="text-[11px] text-gray-400 uppercase tracking-widest mt-2 block font-semibold">2 x 300ml | Uso Diário</span>
+          <!-- Produto 1: Kit Glamour Tratamento Premium -->
+          <div class="bg-dark-800 rounded-3xl p-6 border border-gray-700 hover:border-brand-magenta transition-all flex flex-col justify-between group shadow-xl">
+            <div>
+              <div class="relative overflow-hidden rounded-2xl mb-5 bg-gradient-to-b from-gray-900 to-dark-900 border border-gray-700/60 p-2">
+                <span class="absolute top-3 right-3 bg-brand-magenta text-white text-[10px] font-black uppercase px-2.5 py-1 rounded-full z-10 shadow">
+                  ★ Mais Vendido
+                </span>
+                <img 
+                  src="img/produto1.jpg" 
+                  alt="Kit Glamour Tratamento Premium Shampoo e Máscara Natália Moraes" 
+                  class="w-full h-64 object-cover rounded-xl group-hover:scale-105 transition-transform duration-500"
+                  onerror="this.src='https://placehold.co/500x600/D81B60/FFFFFF?text=Kit+Glamour+Premium'"
+                >
               </div>
 
-              <div class="sm:col-span-7 flex flex-col justify-between">
-                <div>
-                  <div class="flex items-center gap-1 text-yellow-400 text-xs mb-2">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <span class="text-gray-300 ml-1 text-xs font-bold">(5.0)</span>
-                  </div>
+              <span class="text-xs font-bold text-brand-magenta uppercase tracking-wider block mb-1">Tratamento Premium Pós-Química</span>
+              <h3 class="font-title font-black text-xl text-white mb-2 leading-tight">
+                Kit Glamour (Shampoo 300ml + Máscara 300g)
+              </h3>
+              <p class="text-sm text-gray-300 leading-relaxed mb-4">
+                Cuidado que transforma e brilho que impressiona. Restaura a saúde capilar pós-química com limpeza suave e emoliência profunda.
+              </p>
+            </div>
 
-                  <h3 class="font-title font-black text-2xl text-white mb-2 leading-tight">
-                    Shampoo e Condicionador Banana & Mel
-                  </h3>
-
-                  <p class="text-sm text-gray-300 mb-4 leading-relaxed">
-                    Nutrição profunda com extratos naturais. Restaura fios ressecados, prolonga o alinhamento e sela as cutículas instantaneamente.
-                  </p>
-
-                  <div class="bg-dark-900/80 p-3 rounded-xl border border-gray-700/60 mb-6">
-                    <ul class="text-xs text-gray-300 space-y-1">
-                      <li><i class="fa-solid fa-check text-brand-magenta mr-1.5"></i> Alto poder de emoliência e hidratação</li>
-                      <li><i class="fa-solid fa-check text-brand-magenta mr-1.5"></i> Prolonga a durabilidade do Alisamento</li>
-                      <li><i class="fa-solid fa-check text-brand-magenta mr-1.5"></i> Desenvolvido por Natália Moraes</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="flex items-baseline gap-3 mb-6">
-                  <span class="text-3xl sm:text-4xl font-black text-white font-title">R$ 50,00</span>
-                  <span class="text-xs text-green-400 font-bold bg-green-950/60 px-2 py-1 rounded border border-green-800">Pronta Entrega</span>
-                </div>
-
-                <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20quero%20comprar%20o%20Kit%20Shampoo%20e%20Condicionador%20Banana%20e%20Mel%20por%20R%24%2050%2C00!" 
-                   target="_blank" 
-                   rel="noopener noreferrer" 
-                   class="w-full inline-flex items-center justify-center gap-3 bg-brand-magenta hover:bg-brand-vibrant text-white font-title font-black text-base py-4 px-6 rounded-xl shadow-lg shadow-brand-magenta/40 transition-all transform hover:-translate-y-0.5 active:translate-y-0">
-                  <i class="fa-brands fa-whatsapp text-xl"></i>
-                  <span>Quero Comprar Agora</span>
-                </a>
-              </div>
-
+            <div class="pt-4 border-t border-gray-700/80">
+              <a href="https://wa.me/5521969277003?text=Ol%C3%A1%20Nat%C3%A1lia!%20Gostaria%20de%20comprar%20o%20Kit%20Glamour%20Tratamento%20Premium.%20Poderia%20me%20passar%20o%20valor%20e%20o%20frete%20para%20o%20meu%20CEP?" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="w-full inline-flex items-center justify-center gap-2 bg-brand-magenta hover:bg-brand-vibrant text-white font-title font-bold text-sm py-3.5 px-4 rounded-xl shadow-md transition-all">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Comprar pelo WhatsApp</span>
+              </a>
             </div>
           </div>
 
-          <div class="lg:col-span-5 space-y-6">
-            <div class="bg-gradient-to-br from-brand-magenta to-brand-deep p-8 rounded-3xl text-white shadow-xl">
-              <i class="fa-solid fa-box-open text-4xl mb-4 text-white/90"></i>
-              <h3 class="font-title font-black text-2xl uppercase mb-3">Receba em Casa com Segurança</h3>
-              <p class="text-sm text-white/90 leading-relaxed mb-6">
-                Não mora no Rio de Janeiro? Não tem problema! Enviamos as fórmulas originais da Natália Moraes via Correios ou Transportadora para qualquer CEP do Brasil.
-              </p>
-              
-              <div class="space-y-3 border-t border-white/20 pt-4 text-xs font-semibold">
-                <div class="flex items-center gap-2">
-                  <i class="fa-solid fa-truck text-sm"></i>
-                  <span>Cálculo de frete rápido direto no WhatsApp</span>
-                </div>
-                <div class="flex items-center gap-2">
-                  <i class="fa-solid fa-lock text-sm"></i>
-                  <span>Pagamento seguro via Pix ou Cartão</span>
-                </div>
-                <div class="flex items-center gap-2">
-                  <i class="fa-solid fa-circle-check text-sm"></i>
-                  <span>Embalagem reforçada anti-vazamento</span>
-                </div>
+          <!-- Produto 2: Reconstrução Instantânea 30 Segundos -->
+          <div class="bg-dark-800 rounded-3xl p-6 border border-gray-700 hover:border-brand-magenta transition-all flex flex-col justify-between group shadow-xl">
+            <div>
+              <div class="relative overflow-hidden rounded-2xl mb-5 bg-gradient-to-b from-gray-900 to-dark-900 border border-gray-700/60 p-2">
+                <span class="absolute top-3 right-3 bg-green-600 text-white text-[10px] font-black uppercase px-2.5 py-1 rounded-full z-10 shadow">
+                  Ação Rápida
+                </span>
+                <img 
+                  src="img/produto2.jpg" 
+                  alt="Reconstrução Instantânea 30 Segundos Natália Moraes" 
+                  class="w-full h-64 object-cover rounded-xl group-hover:scale-105 transition-transform duration-500"
+                  onerror="this.src='https://placehold.co/500x600/C2185B/FFFFFF?text=Reconstrução+30+Segundos'"
+                >
               </div>
+
+              <span class="text-xs font-bold text-brand-magenta uppercase tracking-wider block mb-1">Ceramidas & Aloe Vera</span>
+              <h3 class="font-title font-black text-xl text-white mb-2 leading-tight">
+                Reconstrução Instantânea 30 Segundos (250ml)
+              </h3>
+              <p class="text-sm text-gray-300 leading-relaxed mb-4">
+                Estimula o crescimento, reforça a resistência da fibra e promove nutrição intensiva e sedosidade em apenas meio minuto.
+              </p>
             </div>
 
-            <div class="p-6 rounded-2xl bg-dark-800 border border-gray-800 text-center">
-              <p class="text-sm text-gray-300 font-medium">Tem dúvidas sobre qual produto é ideal para o seu cabelo?</p>
-              <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20gostaria%20de%20uma%20orienta%C3%A7%C3%A3o%20sobre%20os%20produtos%20da%20Nat%C3%A1lia%20Moraes." target="_blank" rel="noopener noreferrer" class="text-brand-magenta font-bold text-sm inline-flex items-center gap-1.5 mt-2 hover:underline">
-                <span>Falar com especialista no WhatsApp</span>
-                <i class="fa-solid fa-angle-right text-xs"></i>
+            <div class="pt-4 border-t border-gray-700/80">
+              <a href="https://wa.me/5521969277003?text=Ol%C3%A1%20Nat%C3%A1lia!%20Quero%20comprar%20a%20Reconstru%C3%A7%C3%A3o%20Instant%C3%A2nea%2030%20Segundos.%20Como%20calculo%20o%20frete%20para%20o%20meu%20CEP?" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="w-full inline-flex items-center justify-center gap-2 bg-brand-magenta hover:bg-brand-vibrant text-white font-title font-bold text-sm py-3.5 px-4 rounded-xl shadow-md transition-all">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Comprar pelo WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Produto 3: BB Cream Premium 10 em 1 -->
+          <div class="bg-dark-800 rounded-3xl p-6 border border-gray-700 hover:border-brand-magenta transition-all flex flex-col justify-between group shadow-xl">
+            <div>
+              <div class="relative overflow-hidden rounded-2xl mb-5 bg-gradient-to-b from-gray-900 to-dark-900 border border-gray-700/60 p-2">
+                <span class="absolute top-3 right-3 bg-blue-600 text-white text-[10px] font-black uppercase px-2.5 py-1 rounded-full z-10 shadow">
+                  10 Benefícios
+                </span>
+                <img 
+                  src="img/produto3.jpg" 
+                  alt="BB Cream Premium 10 em 1 Creme de Uso Diário Natália Moraes" 
+                  class="w-full h-64 object-cover rounded-xl group-hover:scale-105 transition-transform duration-500"
+                  onerror="this.src='https://placehold.co/500x600/0284C7/FFFFFF?text=BB+Cream+Premium+Creme'"
+                >
+              </div>
+
+              <span class="text-xs font-bold text-brand-magenta uppercase tracking-wider block mb-1">Uso Diário Sem Enxágue</span>
+              <h3 class="font-title font-black text-xl text-white mb-2 leading-tight">
+                BB Cream Premium 10 em 1 (300ml)
+              </h3>
+              <p class="text-sm text-gray-300 leading-relaxed mb-4">
+                Proteção térmica, solar, da cor e antifrizz. Reduz volume, previne pontas duplas e deixa um toque sedoso de longa duração.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-gray-700/80">
+              <a href="https://wa.me/5521969277003?text=Ol%C3%A1%20Nat%C3%A1lia!%20Gostaria%20de%20adquirir%20o%20BB%20Cream%20Premium%2010%20em%201%20(300ml).%20Qual%20o%20valor%20com%20envio?" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="w-full inline-flex items-center justify-center gap-2 bg-brand-magenta hover:bg-brand-vibrant text-white font-title font-bold text-sm py-3.5 px-4 rounded-xl shadow-md transition-all">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Comprar pelo WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Produto 4: BB Cream Spray Premium 10 em 1 -->
+          <div class="bg-dark-800 rounded-3xl p-6 border border-gray-700 hover:border-brand-magenta transition-all flex flex-col justify-between group shadow-xl">
+            <div>
+              <div class="relative overflow-hidden rounded-2xl mb-5 bg-gradient-to-b from-gray-900 to-dark-900 border border-gray-700/60 p-2">
+                <span class="absolute top-3 right-3 bg-purple-600 text-white text-[10px] font-black uppercase px-2.5 py-1 rounded-full z-10 shadow">
+                  Fórmula Leve
+                </span>
+                <img 
+                  src="img/produto4.jpg" 
+                  alt="BB Cream Spray Premium 10 em 1 Natália Moraes" 
+                  class="w-full h-64 object-cover rounded-xl group-hover:scale-105 transition-transform duration-500"
+                  onerror="this.src='https://placehold.co/500x600/9333EA/FFFFFF?text=BB+Cream+Spray+10em1'"
+                >
+              </div>
+
+              <span class="text-xs font-bold text-brand-magenta uppercase tracking-wider block mb-1">Spray Prático Sem Enxágue</span>
+              <h3 class="font-title font-black text-xl text-white mb-2 leading-tight">
+                BB Cream Spray Premium 10 em 1 (200ml)
+              </h3>
+              <p class="text-sm text-gray-300 leading-relaxed mb-4">
+                Aplicação rápida e uniforme com borrifador. Desembaraço instantâneo com proteção térmica e solar sem pesar nos fios.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-gray-700/80">
+              <a href="https://wa.me/5521969277003?text=Ol%C3%A1%20Nat%C3%A1lia!%20Quero%20comprar%20o%20BB%20Cream%20Spray%20Premium%2010%20em%201%20(200ml).%20Como%20funciona%20o%20envio?" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="w-full inline-flex items-center justify-center gap-2 bg-brand-magenta hover:bg-brand-vibrant text-white font-title font-bold text-sm py-3.5 px-4 rounded-xl shadow-md transition-all">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Comprar pelo WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Produto 5: Óleos de Tratamento e Finalização -->
+          <div class="bg-dark-800 rounded-3xl p-6 border border-gray-700 hover:border-brand-magenta transition-all flex flex-col justify-between group shadow-xl">
+            <div>
+              <div class="relative overflow-hidden rounded-2xl mb-5 bg-gradient-to-b from-gray-900 to-dark-900 border border-gray-700/60 p-2">
+                <span class="absolute top-3 right-3 bg-yellow-500 text-dark-900 text-[10px] font-black uppercase px-2.5 py-1 rounded-full z-10 shadow">
+                  Nutrição Pura
+                </span>
+                <img 
+                  src="img/produto5.jpg" 
+                  alt="Óleos de Tratamento Maracujá e Revitalle Macadâmia Natália Moraes" 
+                  class="w-full h-64 object-cover rounded-xl group-hover:scale-105 transition-transform duration-500"
+                  onerror="this.src='https://placehold.co/500x600/EAB308/000000?text=Óleos+Maracujá+e+Macadâmia'"
+                >
+              </div>
+
+              <span class="text-xs font-bold text-brand-magenta uppercase tracking-wider block mb-1">Finalizadores com Filtro Solar</span>
+              <h3 class="font-title font-black text-xl text-white mb-2 leading-tight">
+                Óleos de Tratamento: Maracujá & Macadâmia (30ml)
+              </h3>
+              <p class="text-sm text-gray-300 leading-relaxed mb-4">
+                Opção <strong>Cheirinho de Maracujá</strong> para brilho e nutrição, ou <strong>Revitalle Macadâmia</strong> com proteção térmica e recuperação da elasticidade.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-gray-700/80">
+              <a href="https://wa.me/5521969277003?text=Ol%C3%A1%20Nat%C3%A1lia!%20Gostaria%20de%20saber%20o%20valor%20dos%20Óleos%20de%20Tratamento%20(Maracujá%20ou%20Macadâmia)." 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="w-full inline-flex items-center justify-center gap-2 bg-brand-magenta hover:bg-brand-vibrant text-white font-title font-bold text-sm py-3.5 px-4 rounded-xl shadow-md transition-all">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Comprar pelo WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Produto 6: Shampoo Detox Therapy -->
+          <div class="bg-dark-800 rounded-3xl p-6 border border-gray-700 hover:border-brand-magenta transition-all flex flex-col justify-between group shadow-xl">
+            <div>
+              <div class="relative overflow-hidden rounded-2xl mb-5 bg-gradient-to-b from-gray-900 to-dark-900 border border-gray-700/60 p-2">
+                <span class="absolute top-3 right-3 bg-emerald-600 text-white text-[10px] font-black uppercase px-2.5 py-1 rounded-full z-10 shadow">
+                  Força & Crescimento
+                </span>
+                <img 
+                  src="img/produto6.jpg" 
+                  alt="Shampoo Detox Therapy Força e Crescimento Natália Moraes" 
+                  class="w-full h-64 object-cover rounded-xl group-hover:scale-105 transition-transform duration-500"
+                  onerror="this.src='https://placehold.co/500x600/059669/FFFFFF?text=Shampoo+Detox+Therapy'"
+                >
+              </div>
+
+              <span class="text-xs font-bold text-brand-magenta uppercase tracking-wider block mb-1">Mentol, Biotina & Argila Verde</span>
+              <h3 class="font-title font-black text-xl text-white mb-2 leading-tight">
+                Shampoo Detox Therapy (300ml)
+              </h3>
+              <p class="text-sm text-gray-300 leading-relaxed mb-4">
+                Limpeza desintoxicante do couro cabeludo. Elimina a oleosidade excessiva, combate a caspa e estimula o crescimento saudável e forte dos fios.
+              </p>
+            </div>
+
+            <div class="pt-4 border-t border-gray-700/80">
+              <a href="https://wa.me/5521969277003?text=Ol%C3%A1%20Nat%C3%A1lia!%20Quero%20comprar%20o%20Shampoo%20Detox%20Therapy%20para%20crescimento%20capilar." 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="w-full inline-flex items-center justify-center gap-2 bg-brand-magenta hover:bg-brand-vibrant text-white font-title font-bold text-sm py-3.5 px-4 rounded-xl shadow-md transition-all">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Comprar pelo WhatsApp</span>
               </a>
             </div>
           </div>
 
         </div>
-      </div>
-    </section>
 
-    <!-- 8. GALERIA -->
-    <section id="galeria" class="py-20 sm:py-28 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="text-center max-w-3xl mx-auto mb-16">
-          <span class="text-xs font-black uppercase tracking-widest text-brand-magenta bg-brand-light px-3 py-1 rounded-full">
-            Resultados Reais
-          </span>
-          <h2 class="text-3xl sm:text-5xl font-black text-dark-900 mt-4 mb-4 uppercase">
-            Galeria de Transformações
-          </h2>
-          <p class="text-gray-600 text-base sm:text-lg">
-            Acompanhe o padrão de perfeição entregue diariamente em nosso espaço em Benfica.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div class="group relative rounded-2xl overflow-hidden aspect-square bg-gray-100 shadow-sm">
-            <img 
-              src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=800&auto=format&fit=crop" 
-              alt="Procedimento de Cabelo Natália Moraes" 
-              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-              onerror="this.src='https://placehold.co/500x500/C2185B/FFFFFF?text=Galeria+1'"
-            >
-            <div class="absolute inset-0 bg-brand-magenta/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span class="text-white font-title font-bold text-sm uppercase tracking-wider">Ver Detalhes</span>
+        <!-- Banner de Envio Nacional -->
+        <div class="mt-14 bg-gradient-to-r from-brand-magenta to-brand-deep rounded-3xl p-8 sm:p-10 shadow-2xl flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="flex items-center gap-5">
+            <div class="w-16 h-16 rounded-2xl bg-white text-brand-magenta flex items-center justify-center text-3xl shrink-0 shadow-lg">
+              <i class="fa-solid fa-box-open"></i>
+            </div>
+            <div>
+              <h3 class="font-title font-black text-2xl text-white uppercase">Entregamos em Qualquer Cidade do Brasil</h3>
+              <p class="text-white/90 text-sm mt-1">Envio rastreado via Correios (PAC/Sedex) ou Transportadora com embalagem reforçada anti-vazamento.</p>
             </div>
           </div>
-
-          <div class="group relative rounded-2xl overflow-hidden aspect-square bg-gray-100 shadow-sm">
-            <img 
-              src="https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=800&auto=format&fit=crop" 
-              alt="Tratamento Capilar no Salão" 
-              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-              onerror="this.src='https://placehold.co/500x500/D81B60/FFFFFF?text=Galeria+2'"
-            >
-            <div class="absolute inset-0 bg-brand-magenta/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span class="text-white font-title font-bold text-sm uppercase tracking-wider">Ver Detalhes</span>
-            </div>
-          </div>
-
-          <div class="group relative rounded-2xl overflow-hidden aspect-square bg-gray-100 shadow-sm">
-            <img 
-              src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?q=80&w=800&auto=format&fit=crop" 
-              alt="Design e Beleza Feminina" 
-              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-              onerror="this.src='https://placehold.co/500x500/880e4f/FFFFFF?text=Galeria+3'"
-            >
-            <div class="absolute inset-0 bg-brand-magenta/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span class="text-white font-title font-bold text-sm uppercase tracking-wider">Ver Detalhes</span>
-            </div>
-          </div>
-
-          <div class="group relative rounded-2xl overflow-hidden aspect-square bg-gray-100 shadow-sm">
-            <img 
-              src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?q=80&w=800&auto=format&fit=crop" 
-              alt="Alinhamento e Cuidado Capilar" 
-              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-              onerror="this.src='https://placehold.co/500x500/E91E63/FFFFFF?text=Galeria+4'"
-            >
-            <div class="absolute inset-0 bg-brand-magenta/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <span class="text-white font-title font-bold text-sm uppercase tracking-wider">Ver Detalhes</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="mt-10 text-center">
-          <a href="https://www.instagram.com/nataliamoraeshair" 
+          <a href="https://wa.me/5521969277003?text=Ol%C3%A1%20Nat%C3%A1lia!%20Gostaria%20de%20consultar%20os%20produtos%20dispon%C3%ADveis%20e%20calcular%20o%20frete%20para%20o%20meu%20endere%C3%A7o." 
              target="_blank" 
              rel="noopener noreferrer" 
-             class="inline-flex items-center gap-2 text-dark-900 hover:text-brand-magenta font-title font-bold text-sm uppercase tracking-wider transition-colors">
-            <i class="fa-brands fa-instagram text-xl text-pink-600"></i>
-            <span>Ver mais no Instagram oficial @nataliamoraeshair</span>
+             class="inline-flex items-center justify-center gap-2 bg-white text-brand-magenta hover:bg-gray-100 font-title font-black text-sm px-7 py-4 rounded-xl shadow-lg whitespace-nowrap transition-all shrink-0">
+            <i class="fa-brands fa-whatsapp text-xl text-green-600"></i>
+            <span>Calcular Frete pelo CEP</span>
           </a>
         </div>
 
       </div>
     </section>
 
-    <!-- 9. AVALIAÇÕES / DEPOIMENTOS -->
+    <!-- 9. SECÇÃO DE TRANSFORMAÇÕES REAIS (COM OS NOMES REAIS DOS FICHEIROS NO VS CODE) -->
+    <section id="galeria" class="py-20 sm:py-28 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-black uppercase tracking-widest text-brand-magenta bg-brand-light px-3 py-1 rounded-full">
+            Resultados Comprovados
+          </span>
+          <h2 class="text-3xl sm:text-5xl font-black text-dark-900 mt-4 mb-4 uppercase font-title">
+            Transformações Reais
+          </h2>
+          <p class="text-gray-600 text-base sm:text-lg">
+            Clique em qualquer fotografia para vê-la em ecrã inteiro com máxima definição.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+          
+          <!-- Transformação 1: Antes e Depois (img/transformacao1-antes.jpg e img/transformacao1-depois.jpg) -->
+          <div class="bg-gray-50 rounded-2xl overflow-hidden border border-gray-200 shadow-sm flex flex-col justify-between group hover:shadow-xl transition-all">
+            <div>
+              <div class="grid grid-cols-2 gap-2 p-2.5 bg-gray-100">
+                <!-- Foto Antes -->
+                <div class="relative overflow-hidden rounded-xl aspect-[2/3] bg-dark-900 group/item cursor-pointer">
+                  <span class="absolute top-2 left-2 bg-black/80 backdrop-blur-sm text-white text-[10px] font-black uppercase px-2 py-0.5 rounded z-10">
+                    Antes
+                  </span>
+                  <div class="absolute inset-0 bg-black/30 opacity-0 group-hover/item:opacity-100 transition-opacity z-10 flex items-center justify-center pointer-events-none">
+                    <span class="bg-white/90 text-dark-900 rounded-full w-8 h-8 flex items-center justify-center text-xs shadow-md">
+                      <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    </span>
+                  </div>
+                  <img 
+                    src="img/transformacao1-antes.jpg" 
+                    alt="Antes da Recuperação Capilar" 
+                    data-caption="Transformação 1: Antes do Procedimento"
+                    class="lightbox-trigger w-full h-full object-cover object-center group-hover/item:scale-105 transition-transform duration-500"
+                    onerror="this.src='https://placehold.co/400x600/374151/FFFFFF?text=Antes'"
+                  >
+                </div>
+
+                <!-- Foto Depois -->
+                <div class="relative overflow-hidden rounded-xl aspect-[2/3] bg-dark-900 group/item cursor-pointer">
+                  <span class="absolute top-2 left-2 bg-brand-magenta text-white text-[10px] font-black uppercase px-2 py-0.5 rounded z-10 shadow">
+                    Depois
+                  </span>
+                  <div class="absolute inset-0 bg-black/30 opacity-0 group-hover/item:opacity-100 transition-opacity z-10 flex items-center justify-center pointer-events-none">
+                    <span class="bg-white/90 text-dark-900 rounded-full w-8 h-8 flex items-center justify-center text-xs shadow-md">
+                      <i class="fa-solid fa-magnifying-glass-plus"></i>
+                    </span>
+                  </div>
+                  <img 
+                    src="img/transformacao1-depois.jpg" 
+                    alt="Depois da Recuperação Capilar" 
+                    data-caption="Transformação 1: Depois do Procedimento (Liso Espelhado)"
+                    class="lightbox-trigger w-full h-full object-cover object-center group-hover/item:scale-105 transition-transform duration-500"
+                    onerror="this.src='https://placehold.co/400x600/D81B60/FFFFFF?text=Depois'"
+                  >
+                </div>
+              </div>
+
+              <div class="p-4">
+                <span class="text-[10px] font-bold uppercase text-brand-magenta tracking-wider block mb-1">Recuperação de Fios</span>
+                <h4 class="font-title font-bold text-dark-900 text-sm">Vacina Capilar & Alinhamento</h4>
+                <p class="text-xs text-gray-500 mt-1">Clique nas fotos para ver os detalhes da fibra capilar restaurada.</p>
+              </div>
+            </div>
+            <div class="p-4 pt-0">
+              <a href="https://wa.me/5521969277003?text=Ol%C3%A1%20Nat%C3%A1lia!%20Vi%20a%20Transforma%C3%A7%C3%A3o%201%20(Antes%20e%20Depois)%20no%20site%20e%20quero%20um%20resultado%20assim." 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="w-full inline-flex items-center justify-center gap-1.5 text-xs font-bold text-brand-magenta hover:text-brand-deep py-2 border border-brand-magenta/30 rounded-lg hover:bg-brand-light transition-colors">
+                <span>Quero este resultado</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Transformação 2: Cachos Perfeitos (img/transformacao2.jpg) -->
+          <div class="bg-gray-50 rounded-2xl overflow-hidden border border-gray-200 shadow-sm flex flex-col justify-between group hover:shadow-xl transition-all">
+            <div>
+              <div class="relative overflow-hidden aspect-[3/4] p-2 bg-gray-100 group/img cursor-pointer">
+                <span class="absolute top-4 left-4 bg-brand-magenta text-white text-[10px] font-black uppercase px-2.5 py-1 rounded z-10 shadow">
+                  Cachos Perfeitos
+                </span>
+                <div class="absolute inset-0 bg-black/30 opacity-0 group-hover/img:opacity-100 transition-opacity z-10 flex items-center justify-center pointer-events-none">
+                  <span class="bg-white/90 text-dark-900 rounded-full w-9 h-9 flex items-center justify-center text-sm shadow-md">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </span>
+                </div>
+                <img 
+                  src="img/transformacao2.jpg" 
+                  alt="Resultado de tratamento e definição para cachos" 
+                  data-caption="Transformação 2: Cachoterapia com Definição e Mola Natural"
+                  class="lightbox-trigger w-full h-full object-cover rounded-xl group-hover/img:scale-105 transition-transform duration-500"
+                  onerror="this.src='https://placehold.co/400x500/D81B60/FFFFFF?text=Transformação+2'"
+                >
+              </div>
+              <div class="p-4">
+                <span class="text-[10px] font-bold uppercase text-brand-magenta tracking-wider block mb-1">Terapia de Curvatura</span>
+                <h4 class="font-title font-bold text-dark-900 text-sm">Cachoterapia & Soltura</h4>
+                <p class="text-xs text-gray-500 mt-1">Definição com mola natural, nutrição profunda e balanço leve.</p>
+              </div>
+            </div>
+            <div class="p-4 pt-0">
+              <a href="https://wa.me/5521969277003?text=Ol%C3%A1%20Nat%C3%A1lia!%20Adorei%20o%20resultado%20dos%20cachos%20na%20Transforma%C3%A7%C3%A3o%202!" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="w-full inline-flex items-center justify-center gap-1.5 text-xs font-bold text-brand-magenta hover:text-brand-deep py-2 border border-brand-magenta/30 rounded-lg hover:bg-brand-light transition-colors">
+                <span>Quero este resultado</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Transformação 3: Liso Espelhado (img/transformacao3.jpg) -->
+          <div class="bg-gray-50 rounded-2xl overflow-hidden border border-gray-200 shadow-sm flex flex-col justify-between group hover:shadow-xl transition-all">
+            <div>
+              <div class="relative overflow-hidden aspect-[3/4] p-2 bg-gray-100 group/img cursor-pointer">
+                <span class="absolute top-4 left-4 bg-dark-900 text-white text-[10px] font-black uppercase px-2.5 py-1 rounded z-10 shadow">
+                  Liso Espelhado
+                </span>
+                <div class="absolute inset-0 bg-black/30 opacity-0 group-hover/img:opacity-100 transition-opacity z-10 flex items-center justify-center pointer-events-none">
+                  <span class="bg-white/90 text-dark-900 rounded-full w-9 h-9 flex items-center justify-center text-sm shadow-md">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </span>
+                </div>
+                <img 
+                  src="img/transformacao3.jpg" 
+                  alt="Resultado de Alisamento Premium com Brilho Espelhado" 
+                  data-caption="Transformação 3: Alisamento Premium com Movimento Natural e Brilho Espelhado"
+                  class="lightbox-trigger w-full h-full object-cover rounded-xl group-hover/img:scale-105 transition-transform duration-500"
+                  onerror="this.src='https://placehold.co/400x500/111827/FFFFFF?text=Transformação+3'"
+                >
+              </div>
+              <div class="p-4">
+                <span class="text-[10px] font-bold uppercase text-brand-magenta tracking-wider block mb-1">Especialidade Premium</span>
+                <h4 class="font-title font-bold text-dark-900 text-sm">Alisamento com Movimento</h4>
+                <p class="text-xs text-gray-500 mt-1">Fios alinhados de forma natural, toque sedoso e sem pontas espigadas.</p>
+              </div>
+            </div>
+            <div class="p-4 pt-0">
+              <a href="https://wa.me/5521969277003?text=Ol%C3%A1%20Nat%C3%A1lia!%20Quero%20agendar%20um%20Alisamento%20igual%20ao%20da%20Transforma%C3%A7%C3%A3o%203." 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="w-full inline-flex items-center justify-center gap-1.5 text-xs font-bold text-brand-magenta hover:text-brand-deep py-2 border border-brand-magenta/30 rounded-lg hover:bg-brand-light transition-colors">
+                <span>Quero este resultado</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Transformação 4: Cor & Vida (img/transformacao4.jpg) -->
+          <div class="bg-gray-50 rounded-2xl overflow-hidden border border-gray-200 shadow-sm flex flex-col justify-between group hover:shadow-xl transition-all">
+            <div>
+              <div class="relative overflow-hidden aspect-[3/4] p-2 bg-gray-100 group/img cursor-pointer">
+                <span class="absolute top-4 left-4 bg-brand-magenta text-white text-[10px] font-black uppercase px-2.5 py-1 rounded z-10 shadow">
+                  Cor & Vida
+                </span>
+                <div class="absolute inset-0 bg-black/30 opacity-0 group-hover/img:opacity-100 transition-opacity z-10 flex items-center justify-center pointer-events-none">
+                  <span class="bg-white/90 text-dark-900 rounded-full w-9 h-9 flex items-center justify-center text-sm shadow-md">
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </span>
+                </div>
+                <img 
+                  src="img/transformacao4.jpg" 
+                  alt="Resultado de Coloração e Tratamento de Brilho" 
+                  data-caption="Transformação 4: Iluminação com Saúde e Fidelidade de Cor"
+                  class="lightbox-trigger w-full h-full object-cover rounded-xl group-hover/img:scale-105 transition-transform duration-500"
+                  onerror="this.src='https://placehold.co/400x500/C2185B/FFFFFF?text=Transformação+4'"
+                >
+              </div>
+              <div class="p-4">
+                <span class="text-[10px] font-bold uppercase text-brand-magenta tracking-wider block mb-1">Colorimetria & Brilho</span>
+                <h4 class="font-title font-bold text-dark-900 text-sm">Iluminação com Saúde</h4>
+                <p class="text-xs text-gray-500 mt-1">Tonalidade vibrante acompanhada de tratamento para máxima durabilidade.</p>
+              </div>
+            </div>
+            <div class="p-4 pt-0">
+              <a href="https://wa.me/5521969277003?text=Ol%C3%A1%20Nat%C3%A1lia!%20Achei%20lindo%20o%20cabelo%20da%20Transforma%C3%A7%C3%A3o%204!" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="w-full inline-flex items-center justify-center gap-1.5 text-xs font-bold text-brand-magenta hover:text-brand-deep py-2 border border-brand-magenta/30 rounded-lg hover:bg-brand-light transition-colors">
+                <span>Quero este resultado</span>
+                <i class="fa-solid fa-arrow-right text-[10px]"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mt-12 text-center">
+          <a href="https://www.instagram.com/nataliamoraeshair" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="inline-flex items-center gap-2 text-dark-900 hover:text-brand-magenta font-title font-bold text-sm uppercase tracking-wider transition-colors">
+            <i class="fa-brands fa-instagram text-xl text-pink-600"></i>
+            <span>Ver centenas de outros resultados no Instagram oficial @nataliamoraeshair</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 10. AVALIAÇÕES / DEPOIMENTOS -->
     <section id="depoimentos" class="py-20 sm:py-28 bg-brand-surface border-y border-brand-light">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -853,7 +1135,7 @@
             <span class="text-xs font-black uppercase tracking-widest text-brand-magenta bg-white px-3 py-1 rounded-full shadow-sm">
               Opinião de Quem Confia
             </span>
-            <h2 class="text-3xl sm:text-5xl font-black text-dark-900 mt-4 uppercase">
+            <h2 class="text-3xl sm:text-5xl font-black text-dark-900 mt-4 uppercase font-title">
               Avaliações Reais
             </h2>
             <p class="text-gray-600 text-base sm:text-lg mt-1">
@@ -893,7 +1175,7 @@
                 <i class="fa-solid fa-star"></i>
               </div>
               <p class="text-dark-800 text-base italic leading-relaxed mb-6 font-medium">
-                "Os produtos de manutenção são desenvolvidos pela própria proprietária."
+                "Os produtos de manutenção são desenvolvidos pela própria proprietária. A linha Glamour faz milagres no cabelo!"
               </p>
             </div>
             <div class="flex items-center gap-3 pt-4 border-t border-gray-100">
@@ -945,7 +1227,7 @@
                 <i class="fa-solid fa-star"></i>
               </div>
               <p class="text-dark-800 text-base italic leading-relaxed mb-6 font-medium">
-                "Há serviços de cabeleireiro, manicure, pedicure, design de sobrancelha, cílios!"
+                "O cuidado com as crianças é especial! Muita paciência e carinho, além de todos os serviços de salão completos."
               </p>
             </div>
             <div class="flex items-center gap-3 pt-4 border-t border-gray-100">
@@ -953,7 +1235,7 @@
                 M
               </div>
               <div>
-                <span class="font-bold text-dark-900 text-sm block">Frequentadora Assídua</span>
+                <span class="font-bold text-dark-900 text-sm block">Mãe & Cliente Assídua</span>
                 <span class="text-xs text-green-600 flex items-center gap-1 font-semibold">
                   <i class="fa-solid fa-circle-check text-[10px]"></i> Avaliação Google
                 </span>
@@ -965,7 +1247,7 @@
       </div>
     </section>
 
-    <!-- 10. LOCALIZAÇÃO -->
+    <!-- 11. LOCALIZAÇÃO -->
     <section id="localizacao" class="py-20 sm:py-28 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -975,12 +1257,12 @@
             <span class="text-xs font-black uppercase tracking-widest text-brand-magenta bg-brand-light px-3 py-1 rounded-full">
               Como Chegar
             </span>
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-dark-900 mt-4 mb-6 uppercase">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-dark-900 mt-4 mb-6 uppercase font-title">
               Nosso Espaço em Benfica
             </h2>
 
             <p class="text-gray-600 text-base mb-8 leading-relaxed">
-              Fácil acesso na Zona Norte do Rio de Janeiro. Um ambiente climatizado, acolhedor e estruturado com equipamentos profissionais para receber você com máximo conforto.
+              Fácil acesso na Zona Norte do Rio de Janeiro. Um ambiente climatizado, acolhedor e estruturado com equipamentos profissionais para receber você e sua família com máximo conforto.
             </p>
 
             <div class="space-y-6">
@@ -1048,7 +1330,7 @@
       </div>
     </section>
 
-    <!-- 11. CONTATO E AGENDAMENTO FINAL -->
+    <!-- 12. CONTATO E AGENDAMENTO FINAL -->
     <section id="contato" class="py-20 bg-brand-magenta text-white relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -1062,7 +1344,7 @@
               Pronta para viver a melhor versão do seu cabelo?
             </h2>
             <p class="text-white/90 text-lg mb-8 leading-relaxed">
-              Preencha o formulário rápido ao lado para gerar sua mensagem instantânea e falar diretamente conosco, ou clique no botão direto de WhatsApp.
+              Preencha o formulário rápido ao lado para encomendar seus cosméticos com frete para a sua cidade ou agendar o seu horário no salão.
             </p>
 
             <div class="space-y-4 mb-8">
@@ -1106,18 +1388,33 @@
                 <div>
                   <label for="userInterest" class="block text-xs font-black uppercase tracking-wider text-dark-800 mb-1">Qual é o seu interesse principal?</label>
                   <select id="userInterest" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:border-brand-magenta focus:ring-2 focus:ring-brand-magenta/20 transition-all text-sm font-medium bg-white">
-                    <option value="Alisamento Premium">Alisamento Premium (Especialidade)</option>
-                    <option value="Compra do Kit Banana e Mel">Comprar Produtos (Envio Brasil)</option>
-                    <option value="Terapia Capilar">Terapia Capilar</option>
-                    <option value="Cabeleireiro (Corte/Escova)">Cabeleireiro (Corte, Escova ou Tratamento)</option>
-                    <option value="Manicure / Pedicure">Manicure / Pedicure</option>
-                    <option value="Design de Sobrancelha / Cílios">Design de Sobrancelha / Cílios</option>
+                    <optgroup label="Linha de Cosméticos (Envio Brasil)">
+                      <option value="Comprar Kit Glamour Tratamento Premium">Comprar Kit Glamour Tratamento Premium (300ml + 300g)</option>
+                      <option value="Comprar Reconstrução Instantânea 30 Segundos">Comprar Reconstrução Instantânea 30 Segundos (250ml)</option>
+                      <option value="Comprar BB Cream Premium 10 em 1 Creme">Comprar BB Cream Premium 10 em 1 Creme (300ml)</option>
+                      <option value="Comprar BB Cream Spray Premium 10 em 1">Comprar BB Cream Spray Premium 10 em 1 (200ml)</option>
+                      <option value="Comprar Óleos de Tratamento (Maracujá/Macadâmia)">Comprar Óleos de Tratamento (Maracujá ou Macadâmia)</option>
+                      <option value="Comprar Shampoo Detox Therapy">Comprar Shampoo Detox Therapy (300ml - Força e Crescimento)</option>
+                    </optgroup>
+                    <optgroup label="Agendamentos no Salão">
+                      <option value="Vacina Capilar (Carro-Chefe)">Vacina Capilar (Carro-Chefe do Salão)</option>
+                      <option value="Tratamento para Cachos / Cachoterapia">Tratamento para Cachos (Cachoterapia / Soltura)</option>
+                      <option value="Atendimento Infantil Especializado">Atendimento Infantil Especializado</option>
+                      <option value="Nail Designer (Alongamento / Fibra / Gel)">Nail Designer (Alongamento / Fibra / Banho de Gel)</option>
+                      <option value="Alisamento Premium">Alisamento Premium</option>
+                      <option value="Botox Capilar">Botox Capilar</option>
+                      <option value="Coloração / Mechas">Coloração / Mechas</option>
+                      <option value="Corte Feminino / Infantil">Corte Feminino / Infantil</option>
+                      <option value="Escova / Hidratações">Escova / Hidratações</option>
+                      <option value="Progressivas / Realinhamento">Progressivas / Realinhamento</option>
+                      <option value="Mega Hair (Colocação / Manutenção)">Mega Hair (Colocação / Manutenção)</option>
+                    </optgroup>
                   </select>
                 </div>
 
                 <div>
-                  <label for="userMessage" class="block text-xs font-black uppercase tracking-wider text-dark-800 mb-1">Mensagem ou Dúvida (Opcional)</label>
-                  <textarea id="userMessage" rows="3" placeholder="Gostaria de agendar para sábado..." class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:border-brand-magenta focus:ring-2 focus:ring-brand-magenta/20 transition-all text-sm font-medium resize-none"></textarea>
+                  <label for="userMessage" class="block text-xs font-black uppercase tracking-wider text-dark-800 mb-1">Mensagem ou CEP para frete (Opcional)</label>
+                  <textarea id="userMessage" rows="3" placeholder="Gostaria de saber o valor do produto e o frete para o CEP 00000-000..." class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:border-brand-magenta focus:ring-2 focus:ring-brand-magenta/20 transition-all text-sm font-medium resize-none"></textarea>
                 </div>
 
                 <button type="submit" class="w-full bg-brand-magenta hover:bg-brand-deep text-white font-title font-black text-base py-4 rounded-xl shadow-lg shadow-brand-magenta/30 transition-all flex items-center justify-center gap-2">
@@ -1138,7 +1435,7 @@
 
   </main>
 
-  <!-- 12. FOOTER COM CRÉDITO DO DESENVOLVEDOR (RAFAEL ALVES) -->
+  <!-- 13. FOOTER COM CRÉDITO DO DESENVOLVEDOR (RAFAEL ALVES) -->
   <footer class="bg-dark-900 text-white pt-16 pb-12 border-t border-gray-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -1152,7 +1449,7 @@
             20 Anos Cuidando de Cabelos
           </span>
           <p class="text-gray-400 text-sm leading-relaxed">
-            Especialista em Alisamento Premium, Terapia Capilar e desenvolvimento de cosméticos capilares com envio para todo o Brasil.
+            Especialista em Vacina Capilar, Cachos, Atendimento Infantil e desenvolvimento de cosméticos com envio para todo o Brasil.
           </p>
           <div class="flex items-center gap-3 pt-2">
             <a href="https://www.instagram.com/nataliamoraeshair" target="_blank" rel="noopener noreferrer" aria-label="Instagram Natália Moraes" class="w-10 h-10 rounded-xl bg-dark-800 text-gray-300 hover:text-white hover:bg-brand-magenta flex items-center justify-center transition-colors">
@@ -1168,23 +1465,24 @@
           <h4 class="font-title font-bold text-white uppercase text-sm tracking-wider mb-4">Navegação Rápida</h4>
           <ul class="space-y-2.5 text-sm text-gray-400 font-medium">
             <li><a href="#sobre" class="hover:text-brand-magenta transition-colors">Sobre a Natália & Equipe</a></li>
-            <li><a href="#especialidade" class="hover:text-brand-magenta transition-colors">Alisamento Premium</a></li>
+            <li><a href="#especialidade" class="hover:text-brand-magenta transition-colors">Alisamento & Destaques</a></li>
             <li><a href="#servicos" class="hover:text-brand-magenta transition-colors">Serviços do Espaço</a></li>
-            <li><a href="#produtos" class="hover:text-brand-magenta transition-colors">Produtos Banana e Mel</a></li>
-            <li><a href="#depoimentos" class="hover:text-brand-magenta transition-colors">Depoimentos Google</a></li>
+            <li><a href="#infantil" class="hover:text-brand-magenta transition-colors">Espaço Infantil</a></li>
+            <li><a href="#produtos" class="hover:text-brand-magenta transition-colors">Loja Brasil (Cosméticos)</a></li>
+            <li><a href="#galeria" class="hover:text-brand-magenta transition-colors">Transformações Reais</a></li>
             <li><a href="#localizacao" class="hover:text-brand-magenta transition-colors">Endereço em Benfica</a></li>
           </ul>
         </div>
 
         <div class="lg:col-span-2">
-          <h4 class="font-title font-bold text-white uppercase text-sm tracking-wider mb-4">Procedimentos</h4>
+          <h4 class="font-title font-bold text-white uppercase text-sm tracking-wider mb-4">Destaques</h4>
           <ul class="space-y-2.5 text-sm text-gray-400 font-medium">
-            <li>Alisamento Premium</li>
-            <li>Terapia Capilar</li>
-            <li>Cabeleireiro</li>
-            <li>Manicure & Pedicure</li>
-            <li>Design de Sobrancelha</li>
-            <li>Extensão de Cílios</li>
+            <li>Kit Glamour Premium</li>
+            <li>30 Segundos</li>
+            <li>BB Cream 10 em 1</li>
+            <li>Shampoo Detox</li>
+            <li>Óleos de Tratamento</li>
+            <li>Vacina Capilar</li>
           </ul>
         </div>
 
@@ -1204,7 +1502,7 @@
 
       </div>
 
-      <!-- Linha de Direitos Autorais e Créditos com Hiperligação Direta -->
+      <!-- Linha de Direitos Autorais e Crédito do Desenvolvedor -->
       <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
         <p>&copy; 2026 Espaço de Beleza Natália Moraes. Todos os direitos reservados.</p>
         <p class="text-gray-400">
@@ -1233,139 +1531,25 @@
     </a>
   </div>
 
-  <!-- JAVASCRIPT NATIVO -->
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
+  <!-- 14. MODAL LIGHTBOX (AMPLIAÇÃO DAS FOTOS EM ECRÃ INTEIRO) -->
+  <div id="lightboxModal" class="fixed inset-0 z-[100] bg-black/90 backdrop-blur-md hidden flex flex-col items-center justify-center p-4 sm:p-6 transition-all duration-300 select-none">
+    
+    <!-- Botão Fechar (X) -->
+    <button id="lightboxClose" aria-label="Fechar visualização" class="absolute top-5 right-5 text-white/80 hover:text-white bg-white/10 hover:bg-white/25 rounded-full w-12 h-12 flex items-center justify-center text-2xl transition-all cursor-pointer">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
 
-      // 1. Menu Mobile Toggle
-      const mobileBtn = document.getElementById('mobileMenuBtn');
-      const mobileMenu = document.getElementById('mobileMenu');
-      const mobileLinks = document.querySelectorAll('.mobile-link');
+    <!-- Contentor Central da Imagem -->
+    <div class="relative max-w-4xl max-h-[85vh] flex flex-col items-center justify-center modal-animate">
+      <img id="lightboxImage" src="" alt="Ampliação do resultado" class="max-w-full max-h-[75vh] object-contain rounded-2xl shadow-2xl border border-white/20">
+      <p id="lightboxCaption" class="text-white/90 text-sm sm:text-base font-semibold mt-4 text-center max-w-xl px-4"></p>
+    </div>
 
-      if (mobileBtn && mobileMenu) {
-        mobileBtn.addEventListener('click', () => {
-          mobileMenu.classList.toggle('hidden');
-        });
+    <!-- Dica de Saída -->
+    <span class="text-white/40 text-xs mt-3 hidden sm:block">Pressione ESC ou clique fora da imagem para fechar</span>
+  </div>
 
-        mobileLinks.forEach(link => {
-          link.addEventListener('click', () => {
-            mobileMenu.classList.add('hidden');
-          });
-        });
-      }
-
-      // 2. Animação de Contadores Numéricos (Intersection Observer)
-      const counters = document.querySelectorAll('.counter');
-      const floatCounters = document.querySelectorAll('.counter-float');
-      let animated = false;
-
-      function animateCounters() {
-        counters.forEach(counter => {
-          const target = +counter.getAttribute('data-target');
-          const duration = 2000;
-          const start = 0;
-          const startTime = performance.now();
-
-          function update(currentTime) {
-            const elapsed = currentTime - startTime;
-            const progress = Math.min(elapsed / duration, 1);
-            const easeProgress = 1 - (1 - progress) * (1 - progress);
-            const currentVal = Math.floor(easeProgress * (target - start) + start);
-
-            if (target >= 1000) {
-              counter.innerText = currentVal.toLocaleString('pt-BR');
-            } else {
-              counter.innerText = currentVal;
-            }
-
-            if (progress < 1) {
-              requestAnimationFrame(update);
-            } else {
-              counter.innerText = target >= 1000 ? target.toLocaleString('pt-BR') : target;
-            }
-          }
-
-          requestAnimationFrame(update);
-        });
-
-        floatCounters.forEach(counter => {
-          const target = parseFloat(counter.getAttribute('data-target'));
-          const duration = 1800;
-          const startTime = performance.now();
-
-          function updateFloat(currentTime) {
-            const elapsed = currentTime - startTime;
-            const progress = Math.min(elapsed / duration, 1);
-            const easeProgress = 1 - (1 - progress) * (1 - progress);
-            const currentVal = (easeProgress * target).toFixed(1);
-
-            counter.innerText = currentVal.replace('.', ',');
-
-            if (progress < 1) {
-              requestAnimationFrame(updateFloat);
-            } else {
-              counter.innerText = target.toFixed(1).replace('.', ',');
-            }
-          }
-
-          requestAnimationFrame(updateFloat);
-        });
-      }
-
-      const statsSection = document.getElementById('estatisticas');
-      if (statsSection) {
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting && !animated) {
-              animated = true;
-              animateCounters();
-            }
-          });
-        }, { threshold: 0.3 });
-
-        observer.observe(statsSection);
-      }
-
-      // 3. Tratamento e Validação do Formulário com Envio para o WhatsApp
-      const contactForm = document.getElementById('contactForm');
-      const formFeedback = document.getElementById('formFeedback');
-
-      if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-          e.preventDefault();
-
-          const name = document.getElementById('userName').value.trim();
-          const phone = document.getElementById('userPhone').value.trim();
-          const interest = document.getElementById('userInterest').value;
-          const message = document.getElementById('userMessage').value.trim();
-
-          let text = `*Olá, Natália Moraes! Gostaria de um atendimento:*\n\n`;
-          text += `👤 *Nome:* ${name}\n`;
-          text += `📱 *Telefone:* ${phone}\n`;
-          text += `✨ *Interesse:* ${interest}\n`;
-          if (message) {
-            text += `💬 *Mensagem:* ${message}\n`;
-          }
-          text += `\n_Mensagem enviada através da Landing Page oficial._`;
-
-          const encodedText = encodeURIComponent(text);
-          const whatsappURL = `https://wa.me/5521969277003?text=${encodedText}`;
-
-          if (formFeedback) {
-            formFeedback.classList.remove('hidden');
-          }
-
-          setTimeout(() => {
-            window.open(whatsappURL, '_blank');
-            contactForm.reset();
-            if (formFeedback) {
-              setTimeout(() => formFeedback.classList.add('hidden'), 4000);
-            }
-          }, 400);
-        });
-      }
-
-    });
-  </script>
+  <!-- Ligação ao Ficheiro JavaScript Externo -->
+  <script src="script.js"></script>
 </body>
 </html>
