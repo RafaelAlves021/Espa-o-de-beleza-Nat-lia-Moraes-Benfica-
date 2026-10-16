@@ -54,11 +54,11 @@
   <!-- 1. HEADER FIXO (LAYOUT HARMONIZADO E SEM QUEBRAS) -->
   <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20 gap-4">
+      <div class="flex items-center justify-between h-20 gap-3 xl:gap-6">
         
         <!-- Bloco 1: Logótipo e Crachá Original -->
         <a href="#hero" class="flex flex-col group shrink-0">
-          <span class="text-2xl lg:text-3xl font-title font-black tracking-tight text-dark-900 group-hover:text-brand-magenta transition-colors whitespace-nowrap">
+          <span class="text-xl sm:text-2xl lg:text-3xl font-title font-black tracking-tight text-dark-900 group-hover:text-brand-magenta transition-colors whitespace-nowrap">
             NATÁLIA<span class="text-brand-magenta">MORAES</span>
           </span>
           <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-brand-deep bg-brand-light px-2 py-0.5 rounded w-max mt-0.5 whitespace-nowrap">
@@ -67,21 +67,20 @@
         </a>
 
         <!-- Bloco 2: Menu Desktop Central -->
-        <nav class="hidden lg:flex items-center gap-5 xl:gap-7">
+        <nav class="hidden lg:flex items-center gap-4 xl:gap-6">
           <a href="#sobre" class="text-xs xl:text-sm font-bold text-dark-800 hover:text-brand-magenta transition-colors uppercase tracking-wider whitespace-nowrap">Sobre</a>
-          <a href="#especialidade" class="text-xs xl:text-sm font-bold text-dark-800 hover:text-brand-magenta transition-colors uppercase tracking-wider whitespace-nowrap">Vacina Capilar e Cachos</a>
+          <a href="#especialidade" class="text-xs xl:text-sm font-bold text-dark-800 hover:text-brand-magenta transition-colors uppercase tracking-wider whitespace-nowrap">Vacina Capilar</a>
           <a href="#servicos" class="text-xs xl:text-sm font-bold text-dark-800 hover:text-brand-magenta transition-colors uppercase tracking-wider whitespace-nowrap">Serviços</a>
-          <a href="#infantil" class="text-xs xl:text-sm font-bold text-dark-800 hover:text-brand-magenta transition-colors uppercase tracking-wider whitespace-nowrap">Espaço Infantil</a>
-          <a href="#produtos" class="text-xs xl:text-sm font-bold text-dark-800 hover:text-brand-magenta transition-colors uppercase tracking-wider whitespace-nowrap">Loja Brasil</a>
-          <a href="#galeria" class="text-xs xl:text-sm font-bold text-brand-magenta hover:text-brand-dark transition-colors uppercase tracking-wider whitespace-nowrap flex items-center gap-1">
-            <i class="fa-solid fa-camera text-xs"></i> Transformações
+          <a href="#infantil" class="text-xs xl:text-sm font-bold text-brand-magenta hover:text-brand-dark transition-colors uppercase tracking-wider flex items-center gap-1 whitespace-nowrap">
+            <i class="fa-solid fa-child-reaching text-xs"></i> Infantil
           </a>
-          <a href="#depoimentos" class="text-xs xl:text-sm font-bold text-dark-800 hover:text-brand-magenta transition-colors uppercase tracking-wider whitespace-nowrap">Avaliações</a>
+          <a href="#produtos" class="text-xs xl:text-sm font-bold text-dark-800 hover:text-brand-magenta transition-colors uppercase tracking-wider whitespace-nowrap">Loja Brasil</a>
+          <a href="#galeria" class="text-xs xl:text-sm font-bold text-dark-800 hover:text-brand-magenta transition-colors uppercase tracking-wider whitespace-nowrap">Resultados</a>
           <a href="#localizacao" class="text-xs xl:text-sm font-bold text-dark-800 hover:text-brand-magenta transition-colors uppercase tracking-wider whitespace-nowrap">Benfica RJ</a>
         </nav>
 
         <!-- Bloco 3: Botão de Ação Direta -->
-        <div class="hidden sm:flex items-center shrink-0">
+        <div class="hidden sm:flex items-center shrink-0 pr-1">
           <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20com%20a%20Nat%C3%A1lia%20Moraes!" 
              target="_blank" 
              rel="noopener noreferrer" 
@@ -105,9 +104,12 @@
         <a href="#sobre" class="mobile-link text-base font-bold text-dark-800 hover:text-brand-magenta py-1">Sobre a Natália & Equipe</a>
         <a href="#especialidade" class="mobile-link text-base font-bold text-dark-800 hover:text-brand-magenta py-1">Alisamento Premium</a>
         <a href="#servicos" class="mobile-link text-base font-bold text-dark-800 hover:text-brand-magenta py-1">Todos os Serviços</a>
-        <a href="#infantil" class="mobile-link text-base font-bold text-dark-800 hover:text-brand-magenta py-1">Espaço Infantil</a>
-        <a href="#produtos" class="mobile-link text-base font-bold text-dark-800 hover:text-brand-magenta py-1">Loja Brasil</a>
-        <a href="#galeria" class="mobile-link text-base font-bold text-brand-magenta py-1">Transformações Reais</a>
+        <a href="#infantil" class="mobile-link text-base font-bold text-brand-magenta py-1 flex items-center justify-between">
+          <span>Espaço Infantil</span>
+          <span class="text-xs bg-brand-light text-brand-magenta font-black px-2 py-0.5 rounded">ESPECIAL</span>
+        </a>
+        <a href="#produtos" class="mobile-link text-base font-bold text-dark-800 hover:text-brand-magenta py-1">Loja Brasil (Cosméticos)</a>
+        <a href="#galeria" class="mobile-link text-base font-bold text-dark-800 hover:text-brand-magenta py-1">Resultados & Antes/Depois</a>
         <a href="#depoimentos" class="mobile-link text-base font-bold text-dark-800 hover:text-brand-magenta py-1">Depoimentos & Google</a>
         <a href="#localizacao" class="mobile-link text-base font-bold text-dark-800 hover:text-brand-magenta py-1">Localização em Benfica</a>
         
@@ -124,34 +126,36 @@
     </div>
   </header>
 
-  <main class="pt-20">
-    <!-- 2. HERO SECTION COM FOTO DE ESTÚDIO DA NATÁLIA (nataliahero.jpg) -->
-    <section id="hero" class="relative bg-brand-magenta text-white overflow-hidden">
+  <!-- 2. MAIN COM PADDING COMPENSATÓRIO ADEQUADO -->
+  <main class="pt-20 sm:pt-24">
+    <!-- HERO SECTION COM ENCAIXE E RESPIRO CALIBRADOS (pt-10 sm:pt-14 pb-16 sm:pb-24) -->
+    <section id="hero" class="relative bg-brand-magenta text-white overflow-hidden pt-10 sm:pt-14 pb-16 sm:pb-24">
       <div class="absolute inset-0 opacity-15 pointer-events-none">
         <div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-white blur-3xl"></div>
         <div class="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full bg-brand-vibrant blur-3xl"></div>
       </div>
 
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-28 relative z-10">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
           
           <div class="lg:col-span-7 flex flex-col items-start text-left">
-            <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md text-white text-xs sm:text-sm font-bold uppercase tracking-wider px-4 py-1.5 rounded-full mb-6 border border-white/30">
+            <!-- Selo com a coroa perfeitamente visível abaixo do header -->
+            <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md text-white text-xs sm:text-sm font-bold uppercase tracking-wider px-4 py-1.5 rounded-full mb-6 border border-white/30 shadow-sm">
               <i class="fa-solid fa-crown text-yellow-300"></i>
               <span>Carro-Chefe: Vacina Capilar • Cachos • Linha Própria</span>
             </div>
 
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-tight uppercase mb-6 font-title">
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black leading-tight tracking-tight uppercase mb-6 font-title">
               Especialista em <br>
               <span class="text-dark-900 bg-white px-2 py-0.5 inline-block my-1 rounded-md">Vacina Capilar</span><br>
               Cachos & Cosméticos Exclusivos
             </h1>
 
-            <p class="text-lg sm:text-xl text-white/90 font-medium max-w-2xl mb-8 leading-relaxed">
+            <p class="text-base sm:text-lg lg:text-xl text-white/90 font-medium max-w-2xl mb-8 leading-relaxed">
               Mais de duas décadas de tradição em Benfica. Transformações de alto padrão, acolhimento infantil e fórmulas próprias desenvolvidas pela especialista para garantir resultados de salão em sua casa.
             </p>
 
-            <!-- Selos Rápidos de Autoridade -->
+            <!-- Selos de Autoridade -->
             <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 w-full sm:w-auto mb-8">
               <div class="bg-black/25 backdrop-blur-sm border border-white/20 rounded-2xl p-3 flex items-center gap-3">
                 <div class="w-10 h-10 rounded-xl bg-white text-brand-magenta flex items-center justify-center font-title font-black text-lg shrink-0 shadow-md">
@@ -189,13 +193,13 @@
               <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20Nat%C3%A1lia!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." 
                  target="_blank" 
                  rel="noopener noreferrer" 
-                 class="inline-flex items-center justify-center gap-3 bg-white text-brand-magenta hover:bg-gray-100 font-title font-black text-lg px-8 py-4 rounded-xl shadow-xl transition-all transform hover:-translate-y-1 active:translate-y-0 text-center">
+                 class="inline-flex items-center justify-center gap-3 bg-white text-brand-magenta hover:bg-gray-100 font-title font-black text-base sm:text-lg px-8 py-4 rounded-xl shadow-xl transition-all transform hover:-translate-y-1 active:translate-y-0 text-center">
                 <i class="fa-brands fa-whatsapp text-2xl text-green-600"></i>
                 <span>Agendar Avaliação</span>
               </a>
 
               <a href="#produtos" 
-                 class="inline-flex items-center justify-center gap-2 bg-brand-dark/40 hover:bg-brand-dark/70 text-white border-2 border-white/40 font-title font-bold text-base px-6 py-4 rounded-xl transition-all text-center">
+                 class="inline-flex items-center justify-center gap-2 bg-brand-dark/40 hover:bg-brand-dark/70 text-white border-2 border-white/40 font-title font-bold text-sm sm:text-base px-6 py-4 rounded-xl transition-all text-center">
                 <i class="fa-solid fa-bag-shopping"></i>
                 <span>Ver Produtos com Envio</span>
               </a>
@@ -216,14 +220,14 @@
           </div>
 
           <!-- Moldura com a Foto Oficial da Natália Moraes -->
-          <div class="lg:col-span-5 relative">
+          <div class="lg:col-span-5 relative mt-6 lg:mt-0">
             <div class="relative mx-auto max-w-md lg:max-w-none">
               <div class="absolute -inset-4 bg-white/20 rounded-3xl transform rotate-2"></div>
               <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-dark-900">
                 <img 
                   src="img/nataliahero.jpg" 
                   alt="Natália Moraes - Especialista em Vacina Capilar, Cachos e Linha Própria"
-                  class="w-full h-[480px] sm:h-[540px] object-cover object-top hover:scale-105 transition-transform duration-700"
+                  class="w-full h-[440px] sm:h-[500px] object-cover object-top hover:scale-105 transition-transform duration-700"
                   loading="eager"
                   onerror="this.src='https://placehold.co/600x800/D81B60/FFFFFF?text=Natália+Moraes'"
                 >
