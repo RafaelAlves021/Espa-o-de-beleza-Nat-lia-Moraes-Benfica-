@@ -8,18 +8,15 @@
   <!-- SEO Básico -->
   <meta name="description" content="Espaço de Beleza Natália Moraes em Benfica, RJ. 20 anos de tradição, mais de 30 mil atendimentos, especialista em Alisamento Premium, Vacina Capilar, Cachos, Atendimento Infantil e cosméticos próprios com envio para todo o Brasil.">
 
-<!-- ======================================================================
-       LOGÓTIPO OFICIAL DA MARCA - FAVICON VETORIAL (SVG INLINE)
-       Design: Círculo Magenta com Monograma "NM" e Coroa Imperial Dourada
-       ====================================================================== -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='bgGrad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23D81B60'/%3E%3Cstop offset='100%25' stop-color='%23AD1457'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='32' cy='32' r='30' fill='url(%23bgGrad)' stroke='%23FFFFFF' stroke-width='2'/%3E%3Cpath d='M23 20 L27 25 L32 18 L37 25 L41 20 L40 28 L24 28 Z' fill='%23FFD700'/%3E%3Ccircle cx='32' cy='16' r='1.5' fill='%23FFD700'/%3E%3Ccircle cx='23' cy='18' r='1.2' fill='%23FFD700'/%3E%3Ccircle cx='41' cy='18' r='1.2' fill='%23FFD700'/%3E%3Ctext x='32' y='48' text-anchor='middle' font-family='Poppins, sans-serif' font-weight='900' font-size='20' fill='%23FFFFFF' letter-spacing='-1'%3ENM%3C/text%3E%3C/svg%3E">
+  <!-- Favicon Oficial com a Imagem do Logótipo (img/logo.jpg) -->
+  <link rel="icon" type="image/jpeg" href="img/logo.jpg">
+  <link rel="apple-touch-icon" href="img/logo.jpg">
 
-  <!-- Ícone para dispositivos Apple (iOS) -->
-  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='bgGrad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23D81B60'/%3E%3Cstop offset='100%25' stop-color='%23AD1457'/%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='32' cy='32' r='30' fill='url(%23bgGrad)' stroke='%23FFFFFF' stroke-width='2'/%3E%3Cpath d='M23 20 L27 25 L32 18 L37 25 L41 20 L40 28 L24 28 Z' fill='%23FFD700'/%3E%3Ccircle cx='32' cy='16' r='1.5' fill='%23FFD700'/%3E%3Ccircle cx='23' cy='18' r='1.2' fill='%23FFD700'/%3E%3Ccircle cx='41' cy='18' r='1.2' fill='%23FFD700'/%3E%3Ctext x='32' y='48' text-anchor='middle' font-family='Poppins, sans-serif' font-weight='900' font-size='20' fill='%23FFFFFF' letter-spacing='-1'%3ENM%3C/text%3E%3C/svg%3E">
+  <!-- Metatags Open Graph (Pré-visualização para WhatsApp e Redes Sociais) -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Natália Moraes | Espaço de Beleza & Cosméticos">
   <meta property="og:description" content="Especialista em Vacina Capilar, Cachos, Atendimento Infantil e Linha de Cosméticos para todo o Brasil.">
-  <meta property="og:image" content="https://www.espaconataliamoraes.com.br/img/nataliahero.jpg">
+  <meta property="og:image" content="https://www.espaconataliamoraes.com.br/img/logo.jpg">
   <meta property="og:url" content="https://www.espaconataliamoraes.com.br/">
 
   <!-- Google Fonts: Poppins (Títulos) e Mulish (Corpo) -->
@@ -65,17 +62,20 @@
 </head>
 <body class="antialiased selection:bg-brand-magenta selection:text-white">
 
-  <!-- 1. HEADER FIXO (LAYOUT HARMONIZADO E SEM QUEBRAS) -->
+  <!-- 1. HEADER FIXO COM LOGÓTIPO OFICIAL E ESPAÇAMENTO EQUILIBRADO -->
   <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20 gap-3 xl:gap-6">
         
-        <!-- Bloco 1: Logótipo e Crachá Original -->
+        <!-- Bloco 1: Logótipo Oficial (img/logo.jpg) -->
         <a href="#hero" class="flex flex-col group shrink-0">
-          <span class="text-xl sm:text-2xl lg:text-3xl font-title font-black tracking-tight text-dark-900 group-hover:text-brand-magenta transition-colors whitespace-nowrap">
-            NATÁLIA<span class="text-brand-magenta">MORAES</span>
-          </span>
-          <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-brand-deep bg-brand-light px-2 py-0.5 rounded w-max mt-0.5 whitespace-nowrap">
+          <img 
+            src="img/logo.jpg" 
+            alt="Espaço de Beleza Natália Moraes - Logótipo Oficial" 
+            class="h-10 sm:h-11 w-auto object-contain transition-transform group-hover:scale-105"
+            onerror="this.src='https://placehold.co/200x50/D81B60/FFFFFF?text=Natália+Moraes'"
+          >
+          <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-brand-deep bg-brand-light px-2 py-0.5 rounded w-max mt-1 whitespace-nowrap">
             Especialista em Alisamento Premium
           </span>
         </a>
@@ -83,7 +83,7 @@
         <!-- Bloco 2: Menu Desktop Central -->
         <nav class="hidden lg:flex items-center gap-4 xl:gap-6">
           <a href="#sobre" class="text-xs xl:text-sm font-bold text-dark-800 hover:text-brand-magenta transition-colors uppercase tracking-wider whitespace-nowrap">Sobre</a>
-          <a href="#especialidade" class="text-xs xl:text-sm font-bold text-dark-800 hover:text-brand-magenta transition-colors uppercase tracking-wider whitespace-nowrap">Vacina Capilar</a>
+          <a href="#especialidade" class="text-xs xl:text-sm font-bold text-dark-800 hover:text-brand-magenta transition-colors uppercase tracking-wider whitespace-nowrap">Alisamento</a>
           <a href="#servicos" class="text-xs xl:text-sm font-bold text-dark-800 hover:text-brand-magenta transition-colors uppercase tracking-wider whitespace-nowrap">Serviços</a>
           <a href="#infantil" class="text-xs xl:text-sm font-bold text-brand-magenta hover:text-brand-dark transition-colors uppercase tracking-wider flex items-center gap-1 whitespace-nowrap">
             <i class="fa-solid fa-child-reaching text-xs"></i> Infantil
@@ -140,9 +140,9 @@
     </div>
   </header>
 
-  <!-- 2. MAIN COM PADDING COMPENSATÓRIO ADEQUADO -->
+  <!-- 2. MAIN COM PADDING COMPENSATÓRIO PERFEITAMENTE ENCAIXADO -->
   <main class="pt-20 sm:pt-24">
-    <!-- HERO SECTION COM ENCAIXE E RESPIRO CALIBRADOS -->
+    <!-- HERO SECTION COM RESPIRO VERTICAL REFINADO -->
     <section id="hero" class="relative bg-brand-magenta text-white overflow-hidden pt-10 sm:pt-14 pb-16 sm:pb-24">
       <div class="absolute inset-0 opacity-15 pointer-events-none">
         <div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-white blur-3xl"></div>
@@ -153,6 +153,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
           
           <div class="lg:col-span-7 flex flex-col items-start text-left">
+            <!-- Selo superior perfeitamente visível abaixo da barra fixa -->
             <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md text-white text-xs sm:text-sm font-bold uppercase tracking-wider px-4 py-1.5 rounded-full mb-6 border border-white/30 shadow-sm">
               <i class="fa-solid fa-crown text-yellow-300"></i>
               <span>Carro-Chefe: Vacina Capilar • Cachos • Linha Própria</span>
@@ -168,6 +169,7 @@
               Mais de duas décadas de tradição em Benfica. Transformações de alto padrão, acolhimento infantil e fórmulas próprias desenvolvidas pela especialista para garantir resultados de salão em sua casa.
             </p>
 
+            <!-- Selos Rápidos de Autoridade -->
             <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 w-full sm:w-auto mb-8">
               <div class="bg-black/25 backdrop-blur-sm border border-white/20 rounded-2xl p-3 flex items-center gap-3">
                 <div class="w-10 h-10 rounded-xl bg-white text-brand-magenta flex items-center justify-center font-title font-black text-lg shrink-0 shadow-md">
@@ -200,6 +202,7 @@
               </div>
             </div>
 
+            <!-- Botões Principais de Ação -->
             <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto">
               <a href="https://wa.me/5521969277003?text=Ol%C3%A1%2C%20Nat%C3%A1lia!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." 
                  target="_blank" 
@@ -230,6 +233,7 @@
             </div>
           </div>
 
+          <!-- Moldura com a Foto Oficial da Natália Moraes -->
           <div class="lg:col-span-5 relative mt-6 lg:mt-0">
             <div class="relative mx-auto max-w-md lg:max-w-none">
               <div class="absolute -inset-4 bg-white/20 rounded-3xl transform rotate-2"></div>
@@ -245,7 +249,7 @@
                 <div class="absolute bottom-6 left-6 right-6 text-white">
                   <span class="bg-brand-magenta text-white text-xs font-black uppercase px-2.5 py-1 rounded-md tracking-wider">Especialista Oficial</span>
                   <p class="font-title font-black text-2xl mt-1">Natália Moraes</p>
-                  <p class="text-xs text-white/80 font-medium">Natália Moraes é cabeleireira, terapeuta capilar e empreendedora, que transformou sua experiência e paixão pelo cuidado em uma missão: unir beleza, saúde capilar e autoestima para transformar não apenas cabelos, mas a maneira como cada mulher se enxerga.</p>
+                  <p class="text-xs text-white/80 font-medium">Vacina Capilar • Cachos • Criadora de Fórmulas</p>
                 </div>
               </div>
             </div>
@@ -936,7 +940,7 @@
       </div>
     </section>
 
-    <!-- 9. SECÇÃO DE TRANSFORMAÇÕES REAIS (COM ANTES E DEPOIS AMPLIADO E LIGHTBOX) -->
+    <!-- 9. SECÇÃO DE TRANSFORMAÇÕES REAIS (COM OS NOMES REAIS DOS FICHEIROS NO VS CODE) -->
     <section id="galeria" class="py-20 sm:py-28 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -1449,19 +1453,25 @@
 
   </main>
 
-  <!-- 13. FOOTER COM CRÉDITO DO DESENVOLVEDOR (RAFAEL ALVES) -->
+  <!-- 13. FOOTER COM LOGÓTIPO OFICIAL E CRÉDITO DO DESENVOLVEDOR (RAFAEL ALVES) -->
   <footer class="bg-dark-900 text-white pt-16 pb-12 border-t border-gray-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-gray-800">
         
         <div class="lg:col-span-4 space-y-4">
-          <div class="text-2xl font-black font-title tracking-tight text-white">
-            NATÁLIA<span class="text-brand-magenta">MORAES</span>
+          <div class="flex flex-col">
+            <img 
+              src="img/logo.jpg" 
+              alt="Espaço de Beleza Natália Moraes" 
+              class="h-10 sm:h-12 w-auto object-contain brightness-110 mb-2"
+              onerror="this.src='https://placehold.co/200x60/D81B60/FFFFFF?text=Natália+Moraes'"
+            >
+            <span class="text-xs font-bold uppercase tracking-widest text-brand-deep bg-brand-light px-2.5 py-1 rounded w-max inline-block">
+              20 Anos Cuidando de Cabelos
+            </span>
           </div>
-          <span class="text-xs font-bold uppercase tracking-widest text-brand-deep bg-brand-light px-2.5 py-1 rounded inline-block">
-            20 Anos Cuidando de Cabelos
-          </span>
+          
           <p class="text-gray-400 text-sm leading-relaxed">
             Especialista em Vacina Capilar, Cachos, Atendimento Infantil e desenvolvimento de cosméticos com envio para todo o Brasil.
           </p>
